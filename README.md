@@ -8,33 +8,32 @@ designed to take your money, so you spend your attention on the small remainder.
 
 ---
 
-## 1. Create your Telegram bot (3 minutes)
+## 1. Connect Telegram (3 minutes)
 
-1. Open Telegram, search **@BotFather**, send `/newbot`
-2. Pick a name and a username ending in `bot`
-3. BotFather replies with a token like `8123456789:AAH...` — copy it
-4. Send **any message** to your new bot (this opens the chat so it can reply)
-5. Get your chat id — paste your token into this URL in a browser:
-
-   ```
-   https://api.telegram.org/bot<YOUR_TOKEN>/getUpdates
-   ```
-
-   Find `"chat":{"id":123456789` — that number is your `chat_id`.
-
-Put both into `config.json`:
-
-```json
-"telegram": {
-  "bot_token": "8123456789:AAH...",
-  "chat_id": "123456789"
-}
-```
-
-Test it:
+1. In Telegram, message **@BotFather** and send `/newbot`. Pick a display name, then a
+   username ending in `bot`. It replies with a token like `8123456789:AAH...`
+2. Open your new bot and press **START**, so it is allowed to message you
+3. Run the setup, which verifies the token, finds your chat id and sends a test message:
 
 ```bash
-python scanner.py --test-telegram
+python setup_telegram.py 8123456789:AAH...
+```
+
+If it says your bot has not received any message, you missed step 2 - or you messaged a
+different bot with the same display name. Open your bot through the `t.me/<username>`
+link BotFather gave you, not through search. You can also skip the lookup entirely:
+
+```bash
+python setup_telegram.py <token> --chat-id 123456789      # your Telegram user id
+```
+
+**Where the credentials live.** `setup_telegram.py` writes them to `secrets.json`, which
+is git-ignored and never leaves the machine. `config.json` holds only settings and is safe
+to commit. In GitHub Actions they come from the `TELEGRAM_BOT_TOKEN` and
+`TELEGRAM_CHAT_ID` repository secrets instead.
+
+```bash
+python scanner.py --test-telegram    # prove the wiring end to end
 ```
 
 ---
@@ -45,6 +44,8 @@ python scanner.py --test-telegram
 python scanner.py --dry-run --verbose   # see everything, send nothing
 python scanner.py                       # one scan, sends real alerts
 python scanner.py --loop                # continuous, every 15 min
+python scanner.py --demo <mint>         # send one demo alert for any token
+python bot_commands.py                  # answer /status and /scan from Telegram
 ```
 
 ### Around the clock

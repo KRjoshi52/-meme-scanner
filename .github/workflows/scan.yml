@@ -6,6 +6,8 @@ on:
   schedule:
     - cron: "*/15 * * * *"
   workflow_dispatch:        # the "Run workflow" button, for testing
+  push:
+    branches: [main]        # a push scans immediately - handy for testing a change
 
 concurrency:
   group: scan
