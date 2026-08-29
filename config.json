@@ -1,0 +1,76 @@
+{
+  "telegram": {
+    "_comment": "Credentials live in secrets.json (this machine) or TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID (GitHub Actions). Not here.",
+    "bot_token": "PASTE_BOT_TOKEN_FROM_BOTFATHER",
+    "chat_id": "PASTE_YOUR_CHAT_ID"
+  },
+  "_comment_gates": "HARD GATES. Any single failure = token is rejected, no alert. Loosen at your own risk.",
+  "gates": {
+    "require_mint_authority_revoked": true,
+    "require_freeze_authority_revoked": true,
+    "min_liquidity_usd": 20000,
+    "max_liquidity_usd": 3000000,
+    "min_age_minutes": 20,
+    "max_age_hours": 72,
+    "min_lp_locked_pct": 90,
+    "max_top10_pct_excl_lp": 25,
+    "min_holders": 250,
+    "min_vol24_usd": 50000,
+    "max_vol_to_liq_ratio": 30,
+    "min_vol_to_liq_ratio": 0.4,
+    "max_insiders_in_top20": 2,
+    "max_rugcheck_score": 40,
+    "require_any_social": true,
+    "min_buy_ratio_h1": 0.42,
+    "max_price_change_h24_pct": 400
+  },
+  "_comment_momentum": "max_price_change_h24_pct rejects tokens that already made their move - a clean token up 790% in a day is a safe way to buy the top. Set to null or 0 to disable the gate.",
+  "_comment_scoring": "Tokens that clear every gate are scored 0-100. Only >= min_score_to_alert is sent.",
+  "min_score_to_alert": 60,
+  "min_safety_score": 60,
+  "send_card": true,
+  "scan": {
+    "interval_seconds": 900,
+    "max_alerts_per_scan": 3,
+    "realert_after_hours": 24
+  },
+  "_comment_social": "Social weights derived from arXiv:2607.02823 (Cox HR 5.40 for Telegram presence, 8.94x graduation lift over 832,941 launches). X/Twitter is presence-only: x.com returns HTTP 200 even for nonexistent handles, so free verification is impossible.",
+  "social_gates": {
+    "reject_dead_telegram": true,
+    "require_live_telegram": false,
+    "min_telegram_members": 150
+  },
+  "social_weights": {
+    "telegram_live": 40,
+    "member_tiers": [
+      [
+        10000,
+        30
+      ],
+      [
+        2000,
+        25
+      ],
+      [
+        500,
+        18
+      ],
+      [
+        150,
+        10
+      ],
+      [
+        1,
+        4
+      ]
+    ],
+    "twitter": 15,
+    "website": 10,
+    "discord": 5
+  },
+  "_comment_composite": "Final = safety_weight*on-chain safety + social_weight*social score. On-chain quality decides; social breaks ties. min_safety_score is a hard floor applied BEFORE the blend, so a weak-on-chain token cannot be carried in by a large chat room.",
+  "composite": {
+    "safety_weight": 0.7,
+    "social_weight": 0.3
+  }
+}

@@ -1,0 +1,13 @@
+# credentials - never commit these
+secrets.json
+
+# runtime artefacts
+state.json
+scanner.log
+scanner.log.old
+last_card.png
+config.json.tmp
+
+# python
+__pycache__/
+*.pyc
