@@ -16,6 +16,7 @@ Only messages from the configured chat_id are answered - anyone else who finds
 the bot gets nothing back.
 """
 
+import argparse
 import io
 import json
 import os
@@ -179,7 +180,37 @@ def handle(token, chat, text):
         say(token, chat, "Unknown command.\n\n" + HELP)
 
 
+def drain_once(token, owner):
+    """Answer whatever is waiting, acknowledge it, and stop. Used by the cloud runner."""
+    res = api(token, "getUpdates", json={"timeout": 0, "allowed_updates": ["message"]},
+              timeout=30)
+    updates = res.get("result") or []
+    handled = 0
+    for upd in updates:
+        msg = upd.get("message") or {}
+        chat = str((msg.get("chat") or {}).get("id", ""))
+        text = msg.get("text") or ""
+        if text and chat == owner:
+            log("command: " + text[:40])
+            try:
+                handle(token, chat, text)
+                handled += 1
+            except Exception as e:
+                log("handler error: " + str(e))
+    if updates:
+        # confirm them, or the next run answers the same messages again
+        api(token, "getUpdates",
+            json={"offset": updates[-1]["update_id"] + 1, "timeout": 0}, timeout=30)
+    log("drained " + str(len(updates)) + " update(s), answered " + str(handled))
+    return handled
+
+
 def main():
+    ap = argparse.ArgumentParser(description="Answer Telegram commands for the scanner")
+    ap.add_argument("--once", action="store_true",
+                    help="answer what is waiting and exit (for scheduled/CI runs)")
+    args = ap.parse_args()
+
     cfg = load(CONFIG, None)
     if not cfg:
         sys.exit("config.json missing")
@@ -192,6 +223,10 @@ def main():
     me = api(token, "getMe", json={})
     if not me.get("ok"):
         sys.exit("Telegram rejected the token")
+    if args.once:
+        drain_once(token, owner)
+        return
+
     log("Listening as @" + str(me["result"].get("username")) + " for chat " + owner)
 
     offset = None

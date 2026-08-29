@@ -41,6 +41,15 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python scanner.py
 
+      # So /status and /scan still answer you while the laptop is off - the reply
+      # arrives on the next run, so within about 15 minutes.
+      - name: Answer Telegram commands
+        if: always()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python bot_commands.py --once
+
       - name: Save alert history
         if: always()
         uses: actions/cache/save@v4
