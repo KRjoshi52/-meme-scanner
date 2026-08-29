@@ -29,6 +29,8 @@
   "min_score_to_alert": 60,
   "min_safety_score": 60,
   "send_card": true,
+  "github_repo": "KRjoshi52/-meme-scanner",
+  "_comment_github": "Where the cloud scans run. status.py and /status read this repo's public Actions API so they can tell you what the cloud is doing, not just this laptop.",
   "scan": {
     "interval_seconds": 900,
     "max_alerts_per_scan": 3,

@@ -11,6 +11,7 @@ import io
 import json
 import os
 import re
+import cloud
 import creds
 import subprocess
 import sys
@@ -112,8 +113,12 @@ def main():
               + str(int(comp.get("social_weight", 0) * 100)) + "% social)")
 
     # ---------------------------------------------------------- scheduler
-    info = task_info()
+    text, ok = cloud.last_run(cfg.get("github_repo"))
     print(BAR)
+    print("  cloud        GitHub Actions: " + text
+          + ("" if ok is not False else "   <- failing, check the Actions tab"))
+
+    info = task_info()
     if info is None:
         print("  scheduled    NOT INSTALLED - it only runs when you run it by hand")
         print("               install:  schtasks /create /tn \"" + TASK + "\" /tr "

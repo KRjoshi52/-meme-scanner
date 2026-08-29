@@ -27,6 +27,7 @@ from datetime import datetime
 
 import requests
 
+import cloud
 import creds
 
 if hasattr(sys.stdout, "reconfigure"):
@@ -84,15 +85,15 @@ def task_line():
         out = subprocess.run(["schtasks", "/query", "/tn", TASK, "/fo", "LIST", "/v"],
                              capture_output=True, text=True, timeout=25)
     except (OSError, subprocess.SubprocessError):
-        return "scheduler: unavailable"
+        return "unavailable"
     if out.returncode != 0:
-        return "scheduler: <b>not installed</b>"
+        return "<b>not installed</b>"
     info = {}
     for line in out.stdout.splitlines():
         if ":" in line:
             k, _, v = line.partition(":")
             info.setdefault(k.strip().lower(), v.strip())
-    return ("scheduler: <b>" + info.get("status", "?") + "</b>, next run "
+    return ("<b>" + info.get("status", "?") + "</b>, next run "
             + info.get("next run time", "?"))
 
 
@@ -121,7 +122,10 @@ def status_text():
                  + ", composite " + str(cfg.get("min_score_to_alert", "-"))
                  + "  (" + str(int(comp.get("safety_weight", 0) * 100)) + "/"
                  + str(int(comp.get("social_weight", 0) * 100)) + ")")
-    L.append(task_line())
+    L.append("this laptop: " + task_line())
+    text, ok = cloud.last_run(cfg.get("github_repo"))
+    mark = "" if ok is None else ("" if ok else "  <b>check the Actions tab</b>")
+    L.append("cloud (GitHub): " + text + mark)
     return "\n".join(L)
 
 
