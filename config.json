@@ -36,39 +36,117 @@
     "max_alerts_per_scan": 3,
     "realert_after_hours": 24
   },
-  "_comment_social": "Social weights derived from arXiv:2607.02823 (Cox HR 5.40 for Telegram presence, 8.94x graduation lift over 832,941 launches). X/Twitter is presence-only: x.com returns HTTP 200 even for nonexistent handles, so free verification is impossible.",
+  "_comment_social": "Social scoring is age- and activity-checked, not presence-checked. X account age, follower and post counts come from api.vxtwitter.com; domain registration date comes from RDAP. Both are free and keyless. A days-old account earns nothing - almost every meme coin has one - but an established account or domain is hard to fake in a hurry. Basis for the Telegram weight: arXiv:2607.02823, Cox HR 5.40 over 832,941 launches.",
   "social_gates": {
     "reject_dead_telegram": true,
+    "reject_dead_twitter": true,
     "require_live_telegram": false,
-    "min_telegram_members": 150
+    "min_telegram_members": 150,
+    "_comment_ages": "Age gates are OFF by default (0): nearly every legitimate meme coin launches with a fresh account, so gating on age rejects everything. The ages are scored and printed instead. Set a number to gate.",
+    "min_x_account_age_days": 0,
+    "min_domain_age_days": 0
   },
   "social_weights": {
-    "telegram_live": 40,
+    "telegram_live": 30,
     "member_tiers": [
       [
         10000,
-        30
-      ],
-      [
-        2000,
         25
       ],
       [
+        2000,
+        20
+      ],
+      [
         500,
-        18
+        14
       ],
       [
         150,
-        10
+        8
       ],
       [
         1,
-        4
+        3
       ]
     ],
-    "twitter": 15,
-    "website": 10,
-    "discord": 5
+    "x_age_tiers": [
+      [
+        365,
+        20
+      ],
+      [
+        90,
+        15
+      ],
+      [
+        30,
+        9
+      ],
+      [
+        14,
+        5
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "x_activity": 15,
+    "x_min_tweets": 5,
+    "x_follower_tiers": [
+      [
+        50000,
+        15
+      ],
+      [
+        10000,
+        12
+      ],
+      [
+        2000,
+        8
+      ],
+      [
+        500,
+        5
+      ],
+      [
+        100,
+        2
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "site_age_tiers": [
+      [
+        365,
+        10
+      ],
+      [
+        90,
+        7
+      ],
+      [
+        30,
+        4
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "discord": 0
   },
   "_comment_composite": "Final = safety_weight*on-chain safety + social_weight*social score. On-chain quality decides; social breaks ties. min_safety_score is a hard floor applied BEFORE the blend, so a weak-on-chain token cannot be carried in by a large chat room.",
   "composite": {

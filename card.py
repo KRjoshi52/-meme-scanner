@@ -86,6 +86,17 @@ def _check(d, x, y, r, colour):
             (x + r * .46, y - r * .38)], fill=colour, width=4, joint="curve")
 
 
+def _bang(d, x, y, r, colour):
+    """A drawn exclamation - for a check that passed the gates but reads thin."""
+    d.ellipse([x - r, y - r, x + r, y + r], outline=colour, width=3)
+    d.line([(x, y - r * .52), (x, y + r * .14)], fill=colour, width=4)
+    d.ellipse([x - 2, y + r * .40, x + 2, y + r * .40 + 4], fill=colour)
+
+
+def _mark(d, x, y, r, ok):
+    (_check if ok else _bang)(d, x, y, r, PASS if ok else WARN)
+
+
 def render(path, mint, facts, composite, label="SIGNAL"):
     img = Image.new("RGB", (W, H), BG)
     d = ImageDraw.Draw(img)
@@ -175,26 +186,47 @@ def render(path, mint, facts, composite, label="SIGNAL"):
 
     # ---------------------------------------------------------------- evidence
     y += 34
-    d.text((PAD, y), "VERIFIED ON-CHAIN", font=reg(20), fill=FAINT, anchor="la")
+    d.text((PAD, y), "VERIFIED - ON-CHAIN AND OFF", font=reg(20), fill=FAINT, anchor="la")
     y += 36
 
     top10 = facts.get("top10")
     lp = facts.get("lp_pct")
     rc = facts.get("rc_score")
     chg = facts.get("chg24")
-    rows = [
-        "Mint and freeze authority revoked - supply fixed, wallet cannot be frozen",
-        "LP {:.0f}% locked or burned - liquidity cannot be pulled".format(float(lp or 0)),
-        "Top-10 hold {:.1f}% excluding pools and lockers".format(float(top10 or 0)),
-        "RugCheck risk {} / 100 - independent second opinion".format(rc if rc is not None else "?"),
-    ]
-    if chg is not None:
-        rows.append("24h move {:+.0f}% - inside the momentum gate".format(float(chg)))
 
-    for r in rows:
-        _check(d, PAD + 13, y + 12, 13, PASS)
-        d.text((PAD + 42, y), r, font=reg(24), fill=MUTED, anchor="la")
-        y += 42
+    # (text, ok) - ok=False draws a warning mark: it cleared the gates but reads thin
+    rows = [
+        ("Mint and freeze authority revoked - supply fixed, cannot be frozen", True),
+        ("LP {:.0f}% locked or burned - liquidity cannot be pulled".format(float(lp or 0)), True),
+        ("Top-10 hold {:.1f}% excluding pools and lockers".format(float(top10 or 0)), True),
+    ]
+    rc_text = "RugCheck risk {} / 100".format(rc if rc is not None else "?")
+    if chg is not None:
+        rc_text += "  -  24h move {:+.0f}%".format(float(chg))
+    rows.append((rc_text, True))
+
+    sig = facts.get("sig") or {}
+    x = sig.get("x") or {}
+    site = sig.get("site") or {}
+
+    if x.get("community"):
+        rows.append(("X link is a community, not an account - unverifiable", False))
+    elif x.get("exists") and x.get("age_days") is not None:
+        age, fol, tw = x["age_days"], x.get("followers") or 0, x.get("tweets") or 0
+        rows.append(("X @{} - {} days old, {:,} followers, {:,} posts".format(
+            x.get("handle", "?"), age, fol, tw), age >= 30 and tw >= 5))
+    elif sig.get("has_twitter"):
+        rows.append(("X account could not be verified", False))
+
+    if site.get("age_days") is not None:
+        rows.append(("{} registered {} days ago".format(site.get("domain", "?"),
+                                                        site["age_days"]),
+                     site["age_days"] >= 30))
+
+    for text, ok in rows[:6]:
+        _mark(d, PAD + 13, y + 12, 13, ok)
+        d.text((PAD + 42, y), text, font=reg(23), fill=MUTED, anchor="la")
+        y += 38
 
     # ---------------------------------------------------------------- address
     y = H - 232

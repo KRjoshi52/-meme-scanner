@@ -119,8 +119,9 @@ composite = 0.70 × safety + 0.30 × social   → alert at ≥ 60
 **Safety (0–100)** — liquidity depth 20, holder breadth 15, top-10 concentration 20,
 turnover health 15, buy pressure 15, RugCheck risk 15.
 
-**Social (0–100)** — live Telegram 40, community size 4–30 by tier, X/Twitter link 15,
-website 10, Discord 5.
+**Social (0–100)** — live Telegram 30, community size 3–25 by tier, X account age
+0–20, X activity 0–15, website domain age 0–10. Every one of those is checked
+against a live source. Nothing scores for merely *existing*.
 
 Why social is weighted at all, and why Telegram carries most of it:
 
@@ -138,27 +139,50 @@ and the evidence behind it — so no point in the score is something you have to
 
 ### Why it is balanced this way
 
-The first version weighted social at 45%, and five live tokens showed what that
-actually did: every single decision was made by the social score. A token with 88/100
-on-chain safety was blocked for having no Telegram, while the weakest on-chain token
-of the five was sent on the strength of a 4,333-member chat room.
+**On-chain vs social.** The first version weighted social at 45%, and five live tokens
+showed what that did: every decision was made by the social score. A token with 88/100
+on-chain safety was blocked for having no Telegram, while the weakest on-chain token of
+the five was sent on the strength of a 4,333-member chat room. Social is now a 30%
+tiebreaker behind a hard safety floor, so no chat room can carry a weak token through.
 
-Both of those are the wrong answer. The fix is two-part — social demoted to a
-tiebreaker at 30%, and a hard safety floor applied *before* the blend so no chat room,
-however large, can carry a weak token through. The same five tokens under the
-current rules:
+**Presence vs evidence.** The first version also scored *presence*: 15 points for an X
+link, 10 for a website, neither checked. Both were worthless, and one alert proved it.
 
-| Token | Safety | Social | Composite | Verdict |
-|---|---|---|---|---|
-| apesemfone | 88.1 | 25 | 69.2 | **alert** |
-| 401k | 78.1 | 25 | 62.2 | **alert** |
-| GIGAAPE | 53.4 | 90 | 64.4 | blocked by safety floor |
-| cat | 59.1 | 25 | 48.9 | blocked by safety floor |
-| POKEMON | 59.1 | 15 | 45.9 | blocked by safety floor |
+> **The `401k` case.** It cleared every gate and was sent on 29 Aug at composite 61.5.
+> Checked properly the next morning: the X account was created **the same day** with 3
+> posts, the domain was registered **the same day**, and the token was **down 98%** with
+> liquidity collapsed from $38k to $2k. It scored 25 social points for two things that
+> were, on inspection, evidence of the opposite.
 
-On-chain quality decides. Social only separates tokens that already earned their way
-past the floor. Expect roughly one or two alerts per hour of scanning in a normal
-market, and none at all in a quiet one.
+Under the current rules that token scores **social 0, composite 31.7** and never alerts.
+
+| Signal | Old | Now |
+|---|---|---|
+| X link present | 15 pts, unchecked | 0 — presence is free to fake |
+| X account 1 day old | not measured | 0 pts, printed on the alert |
+| X account 1+ year old, active | not measured | up to 35 pts |
+| X link that 404s | 15 pts | **hard reject** — declared and false |
+| Website present | 10 pts, unchecked | 0 |
+| Domain registered yesterday | not measured | 0 pts, printed on the alert |
+| Domain 1+ year old | not measured | 10 pts |
+
+**Age gates are off by default.** Nearly every legitimate meme coin launches with a
+fresh account and a fresh domain, so rejecting on age rejects everything. The ages are
+scored and printed on the card instead, with a warning mark, so you see what is actually
+behind a token before you buy. Set `min_x_account_age_days` or `min_domain_age_days` in
+`config.json` if you would rather gate than judge.
+
+### What the social layer still cannot do
+
+- **Follower quality.** A 50,000-follower account can be bought. Counts are scored in
+  tiers and paired with post counts, which is harder to fake convincingly, but neither
+  proves a real audience.
+- **X communities.** A link to `x.com/i/communities/...` names no account, so there is
+  nothing to verify. It scores zero and says so.
+- **Reddit.** Needs OAuth; the public JSON endpoints return 403. Not wired in.
+- **Discovery bias.** DexScreener's profile and boost feeds are where projects pay to
+  appear. Tokens that never buy a boost are invisible to this scanner.
+- **Content.** Nothing here reads what an account posts or who follows it.
 
 ---
 
@@ -168,6 +192,8 @@ market, and none at all in a quiet one.
 - **RugCheck** `api.rugcheck.xyz` — holder distribution, LP lock status, risk flags
 - **Solana RPC** `api.mainnet-beta.solana.com` — mint/freeze authority, straight from chain
 - **Telegram** `t.me/<handle>` — channel existence + subscriber count, scraped from the public page
+- **X/Twitter** `api.vxtwitter.com` — account existence, creation date, followers, post count
+- **RDAP** `rdap.org` — the registry's own record of when a domain was registered
 
 Every alert links back to RugCheck, Solscan and DexScreener so you can re-check
 each number yourself before buying.

@@ -1,7 +1,7 @@
 """
 Social-signal layer for the Solana meme-coin screener.
 
-WHY THIS MODULE EXISTS — the research basis
+WHY THIS MODULE EXISTS - the research basis
 -------------------------------------------
 Kim et al., "Pump.fun Graduation Regime Windows: Survival Analysis of 832,941
 Token Launches and the Social-Presence Effect" (arXiv:2607.02823) ran a Cox
@@ -12,33 +12,36 @@ proportional-hazards model over 832,941 pump.fun launches and found:
   * Lift 8.94x, Cox hazard ratio 5.40 (95% CI [4.73, 6.17])
   * Model concordance 0.858, stable under bootstrap
 
-That makes verified Telegram presence the single strongest *social* predictor
-measured at scale, which is why it carries the most weight below.
+"Graduation" means reaching a real DEX. It is NOT profit. These weights raise
+the odds of picking a live token, not a winning trade.
 
-The same paper found initial market cap above the 30 SOL platform default is
-the strongest single predictor overall (Cox HR 4.51).
+WHAT CHANGED, AND WHY
+---------------------
+The first version scored *presence*: an X link was worth 15 points and a website
+10, with no check on either. Two real signals showed how empty that was - both
+tokens' X accounts and domains had been created the day before, one with zero
+tweets. Presence is free to fake, so it is worth nothing.
 
-IMPORTANT CAVEAT, stated honestly: "graduation" means reaching a real DEX.
-It is NOT the same as profit. A token can graduate and still lose you money.
-These weights raise the odds of picking a live token, not a winning trade.
+Everything scored here is now age- and activity-checked against a live source:
 
-WHAT IS ACTUALLY OBTAINABLE (tested live, not assumed)
-------------------------------------------------------
-  Telegram presence + subscriber count   FREE   scraped from t.me public page
-  Telegram dead-link detection           FREE   fake handles render no markers
-  Social presence (X/TG/site/discord)    FREE   DexScreener info.socials
-  X/Twitter follower counts, account age PAID   X API v2 is pay-per-use since
-                                                Feb 2026 ($0.005/read). Optional,
-                                                OFF by default - see config.
-  X/Twitter handle existence             NOT POSSIBLE FREE - x.com returns
-                                                HTTP 200 for nonexistent handles
-  Reddit mentions                        OAUTH  reddit.com/*.json returns 403
-                                                without OAuth; new API clients
-                                                need manual approval. Optional.
+  Telegram presence + subscriber count   t.me public page
+  Telegram dead-link detection           t.me renders no markers for fakes
+  X account existence                    api.vxtwitter.com (404 = does not exist)
+  X account age, followers, tweet count  same call
+  Website domain registration date       RDAP (rdap.org), the registry's own record
+
+A days-old account is not neutral. Nearly every meme coin has one, so it earns
+no points - but a genuinely established account or domain is hard to fake in a
+hurry, and that is what gets rewarded.
+
+Failures are treated as unknown, never as guilt: if a service is unreachable the
+component scores zero rather than rejecting the token. Only a definitive 404 on
+a declared link counts as deception.
 """
 
 import re
 import time
+from datetime import datetime, timezone
 
 import requests
 
@@ -52,11 +55,22 @@ SESSION.headers.update({"User-Agent": BROWSER_UA})
 TG_EXTRA = re.compile(r'tgme_page_extra">([^<]*)', re.I)
 TG_MARKER = re.compile(r"tgme_page_(title|extra|description)", re.I)
 
+X_HANDLE = re.compile(r"(?:twitter|x)\.com/(?!i/|intent/|share|home|search)([A-Za-z0-9_]{1,15})", re.I)
+X_COMMUNITY = re.compile(r"(?:twitter|x)\.com/i/communities/", re.I)
+
+X_API = "https://api.vxtwitter.com/"
+X_API_FALLBACK = "https://api.fxtwitter.com/"
+RDAP = "https://rdap.org/domain/"
+
 
 def _digits(text):
     """'9 716 937 subscribers' -> 9716937  (handles non-breaking spaces)."""
     d = re.sub(r"[^0-9]", "", text or "")
     return int(d) if d else None
+
+
+def _days_since(dt):
+    return (datetime.now(timezone.utc) - dt).days
 
 
 def parse_socials(pair):
@@ -84,15 +98,9 @@ def parse_socials(pair):
     return out
 
 
+# ---------------------------------------------------------------- Telegram
 def telegram_stats(url, timeout=15):
-    """
-    Live check of a Telegram link. Returns:
-      exists  - True if t.me renders a real channel/group page
-      members - subscriber count if the channel publishes one, else None
-      label   - 'subscribers' / 'members' / None
-
-    A declared-but-dead Telegram link is a deception signal, not a neutral one.
-    """
+    """Live check of a Telegram link: does the channel exist, and how big is it."""
     res = {"exists": False, "members": None, "label": None, "checked": False}
     if not url:
         return res
@@ -101,7 +109,7 @@ def telegram_stats(url, timeout=15):
         return res
     handle = m.group(1)
     if handle.startswith("+"):
-        # private invite link - cannot be inspected; treat as present, unmeasurable
+        # private invite link - cannot be inspected; present, unmeasurable
         res.update({"exists": True, "checked": True, "label": "private invite"})
         return res
     try:
@@ -118,95 +126,272 @@ def telegram_stats(url, timeout=15):
                 res["members"] = _digits(chunk)
                 res["label"] = "subscribers" if "subscriber" in low else "members"
                 break
-    except Exception:
+    except requests.RequestException:
         pass
     return res
 
 
+# ---------------------------------------------------------------- X / Twitter
+def x_stats(url, timeout=15):
+    """
+    Real X account data, free, no key. Returns:
+      checked    the lookup completed (False = service down, treat as unknown)
+      exists     the account is real (False after a definitive 404)
+      age_days   how long ago it was created
+      followers / tweets / following
+      community  the link points at a community, not an account
+    """
+    res = {"checked": False, "exists": None, "age_days": None, "followers": None,
+           "tweets": None, "following": None, "community": False, "handle": None}
+    if not url:
+        return res
+    if X_COMMUNITY.search(url):
+        res.update({"checked": True, "community": True})
+        return res
+    m = X_HANDLE.search(url)
+    if not m:
+        return res
+    handle = m.group(1)
+    res["handle"] = handle
+
+    for base in (X_API, X_API_FALLBACK):
+        try:
+            r = SESSION.get(base + handle, timeout=timeout)
+        except requests.RequestException:
+            continue
+        if r.status_code == 404:
+            res.update({"checked": True, "exists": False})
+            return res
+        if r.status_code != 200:
+            continue
+        try:
+            data = r.json()
+        except ValueError:
+            continue
+        user = data.get("user") if isinstance(data.get("user"), dict) else data
+        created = user.get("created_at") or user.get("joined")
+        if not created:
+            continue
+        try:
+            dt = datetime.strptime(created, "%a %b %d %H:%M:%S %z %Y")
+        except (ValueError, TypeError):
+            continue
+        res.update({
+            "checked": True, "exists": True, "age_days": _days_since(dt),
+            "followers": user.get("followers_count", user.get("followers")),
+            "tweets": user.get("tweet_count", user.get("tweets")),
+            "following": user.get("following_count", user.get("following")),
+        })
+        return res
+    return res
+
+
+# ---------------------------------------------------------------- website
+def domain_of(url):
+    if not url:
+        return None
+    m = re.match(r"^\s*(?:https?://)?(?:www\.)?([^/:\s?#]+)", url, re.I)
+    if not m:
+        return None
+    host = m.group(1).lower()
+    parts = [p for p in host.split(".") if p]
+    return ".".join(parts[-2:]) if len(parts) >= 2 else host
+
+
+def domain_stats(url, timeout=20):
+    """Registration date straight from the registry, via RDAP. No key needed."""
+    res = {"checked": False, "exists": None, "age_days": None,
+           "domain": None, "registered": None}
+    domain = domain_of(url)
+    if not domain:
+        return res
+    res["domain"] = domain
+    try:
+        r = SESSION.get(RDAP + domain, timeout=timeout, allow_redirects=True,
+                        headers={"Accept": "application/rdap+json"})
+    except requests.RequestException:
+        return res
+    if r.status_code == 404:
+        res.update({"checked": True, "exists": False})
+        return res
+    if r.status_code != 200:
+        return res
+    try:
+        data = r.json()
+    except ValueError:
+        return res
+    for ev in data.get("events") or []:
+        if str(ev.get("eventAction", "")).lower() == "registration":
+            raw = str(ev.get("eventDate", ""))
+            for fmt in ("%Y-%m-%dT%H:%M:%S.%f%z", "%Y-%m-%dT%H:%M:%S%z",
+                        "%Y-%m-%dT%H:%M:%SZ", "%Y-%m-%dT%H:%M:%S.%fZ"):
+                try:
+                    dt = datetime.strptime(raw, fmt)
+                    if dt.tzinfo is None:
+                        dt = dt.replace(tzinfo=timezone.utc)
+                    res.update({"checked": True, "exists": True,
+                                "age_days": _days_since(dt), "registered": raw[:10]})
+                    return res
+                except ValueError:
+                    continue
+    res["checked"] = True
+    res["exists"] = True
+    return res
+
+
+# ---------------------------------------------------------------- gather
 def gather(pair, cfg_social=None):
-    """Collect every free social signal for one token."""
-    cfg_social = cfg_social or {}
+    """Collect every free social signal for one token, checked against live sources."""
     sig = parse_socials(pair)
+
     sig["telegram"] = telegram_stats(sig["telegram_url"]) if sig["telegram_url"] else \
         {"exists": False, "members": None, "label": None, "checked": False}
     if sig["telegram_url"]:
-        time.sleep(0.4)  # be polite to t.me
+        time.sleep(0.3)
+
+    sig["x"] = x_stats(sig["twitter_url"])
+    if sig["twitter_url"]:
+        time.sleep(0.3)
+
+    sig["site"] = domain_stats(sig["website_url"])
 
     sig["has_telegram"] = bool(sig["telegram_url"]) and sig["telegram"]["exists"]
     sig["telegram_dead"] = bool(sig["telegram_url"]) and sig["telegram"]["checked"] \
         and not sig["telegram"]["exists"]
+    sig["members"] = sig["telegram"]["members"]
+
     sig["has_twitter"] = bool(sig["twitter_url"])
+    sig["twitter_dead"] = sig["x"]["checked"] and sig["x"]["exists"] is False
     sig["has_discord"] = bool(sig["discord_url"])
     sig["has_website"] = bool(sig["website_url"])
-    sig["members"] = sig["telegram"]["members"]
+    sig["site_dead"] = sig["site"]["checked"] and sig["site"]["exists"] is False
     return sig
 
 
-def member_tier_points(members, tiers):
-    """Subscriber-count points. Bigger verified community = higher survival odds."""
-    if members is None:
-        return 0, "count not published"
+# ---------------------------------------------------------------- scoring
+def _tier(value, tiers):
+    """tiers is [[threshold, points], ...] highest first."""
+    if value is None:
+        return None
     for lo, pts in tiers:
-        if members >= lo:
-            return pts, "{:,} subscribers".format(members)
-    return 0, "{:,} subscribers".format(members)
+        if value >= lo:
+            return pts
+    return 0
 
 
 def social_score(sig, weights):
     """
     0-100 social score. Returns (score, breakdown) where breakdown is a list of
-    (component, points_awarded, max_points, evidence) so every point is auditable.
+    (component, points, max_points, evidence) so every point is auditable.
     """
     rows = []
+    x, site = sig["x"], sig["site"]
 
-    # Telegram presence - arXiv:2607.02823, Cox HR 5.40, 8.94x graduation lift
+    # --- Telegram presence: the one component with published survival evidence
+    mx = weights["telegram_live"]
     if sig["has_telegram"]:
-        rows.append(("Telegram channel live", weights["telegram_live"],
-                     weights["telegram_live"], "verified on t.me"))
+        rows.append(("Telegram channel live", mx, mx, "verified on t.me"))
     else:
-        rows.append(("Telegram channel live", 0, weights["telegram_live"],
+        rows.append(("Telegram channel live", 0, mx,
                      "dead link" if sig["telegram_dead"] else "none declared"))
 
-    # Telegram size
+    # --- Telegram size
+    mx = weights["member_tiers"][0][1]
     if sig["has_telegram"]:
-        pts, ev = member_tier_points(sig["members"], weights["member_tiers"])
+        pts = _tier(sig["members"], weights["member_tiers"])
+        if pts is None:
+            pts, ev = 0, "count not published"
+        else:
+            ev = "{:,} subscribers".format(sig["members"])
     else:
         pts, ev = 0, "no live channel"
-    rows.append(("Telegram community size", pts, weights["member_tiers"][0][1], ev))
+    rows.append(("Telegram community size", pts, mx, ev))
 
-    # X/Twitter - presence only; existence is NOT verifiable for free
-    rows.append(("X/Twitter declared", weights["twitter"] if sig["has_twitter"] else 0,
-                 weights["twitter"],
-                 "link present (unverified - see README)" if sig["has_twitter"] else "none"))
+    # --- X account age: a day-old account is what every rug has
+    mx = weights["x_age_tiers"][0][1]
+    if not sig["has_twitter"]:
+        pts, ev = 0, "no X account declared"
+    elif x["community"]:
+        pts, ev = 0, "link is an X community, not an account"
+    elif x["exists"] is False:
+        pts, ev = 0, "ACCOUNT DOES NOT EXIST"
+    elif not x["checked"] or x["age_days"] is None:
+        pts, ev = 0, "could not verify (service unreachable)"
+    else:
+        pts = _tier(x["age_days"], weights["x_age_tiers"]) or 0
+        ev = "created {} days ago".format(x["age_days"])
+        if x["age_days"] <= 2:
+            ev += " - same week as the token"
+    rows.append(("X account age", pts, mx, ev))
 
-    rows.append(("Website", weights["website"] if sig["has_website"] else 0,
-                 weights["website"], "present" if sig["has_website"] else "none"))
+    # --- X activity: followers mean nothing next to zero posts
+    mx = weights["x_activity"]
+    if x.get("followers") is None:
+        pts, ev = 0, "not measurable"
+    else:
+        f, t = x.get("followers") or 0, x.get("tweets") or 0
+        if t < weights["x_min_tweets"]:
+            pts, ev = 0, "{:,} followers but only {} posts".format(f, t)
+        else:
+            pts = _tier(f, weights["x_follower_tiers"]) or 0
+            ev = "{:,} followers, {:,} posts".format(f, t)
+    rows.append(("X account activity", pts, mx, ev))
 
-    rows.append(("Discord", weights["discord"] if sig["has_discord"] else 0,
-                 weights["discord"], "present" if sig["has_discord"] else "none"))
+    # --- website domain age, from the registry
+    mx = weights["site_age_tiers"][0][1]
+    if not sig["has_website"]:
+        pts, ev = 0, "no website declared"
+    elif site["exists"] is False:
+        pts, ev = 0, "DOMAIN NOT REGISTERED"
+    elif site["age_days"] is None:
+        pts, ev = 0, "registration date unavailable"
+    else:
+        pts = _tier(site["age_days"], weights["site_age_tiers"]) or 0
+        ev = "{} registered {} days ago".format(site["domain"], site["age_days"])
+    rows.append(("Website domain age", pts, mx, ev))
+
+    # --- Discord: presence only, and priced accordingly
+    mx = weights["discord"]
+    rows.append(("Discord", mx if sig["has_discord"] else 0, mx,
+                 "present" if sig["has_discord"] else "none"))
 
     total = sum(r[1] for r in rows)
     return round(min(100.0, total), 1), rows
 
 
 def social_gates(sig, gates):
-    """
-    Hard social gates. Returns list of (label, passed, evidence).
-    Kept deliberately small - only checks that are verifiable and meaningful.
-    """
+    """Hard social gates: only checks that are verifiable and meaningful."""
     C = []
     if gates.get("reject_dead_telegram", True):
         C.append(("Telegram link not dead", not sig["telegram_dead"],
                   "declared but does not exist - deception signal"
                   if sig["telegram_dead"] else "ok"))
+
+    if gates.get("reject_dead_twitter", True):
+        C.append(("X account exists", not sig["twitter_dead"],
+                  "declared but the account does not exist - deception signal"
+                  if sig["twitter_dead"] else "ok"))
+
     if gates.get("require_live_telegram", False):
         C.append(("Live Telegram channel", sig["has_telegram"],
                   "verified" if sig["has_telegram"] else "no live channel"))
+
     min_members = gates.get("min_telegram_members", 0)
     if min_members and sig["has_telegram"]:
         m = sig["members"]
-        # private invite links publish no count - do not punish them
-        ok = (m is None) or (m >= min_members)
+        ok = (m is None) or (m >= min_members)   # private links publish no count
         C.append(("Telegram >= {} members".format(min_members), ok,
                   "{:,}".format(m) if m is not None else "count not public (allowed)"))
+
+    min_x_age = gates.get("min_x_account_age_days", 0)
+    x = sig["x"]
+    if min_x_age and sig["has_twitter"] and x["age_days"] is not None:
+        C.append(("X account >= {}d old".format(min_x_age), x["age_days"] >= min_x_age,
+                  "{} days old".format(x["age_days"])))
+
+    min_site_age = gates.get("min_domain_age_days", 0)
+    if min_site_age and sig["has_website"] and sig["site"]["age_days"] is not None:
+        C.append(("Domain >= {}d old".format(min_site_age),
+                  sig["site"]["age_days"] >= min_site_age,
+                  "{} days old".format(sig["site"]["age_days"])))
     return C
