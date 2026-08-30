@@ -27,6 +27,7 @@ import requests
 import card
 import creds
 import social
+import track
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -36,6 +37,7 @@ CONFIG_PATH = os.path.join(HERE, "config.json")
 STATE_PATH = os.path.join(HERE, "state.json")
 
 DEX = "https://api.dexscreener.com"
+GECKO = "https://api.geckoterminal.com/api/v2/networks/solana"
 RUGCHECK = "https://api.rugcheck.xyz/v1"
 RPC = "https://api.mainnet-beta.solana.com"
 
@@ -87,8 +89,16 @@ def save_json_file(path, data):
 
 # ---------------------------------------------------------------- discovery
 def discover_solana_mints():
-    """Freshly-promoted Solana tokens from DexScreener's public feeds."""
+    """
+    Candidates from two independent streams.
+
+    DexScreener's profile and boost feeds are pay-to-appear: a token that never
+    buys a boost is invisible there. GeckoTerminal's trending pools are ranked
+    by actual trading, so they surface tokens nobody paid to promote. Neither
+    alone is a full view of the chain; together they are less biased than either.
+    """
     mints, seen = [], set()
+
     for path in ("/token-profiles/latest/v1", "/token-boosts/latest/v1", "/token-boosts/top/v1"):
         data = get_json(DEX + path)
         if not isinstance(data, list):
@@ -99,8 +109,21 @@ def discover_solana_mints():
             mint = item.get("tokenAddress")
             if mint and mint not in seen:
                 seen.add(mint)
-                mints.append({"mint": mint})
+                mints.append({"mint": mint, "src": "dexscreener"})
         time.sleep(1.1)  # these feeds are rate-limited to 60 req/min
+
+    for path in ("/trending_pools", "/pools?sort=h24_volume_usd_desc"):
+        data = get_json(GECKO + path)
+        if not isinstance(data, dict):
+            continue
+        for pool in data.get("data") or []:
+            base = ((pool.get("relationships") or {}).get("base_token") or {}).get("data") or {}
+            mint = str(base.get("id", "")).replace("solana_", "")
+            if mint and mint not in seen:
+                seen.add(mint)
+                mints.append({"mint": mint, "src": "geckoterminal"})
+        time.sleep(1.1)
+
     return mints
 
 
@@ -511,6 +534,9 @@ def scan_once(cfg, dry_run=False, verbose=False):
         if sc < cfg["min_score_to_alert"]:
             log("  [{}] {:<12} clean but composite {} < {} (safety {} / social {})".format(
                 i, facts["symbol"][:12], sc, cfg["min_score_to_alert"], saf, soc))
+            # the control group: cleared every gate, scored short. If these do as
+            # well as the alerts, the threshold is not earning its keep.
+            track.record(mint, facts, sc, alerted=False)
             time.sleep(0.6)
             continue
 
@@ -527,8 +553,16 @@ def scan_once(cfg, dry_run=False, verbose=False):
             print(to_plain(msg))
         elif deliver(cfg, mint, checks, facts, sc, msg):
             state["alerted"][mint] = now
+            track.record(mint, facts, sc, alerted=True)
             sent += 1
             log("  -> Telegram alert sent for " + str(facts["symbol"]))
+
+    try:
+        filled = track.update()
+        if filled:
+            log("Track record: {} checkpoint(s) filled.".format(filled))
+    except Exception as e:
+        log("Track update skipped: " + str(e))
 
     state["last_scan"] = now
     state["last_scan_human"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")

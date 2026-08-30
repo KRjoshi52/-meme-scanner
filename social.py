@@ -62,6 +62,19 @@ X_API = "https://api.vxtwitter.com/"
 X_API_FALLBACK = "https://api.fxtwitter.com/"
 RDAP = "https://rdap.org/domain/"
 
+# A "website" that points at a platform tells you when the PLATFORM was registered,
+# not the project. A token linking to an X community scored a perfect domain-age
+# mark for x.com being 33 years old. These are never the project's own domain.
+PLATFORM_DOMAINS = {
+    "x.com", "twitter.com", "t.me", "telegram.me", "telegram.org",
+    "discord.gg", "discord.com", "instagram.com", "tiktok.com", "youtube.com",
+    "youtu.be", "facebook.com", "reddit.com", "medium.com", "substack.com",
+    "linktr.ee", "linktree.com", "beacons.ai", "bio.link", "carrd.co",
+    "notion.site", "github.io", "github.com", "gitbook.io",
+    "pump.fun", "dexscreener.com", "dextools.io", "birdeye.so", "solscan.io",
+    "raydium.io", "jup.ag", "bit.ly", "tinyurl.com",
+}
+
 
 def _digits(text):
     """'9 716 937 subscribers' -> 9716937  (handles non-breaking spaces)."""
@@ -242,11 +255,14 @@ def domain_of(url):
 def domain_stats(url, timeout=20):
     """Registration date straight from the registry, via RDAP. No key needed."""
     res = {"checked": False, "exists": None, "age_days": None,
-           "domain": None, "registered": None}
+           "domain": None, "registered": None, "platform": False}
     domain = domain_of(url)
     if not domain:
         return res
     res["domain"] = domain
+    if domain in PLATFORM_DOMAINS:
+        res.update({"checked": True, "platform": True})
+        return res
     try:
         r = SESSION.get(RDAP + domain, timeout=timeout, allow_redirects=True,
                         headers={"Accept": "application/rdap+json"})
@@ -386,6 +402,8 @@ def social_score(sig, weights):
     mx = weights["site_age_tiers"][0][1]
     if not sig["has_website"]:
         pts, ev = 0, "no website declared"
+    elif site.get("platform"):
+        pts, ev = 0, "links to {}, not a project domain".format(site.get("domain"))
     elif site["exists"] is False:
         pts, ev = 0, "DOMAIN NOT REGISTERED"
     elif site["age_days"] is None:

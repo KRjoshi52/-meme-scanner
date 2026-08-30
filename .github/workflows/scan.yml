@@ -33,7 +33,9 @@ jobs:
       - name: Restore alert history
         uses: actions/cache/restore@v4
         with:
-          path: state.json
+          path: |
+            state.json
+            track.json
           key: scanner-state-${{ github.run_id }}
           restore-keys: scanner-state-
 
@@ -56,5 +58,7 @@ jobs:
         if: always()
         uses: actions/cache/save@v4
         with:
-          path: state.json
+          path: |
+            state.json
+            track.json
           key: scanner-state-${{ github.run_id }}

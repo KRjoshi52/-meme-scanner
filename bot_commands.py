@@ -29,6 +29,7 @@ import requests
 
 import cloud
 import creds
+import track
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -152,6 +153,7 @@ def task_control(enable):
 
 HELP = ("<b>Commands</b>\n"
         "/status - is it running, what has it done\n"
+        "/record - what the signals have actually been worth\n"
         "/scan - run a scan right now\n"
         "/last - resend the last signal card\n"
         "/pause - stop the 15-minute schedule\n"
@@ -165,6 +167,9 @@ def handle(token, chat, text):
         say(token, chat, status_text())
     elif cmd == "scan":
         run_scan(token, chat)
+    elif cmd in ("record", "results"):
+        say(token, chat, "<b>Track record</b>\n<pre>" + track.report(include_all=True)
+            + "</pre>\n<b>Recent</b>\n<pre>" + track.recent() + "</pre>")
     elif cmd == "last":
         if os.path.exists(CARD):
             with open(CARD, "rb") as fh:

@@ -183,12 +183,34 @@ behind a token before you buy. Set `min_x_account_age_days` or `min_domain_age_d
 - **Discovery bias.** DexScreener's profile and boost feeds are where projects pay to
   appear. Tokens that never buy a boost are invisible to this scanner.
 - **Content.** Nothing here reads what an account posts or who follows it.
+- **Platform links are not websites.** A token whose "website" is an X community or a
+  linktree scores zero for domain age - the registration date of `x.com` says nothing
+  about the token. One live run awarded a perfect 10/10 for exactly that before it was
+  caught.
+
+### The track record
+
+`track.py` records every signal with its entry price and re-prices it at +1h, +6h and
++24h. Near-misses - tokens that cleared every gate but scored below the threshold - are
+recorded too, as a control group: if they do as well as the alerts, the threshold is
+not earning its keep.
+
+```bash
+python track.py --report --all    # what the signals have been worth
+python track.py --recent          # one line per recent signal
+```
+
+Or send `/record` to the bot. The record so far is one alert, `401k`, **down 98.9% at
+24h** - which is the point of keeping it. A screener with no measured record is an
+opinion.
 
 ---
 
 ## 5. Data sources (all free, no API key)
 
-- **DexScreener** `api.dexscreener.com` — discovery feeds + live market data
+- **DexScreener** `api.dexscreener.com` — pay-to-appear discovery feeds + market data
+- **GeckoTerminal** `api.geckoterminal.com` — trending pools ranked by real trading,
+  so tokens nobody paid to promote are visible too
 - **RugCheck** `api.rugcheck.xyz` — holder distribution, LP lock status, risk flags
 - **Solana RPC** `api.mainnet-beta.solana.com` — mint/freeze authority, straight from chain
 - **Telegram** `t.me/<handle>` — channel existence + subscriber count, scraped from the public page

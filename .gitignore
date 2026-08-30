@@ -3,6 +3,7 @@ secrets.json
 
 # runtime artefacts
 state.json
+track.json
 scanner.log
 scanner.log.old
 last_card.png
