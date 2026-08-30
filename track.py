@@ -31,8 +31,11 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 TRACK = os.path.join(HERE, "track.json")
 DEX = "https://api.dexscreener.com/token-pairs/v1/solana/"
 
-HORIZONS = (("1h", 3600), ("6h", 21600), ("24h", 86400))
-GIVE_UP_AFTER = 129600          # 36h - past the last checkpoint plus slack
+# (label, seconds, grace) - a checkpoint measured long after it came due is not
+# that checkpoint. If the scanner was offline, "1h" filled from a 10-hour-old
+# price is not a 1-hour result, so it is marked missed and excluded from stats.
+HORIZONS = (("1h", 3600, 2700), ("6h", 21600, 10800), ("24h", 86400, 43200))
+GIVE_UP_AFTER = 172800          # 48h - past the last checkpoint plus its grace
 
 SESSION = requests.Session()
 SESSION.headers.update({"User-Agent": "meme-scanner-track/1.0", "Accept": "application/json"})
@@ -111,12 +114,23 @@ def update(verbose=False):
         age = now - e["at"]
         if age > GIVE_UP_AFTER and len(e["marks"]) >= len(HORIZONS):
             continue
-        due = [(k, s) for k, s in HORIZONS if age >= s and k not in e["marks"]]
+        due = [(k, s, g) for k, s, g in HORIZONS if age >= s and k not in e["marks"]]
         if not due:
             continue
+
+        # anything already past its grace window can never be measured honestly
+        late = [(k, s, g) for k, s, g in due if age > s + g]
+        for key, _, _g in late:
+            e["marks"][key] = {"missed": True, "pct": None,
+                               "note": "not measured within the window"}
+            changed += 1
+        due = [t for t in due if t not in late]
+        if not due:
+            continue
+
         price, liq = _price_now(e["mint"])
         stamp = datetime.now().strftime("%Y-%m-%d %H:%M")
-        for key, _ in due:
+        for key, _, _g in due:
             if price is None:
                 # unreadable price after a real alert almost always means the pool is gone
                 e["marks"][key] = {"at": stamp, "price": None, "liq": liq, "pct": None,
@@ -167,23 +181,28 @@ def report(include_all=False):
         if not group:
             continue
         out.append(name + "  -  " + str(len(group)) + " recorded")
-        for key, _ in HORIZONS:
+        for key, _, _g in HORIZONS:
             vals = [e["marks"][key]["pct"] for e in group
                     if key in e["marks"] and e["marks"][key].get("pct") is not None]
             dead = sum(1 for e in group
-                       if key in e["marks"] and e["marks"][key].get("pct") is None)
+                       if key in e["marks"] and e["marks"][key].get("pct") is None
+                       and not e["marks"][key].get("missed"))
+            missed = sum(1 for e in group
+                         if key in e["marks"] and e["marks"][key].get("missed"))
             st = _stats(vals)
             if not st and not dead:
-                out.append("  {:<4} not due yet".format(key))
+                out.append("  {:<4} {}".format(
+                    key, "{} missed".format(missed) if missed else "not due yet"))
                 continue
             if not st:
                 out.append("  {:<4} {} with no priced pair left".format(key, dead))
                 continue
             out.append("  {:<4} n={:<3} median {:>7.1f}%   mean {:>7.1f}%   "
-                       "up {:>3}%   best {:>7.1f}%   worst {:>7.1f}%{}".format(
+                       "up {:>3}%   best {:>7.1f}%   worst {:>7.1f}%{}{}".format(
                            key, st["n"], st["median"], st["mean"], st["win_rate"],
                            st["best"], st["worst"],
-                           "   (+{} dead)".format(dead) if dead else ""))
+                           "   (+{} dead)".format(dead) if dead else "",
+                           "   ({} missed)".format(missed) if missed else ""))
         out.append("")
 
     pending = [e for e in entries if len(e["marks"]) < len(HORIZONS)]
@@ -201,9 +220,10 @@ def recent(limit=8):
     out = []
     for e in rows:
         marks = "  ".join(
-            "{} {}".format(k, "dead" if e["marks"][k].get("pct") is None
+            "{} {}".format(k, ("missed" if e["marks"][k].get("missed") else "dead")
+                           if e["marks"][k].get("pct") is None
                            else "{:+.0f}%".format(e["marks"][k]["pct"]))
-            for k, _ in HORIZONS if k in e["marks"])
+            for k, _, _g in HORIZONS if k in e["marks"])
         out.append("{:<12} {:<5} {:>5}  {}".format(
             e["symbol"][:12], "alert" if e.get("alerted") else "near",
             e.get("composite", "?"), marks or "pending"))
