@@ -192,7 +192,11 @@ behind a token before you buy. Set `min_x_account_age_days` or `min_domain_age_d
 - **RugCheck** `api.rugcheck.xyz` — holder distribution, LP lock status, risk flags
 - **Solana RPC** `api.mainnet-beta.solana.com` — mint/freeze authority, straight from chain
 - **Telegram** `t.me/<handle>` — channel existence + subscriber count, scraped from the public page
-- **X/Twitter** `api.vxtwitter.com` — account existence, creation date, followers, post count
+- **X/Twitter** `api.vxtwitter.com` **and** `api.fxtwitter.com` — account existence,
+  creation date, followers, post count. Both are queried and their answers compared:
+  asked for one handle at the same moment they returned *different account ids*, one
+  created 12 Aug and one 28 Aug. When they disagree on which account holds a handle,
+  the account scores zero rather than trusting either.
 - **RDAP** `rdap.org` — the registry's own record of when a domain was registered
 
 Every alert links back to RugCheck, Solscan and DexScreener so you can re-check

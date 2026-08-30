@@ -26,8 +26,8 @@ Everything scored here is now age- and activity-checked against a live source:
 
   Telegram presence + subscriber count   t.me public page
   Telegram dead-link detection           t.me renders no markers for fakes
-  X account existence                    api.vxtwitter.com (404 = does not exist)
-  X account age, followers, tweet count  same call
+  X account existence                    vxtwitter + fxtwitter, cross-checked
+  X account age, followers, tweet count  same calls, conservative reading
   Website domain registration date       RDAP (rdap.org), the registry's own record
 
 A days-old account is not neutral. Nearly every meme coin has one, so it earns
@@ -132,17 +132,58 @@ def telegram_stats(url, timeout=15):
 
 
 # ---------------------------------------------------------------- X / Twitter
+def _x_lookup(base, handle, timeout):
+    """One mirror's answer: (found, record) - record is None on 404."""
+    try:
+        r = SESSION.get(base + handle, timeout=timeout)
+    except requests.RequestException:
+        return False, None
+    if r.status_code == 404:
+        return True, None
+    if r.status_code != 200:
+        return False, None
+    try:
+        data = r.json()
+    except ValueError:
+        return False, None
+    user = data.get("user") if isinstance(data.get("user"), dict) else data
+    created = user.get("created_at") or user.get("joined")
+    if not created:
+        return False, None
+    try:
+        dt = datetime.strptime(created, "%a %b %d %H:%M:%S %z %Y")
+    except (ValueError, TypeError):
+        return False, None
+    return True, {
+        "id": str(user.get("id", "")),
+        "age_days": _days_since(dt),
+        "created": created,
+        "followers": user.get("followers_count", user.get("followers")),
+        "tweets": user.get("tweet_count", user.get("tweets")),
+        "following": user.get("following_count", user.get("following")),
+    }
+
+
 def x_stats(url, timeout=15):
     """
-    Real X account data, free, no key. Returns:
-      checked    the lookup completed (False = service down, treat as unknown)
-      exists     the account is real (False after a definitive 404)
-      age_days   how long ago it was created
+    Real X account data, free, no key, cross-checked against two independent
+    mirrors. Returns:
+      checked     the lookup completed (False = both services down, unknown)
+      exists      the account is real (False only when both agree it 404s)
+      conflict    the two mirrors returned different account ids for this handle
+      age_days    how long ago it was created
       followers / tweets / following
-      community  the link points at a community, not an account
+      community   the link points at a community, not an account
+
+    The cross-check is not paranoia. X handles are released and re-registered,
+    and these mirrors cache: asked for the same handle at the same moment, one
+    returned an account created 12 Aug and the other one created 28 Aug, with
+    different ids. When they disagree about *which account this is*, nothing
+    about it can be treated as evidence.
     """
     res = {"checked": False, "exists": None, "age_days": None, "followers": None,
-           "tweets": None, "following": None, "community": False, "handle": None}
+           "tweets": None, "following": None, "community": False, "handle": None,
+           "conflict": False, "sources": 0}
     if not url:
         return res
     if X_COMMUNITY.search(url):
@@ -154,35 +195,35 @@ def x_stats(url, timeout=15):
     handle = m.group(1)
     res["handle"] = handle
 
+    answers = []
+    gone = 0
     for base in (X_API, X_API_FALLBACK):
-        try:
-            r = SESSION.get(base + handle, timeout=timeout)
-        except requests.RequestException:
-            continue
-        if r.status_code == 404:
+        found, rec = _x_lookup(base, handle, timeout)
+        if found and rec is None:
+            gone += 1
+        elif rec:
+            answers.append(rec)
+
+    if not answers:
+        if gone:
             res.update({"checked": True, "exists": False})
-            return res
-        if r.status_code != 200:
-            continue
-        try:
-            data = r.json()
-        except ValueError:
-            continue
-        user = data.get("user") if isinstance(data.get("user"), dict) else data
-        created = user.get("created_at") or user.get("joined")
-        if not created:
-            continue
-        try:
-            dt = datetime.strptime(created, "%a %b %d %H:%M:%S %z %Y")
-        except (ValueError, TypeError):
-            continue
-        res.update({
-            "checked": True, "exists": True, "age_days": _days_since(dt),
-            "followers": user.get("followers_count", user.get("followers")),
-            "tweets": user.get("tweet_count", user.get("tweets")),
-            "following": user.get("following_count", user.get("following")),
-        })
         return res
+
+    res["sources"] = len(answers)
+    ids = {a["id"] for a in answers if a["id"]}
+    if len(ids) > 1:
+        # same handle, two different accounts - identity is unresolved
+        res.update({"checked": True, "exists": True, "conflict": True})
+        return res
+
+    # agreed (or only one mirror answered): take the most conservative reading
+    best = min(answers, key=lambda a: a["age_days"])
+    res.update({
+        "checked": True, "exists": True, "age_days": best["age_days"],
+        "followers": min(a["followers"] or 0 for a in answers),
+        "tweets": min(a["tweets"] or 0 for a in answers),
+        "following": best["following"],
+    })
     return res
 
 
@@ -315,6 +356,8 @@ def social_score(sig, weights):
         pts, ev = 0, "link is an X community, not an account"
     elif x["exists"] is False:
         pts, ev = 0, "ACCOUNT DOES NOT EXIST"
+    elif x.get("conflict"):
+        pts, ev = 0, "two sources return different accounts for this handle"
     elif not x["checked"] or x["age_days"] is None:
         pts, ev = 0, "could not verify (service unreachable)"
     else:
@@ -322,6 +365,8 @@ def social_score(sig, weights):
         ev = "created {} days ago".format(x["age_days"])
         if x["age_days"] <= 2:
             ev += " - same week as the token"
+        if x.get("sources", 0) < 2:
+            ev += " (one source only)"
     rows.append(("X account age", pts, mx, ev))
 
     # --- X activity: followers mean nothing next to zero posts
