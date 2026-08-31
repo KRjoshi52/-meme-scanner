@@ -39,11 +39,13 @@ jobs:
       - name: Restore alert history
         uses: actions/cache/restore@v4
         with:
-          path: |
-            state.json
-            track.json
+          path: state.json          # dedupe only - the record lives in git, not here
           key: scanner-state-${{ github.run_id }}
           restore-keys: scanner-state-
+
+      # start from the committed record, not from whatever this runner last saw
+      - name: Sync the track record
+        run: git pull --rebase --autostash origin main || true
 
       - name: Scan
         env:
@@ -80,7 +82,5 @@ jobs:
         if: always()
         uses: actions/cache/save@v4
         with:
-          path: |
-            state.json
-            track.json
+          path: state.json
           key: scanner-state-${{ github.run_id }}

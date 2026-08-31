@@ -1,6 +1,39 @@
 {
   "entries": [
     {
+      "mint": "gHNvRdZLtJFsfJuEnwePNtgiDCy9sbgTc5Mfi2Upump",
+      "symbol": "401k",
+      "at": 1788036284.83,
+      "at_human": "2026-08-29 21:45",
+      "alerted": true,
+      "composite": 61.5,
+      "safety": 77.1,
+      "social": 25,
+      "price0": 0.0001996,
+      "liq0": 37923.0,
+      "mcap0": 198751,
+      "age_h0": 1.48,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "scanner was not running"
+        },
+        "6h": {
+          "missed": true,
+          "pct": null,
+          "note": "scanner was not running"
+        },
+        "24h": {
+          "at": "2026-08-30 20:53",
+          "price": 2.228e-06,
+          "liq": 2446.0,
+          "pct": -98.9,
+          "note": "measured at 24h"
+        }
+      }
+    },
+    {
       "mint": "G9FGtfqT5GY73Tb2d1sR5Jws6HY73fmK4nR34fjbpump",
       "symbol": "ApeChad",
       "at": 1788119932.5102873,
