@@ -32,9 +32,14 @@ TRACK = os.path.join(HERE, "track.json")
 DEX = "https://api.dexscreener.com/token-pairs/v1/solana/"
 
 # (label, seconds, grace) - a checkpoint measured long after it came due is not
-# that checkpoint. If the scanner was offline, "1h" filled from a 10-hour-old
-# price is not a 1-hour result, so it is marked missed and excluded from stats.
-HORIZONS = (("1h", 3600, 2700), ("6h", 21600, 10800), ("24h", 86400, 43200))
+# that checkpoint, so past its grace it is marked missed rather than invented.
+#
+# The grace windows are sized to what the cloud runner actually delivers, not to
+# what its schedule claims. GitHub's free cron deprioritises high-frequency jobs:
+# a "*/15" schedule was measured landing every 2.5-5 hours. Every mark also
+# records the age at which it was really taken, so a "1h" reading taken at 2.4h
+# says so instead of pretending.
+HORIZONS = (("1h", 3600, 9000), ("6h", 21600, 21600), ("24h", 86400, 43200))
 GIVE_UP_AFTER = 172800          # 48h - past the last checkpoint plus its grace
 
 SESSION = requests.Session()
@@ -139,7 +144,8 @@ def update(verbose=False):
                 p0 = e.get("price0")
                 pct = ((price - p0) / p0 * 100.0) if p0 else None
                 e["marks"][key] = {"at": stamp, "price": price, "liq": liq,
-                                   "pct": round(pct, 1) if pct is not None else None}
+                                   "pct": round(pct, 1) if pct is not None else None,
+                                   "measured_at_h": round(age / 3600.0, 1)}
             changed += 1
             if verbose:
                 print("  {:<12} {:<4} {}".format(e["symbol"], key,
@@ -219,11 +225,20 @@ def recent(limit=8):
         return "Nothing recorded yet."
     out = []
     for e in rows:
-        marks = "  ".join(
-            "{} {}".format(k, ("missed" if e["marks"][k].get("missed") else "dead")
-                           if e["marks"][k].get("pct") is None
-                           else "{:+.0f}%".format(e["marks"][k]["pct"]))
-            for k, _, _g in HORIZONS if k in e["marks"])
+        parts = []
+        for k, secs, _g in HORIZONS:
+            if k not in e["marks"]:
+                continue
+            m = e["marks"][k]
+            if m.get("pct") is None:
+                parts.append("{} {}".format(k, "missed" if m.get("missed") else "dead"))
+                continue
+            real = m.get("measured_at_h")
+            drift = ""
+            if real and abs(real - secs / 3600.0) > 0.5:
+                drift = "@{}h".format(real)
+            parts.append("{}{} {:+.0f}%".format(k, drift, m["pct"]))
+        marks = "  ".join(parts)
         out.append("{:<12} {:<5} {:>5}  {}".format(
             e["symbol"][:12], "alert" if e.get("alerted") else "near",
             e.get("composite", "?"), marks or "pending"))

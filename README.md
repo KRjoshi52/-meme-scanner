@@ -228,6 +228,13 @@ Or send `/record` to the bot. The record so far is one alert, `401k`, **down 98.
 24h** - which is the point of keeping it. A screener with no measured record is an
 opinion.
 
+**Measured cadence, not the advertised one.** The workflow asks for every 15 minutes.
+Over 24 hours the runs actually landed **2.5 to 5 hours apart** - GitHub deprioritises
+high-frequency cron on free tiers and drops slots under load. Plan around that: alerts
+arrive hours after a token qualifies, and short-horizon checkpoints are often missed.
+The grace windows and the `@Nh` markers in `--recent` exist because of it. If you need
+a real 15-minute cadence, that needs a machine that stays on.
+
 **The record lives in git, not in a cache.** The cloud run commits `track.json` back
 to this repo whenever it changes, so there is one copy, it survives cache eviction,
 and you can read the whole history on GitHub. A record the tool could quietly lose
