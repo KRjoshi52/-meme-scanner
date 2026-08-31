@@ -137,6 +137,21 @@
           "pct": -84.2
         }
       }
+    },
+    {
+      "mint": "HgWZ9faEs7QMugQDCN6o8nxnWPnfimPFzHgvQMoWpump",
+      "symbol": "Happy",
+      "at": 1788188900.918665,
+      "at_human": "2026-08-31 15:08",
+      "alerted": false,
+      "composite": 50.7,
+      "safety": 72.4,
+      "social": 0,
+      "price0": 0.000247,
+      "liq0": 42396.4,
+      "mcap0": 244110,
+      "age_h0": 1.0002550801595051,
+      "marks": {}
     }
   ]
 }
