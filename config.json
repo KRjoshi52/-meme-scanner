@@ -19,6 +19,8 @@
     "max_vol_to_liq_ratio": 30,
     "min_vol_to_liq_ratio": 0.4,
     "max_insiders_in_top20": 2,
+    "max_insider_network_pct": 10,
+    "max_creator_tokens": 0,
     "max_rugcheck_score": 40,
     "require_any_social": true,
     "min_buy_ratio_h1": 0.42,
@@ -152,5 +154,6 @@
   "composite": {
     "safety_weight": 0.7,
     "social_weight": 0.3
-  }
+  },
+  "_comment_insider": "max_insider_network_pct: share of supply held by wallet clusters RugCheck has linked together - a bundled launch looks distributed to a top-10 check but is not. max_creator_tokens: 0 = off, because RugCheck populates creatorTokens for only some tokens; set it and unknown deployers are still allowed through, never assumed clean."
 }

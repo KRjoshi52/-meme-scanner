@@ -188,6 +188,30 @@ behind a token before you buy. Set `min_x_account_age_days` or `min_domain_age_d
   about the token. One live run awarded a perfect 10/10 for exactly that before it was
   caught.
 
+### Bundled launches and deployer history
+
+Two checks that cost nothing, because the data is already in the RugCheck report
+the scanner fetches anyway - and two honest measurements of what they are worth:
+
+**Insider clusters.** RugCheck links wallets that were funded together. A bundled
+launch spreads the float across many small wallets so a top-10 check sees nothing,
+while one person still controls it. The scanner now sums what those clusters hold
+and rejects above 10% of supply.
+
+> Measured over 22 live tokens: **23% had linked clusters**, and one (`Tuff`, 22.8%
+> across 5 wallets) would have been rejected. Useful, but narrow - and it would
+> **not** have caught `401k`, whose clusters held 0.48%.
+
+**Deployer history.** `creatorTokens` says how many other tokens the deploying
+wallet has launched. A wallet on its fortieth launch is a different proposition
+from one on its first.
+
+> Measured over the same 22 tokens: populated for **1 of 22**. At 5% coverage it
+> cannot carry a decision, so `max_creator_tokens` is **0 (off)** by default. When
+> the data is there it is printed on the card; when it is missing the deployer is
+> never assumed clean. There is no free alternative - RugCheck exposes no creator
+> endpoint (404) and pump.fun's API blocks unauthenticated reads (403).
+
 ### The track record
 
 `track.py` records every signal with its entry price and re-prices it at +1h, +6h and
@@ -203,6 +227,11 @@ python track.py --recent          # one line per recent signal
 Or send `/record` to the bot. The record so far is one alert, `401k`, **down 98.9% at
 24h** - which is the point of keeping it. A screener with no measured record is an
 opinion.
+
+**The record lives in git, not in a cache.** The cloud run commits `track.json` back
+to this repo whenever it changes, so there is one copy, it survives cache eviction,
+and you can read the whole history on GitHub. A record the tool could quietly lose
+is not a record.
 
 ---
 

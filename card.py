@@ -218,15 +218,23 @@ def render(path, mint, facts, composite, label="SIGNAL"):
     elif sig.get("has_twitter"):
         rows.append(("X account could not be verified", False))
 
+    if facts.get("ins_nets"):
+        rows.append(("Insider clusters hold {}% across {} wallets".format(
+            facts.get("ins_pct"), facts.get("ins_accounts")),
+            float(facts.get("ins_pct") or 0) < 5))
+    if facts.get("creator_tokens") is not None:
+        rows.append(("Deployer has launched {} other token(s)".format(facts["creator_tokens"]),
+                     facts["creator_tokens"] <= 3))
+
     if site.get("age_days") is not None:
         rows.append(("{} registered {} days ago".format(site.get("domain", "?"),
                                                         site["age_days"]),
                      site["age_days"] >= 30))
 
-    for text, ok in rows[:6]:
+    for text, ok in rows[:7]:
         _mark(d, PAD + 13, y + 12, 13, ok)
         d.text((PAD + 42, y), text, font=reg(23), fill=MUTED, anchor="la")
-        y += 38
+        y += 36
 
     # ---------------------------------------------------------------- address
     y = H - 232

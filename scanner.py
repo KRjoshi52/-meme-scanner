@@ -179,6 +179,46 @@ def concentration(report):
     return round(top10, 2), insiders
 
 
+def insider_networks(report):
+    """
+    How much of the supply sits in wallet clusters RugCheck has linked together.
+
+    A "bundled" launch funds many wallets from one source so the float looks
+    distributed while one person controls it. Top-10 concentration misses this
+    entirely - the wallets are individually small.
+
+    Returns (pct_of_supply, network_count, account_count).
+    """
+    nets = report.get("insiderNetworks") or []
+    if not nets:
+        return 0.0, 0, 0
+    supply = float((report.get("token") or {}).get("supply") or 0)
+    held = 0.0
+    accounts = 0
+    for n in nets:
+        try:
+            held += float(n.get("tokenAmount") or 0)
+            accounts += int(n.get("size") or 0)
+        except (TypeError, ValueError):
+            continue
+    pct = (held / supply * 100.0) if supply else 0.0
+    return round(pct, 2), len(nets), accounts
+
+
+def creator_history(report):
+    """
+    How many other tokens this deployer has launched, when RugCheck knows.
+
+    Sparse: the field is populated for some tokens and null for most, so this
+    can inform a decision but cannot be relied on to make one. None = unknown,
+    never treated as clean.
+    """
+    ct = report.get("creatorTokens")
+    if isinstance(ct, list):
+        return len(ct)
+    return None
+
+
 def lp_locked_pct(report):
     """Highest LP-locked percentage across this token's markets."""
     best = 0.0
@@ -206,6 +246,8 @@ def evaluate(pair, auth, report, gates, sig, cfg):
     vl = vol24 / liq if liq else 0
 
     top10, insiders = concentration(report)
+    ins_pct, ins_nets, ins_accounts = insider_networks(report)
+    creator_tokens = creator_history(report)
     lp_pct = lp_locked_pct(report)
     holders = report.get("totalHolders") or 0
     rc_score = report.get("score_normalised")
@@ -265,6 +307,17 @@ def evaluate(pair, auth, report, gates, sig, cfg):
                   else "{:+.0f}%".format(c24)
                   + (" - most of the move already happened" if c24 > max_chg else "")))
 
+    max_ins = gates.get("max_insider_network_pct")
+    if max_ins:
+        C.append(("Insider clusters hold <= {}%".format(max_ins), ins_pct <= max_ins,
+                  "{}% across {} cluster(s), {} wallets".format(ins_pct, ins_nets, ins_accounts)
+                  if ins_nets else "no linked clusters found"))
+
+    max_ct = gates.get("max_creator_tokens")
+    if max_ct and creator_tokens is not None:
+        C.append(("Deployer has launched <= {}".format(max_ct), creator_tokens <= max_ct,
+                  "{} previous token(s) by this wallet".format(creator_tokens)))
+
     C.append(("RugCheck risk <= {}".format(gates["max_rugcheck_score"]),
               rc_score is not None and rc_score <= gates["max_rugcheck_score"],
               "score {}".format(rc_score)))
@@ -279,6 +332,8 @@ def evaluate(pair, auth, report, gates, sig, cfg):
         "liq": liq, "vol24": vol24, "vol1": vol1, "age_h": age_h, "top10": top10,
         "holders": holders, "lp_pct": lp_pct, "buy_ratio": buy_ratio, "vl": vl,
         "insiders": insiders, "rc_score": rc_score,
+        "ins_pct": ins_pct, "ins_nets": ins_nets, "ins_accounts": ins_accounts,
+        "creator_tokens": creator_tokens, "creator": report.get("creator"),
         "symbol": (pair.get("baseToken") or {}).get("symbol", "?"),
         "name": (pair.get("baseToken") or {}).get("name", "?"),
         "price": pair.get("priceUsd"),
@@ -347,6 +402,11 @@ def build_message(mint, checks, f, sc):
     L.append("Age <b>" + age + "</b> | Holders <b>{:,}</b>".format(f["holders"])
              + " | DEX " + esc(f["dex"]))
     L.append("")
+    if f.get("ins_nets"):
+        L.append("Insider clusters: <b>{}%</b> of supply across {} cluster(s), {} wallets".format(
+            f["ins_pct"], f["ins_nets"], f["ins_accounts"]))
+    if f.get("creator_tokens") is not None:
+        L.append("Deployer has launched <b>{}</b> other token(s)".format(f["creator_tokens"]))
     L.append("<b>PROOF - every check, verified live:</b>")
     for label, ok, ev in checks:
         L.append(("✅ " if ok else "❌ ") + esc(label) + " - <i>" + esc(ev) + "</i>")

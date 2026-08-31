@@ -1,9 +1,8 @@
 # credentials - never commit these
 secrets.json
 
-# runtime artefacts
+# runtime artefacts  (track.json is NOT here - the record is committed)
 state.json
-track.json
 scanner.log
 scanner.log.old
 last_card.png
