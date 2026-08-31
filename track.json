@@ -1,51 +1,18 @@
 {
   "entries": [
     {
-      "mint": "gHNvRdZLtJFsfJuEnwePNtgiDCy9sbgTc5Mfi2Upump",
-      "symbol": "401k",
-      "at": 1788029048.5035896,
-      "at_human": "2026-08-29 21:45",
-      "alerted": true,
-      "composite": 61.5,
-      "safety": 77.1,
-      "social": 25,
-      "price0": 0.0001996,
-      "liq0": 37923.0,
-      "mcap0": 198751,
-      "age_h0": 1.48,
-      "marks": {
-        "1h": {
-          "missed": true,
-          "pct": null,
-          "note": "scanner was not running"
-        },
-        "6h": {
-          "missed": true,
-          "pct": null,
-          "note": "scanner was not running"
-        },
-        "24h": {
-          "at": "2026-08-30 20:56",
-          "price": 2.196e-06,
-          "liq": 2413.75,
-          "pct": -98.9,
-          "note": "backfilled from the alert price; 1h/6h were never measured"
-        }
-      }
-    },
-    {
       "mint": "G9FGtfqT5GY73Tb2d1sR5Jws6HY73fmK4nR34fjbpump",
       "symbol": "ApeChad",
-      "at": 1788119798.7399697,
-      "at_human": "2026-08-30 20:56",
+      "at": 1788119932.5102873,
+      "at_human": "2026-08-30 19:58",
       "alerted": false,
-      "composite": 52.7,
-      "safety": 75.3,
+      "composite": 52.8,
+      "safety": 75.4,
       "social": 0,
-      "price0": 0.0001946,
-      "liq0": 37081.78,
-      "mcap0": 191951,
-      "age_h0": 1.2490942095947266,
+      "price0": 0.0002002,
+      "liq0": 37651.44,
+      "mcap0": 197517,
+      "age_h0": 1.2862527894422744,
       "marks": {
         "1h": {
           "missed": true,
@@ -62,16 +29,16 @@
     {
       "mint": "MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump",
       "symbol": "OTC",
-      "at": 1788119832.3594081,
-      "at_human": "2026-08-30 20:57",
+      "at": 1788120047.0196264,
+      "at_human": "2026-08-30 20:00",
       "alerted": false,
-      "composite": 48.2,
-      "safety": 68.0,
+      "composite": 48.8,
+      "safety": 68.9,
       "social": 2,
-      "price0": 0.0012,
-      "liq0": 121687.85,
-      "mcap0": 901061,
-      "age_h0": 54.40065183302138,
+      "price0": 0.001217,
+      "liq0": 122556.1,
+      "mcap0": 913770,
+      "age_h0": 54.460283139309354,
       "marks": {
         "1h": {
           "missed": true,
@@ -82,6 +49,59 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        }
+      }
+    },
+    {
+      "mint": "BRZ5aeJCDuruA42V1CntqKvofa2G7DS3yyxx1pZEpump",
+      "symbol": "moonkey",
+      "at": 1788120061.4504588,
+      "at_human": "2026-08-30 20:01",
+      "alerted": true,
+      "composite": 66.6,
+      "safety": 62.2,
+      "social": 77,
+      "price0": 0.0007089,
+      "liq0": 90043.95,
+      "mcap0": 684545,
+      "age_h0": 67.25414369649252,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        },
+        "6h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
+    },
+    {
+      "mint": "TRUEq13uwehY57S1Y62iTxas7ahpFgohc8kScbGNu1h",
+      "symbol": "STACY",
+      "at": 1788130007.4447763,
+      "at_human": "2026-08-30 22:46",
+      "alerted": false,
+      "composite": 55.3,
+      "safety": 79.0,
+      "social": 0,
+      "price0": 0.001027,
+      "liq0": 121187.95,
+      "mcap0": 1007872,
+      "age_h0": 24.56540124247233,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-08-31 06:15",
+          "price": 0.0001625,
+          "liq": 44727.63,
+          "pct": -84.2
         }
       }
     }
