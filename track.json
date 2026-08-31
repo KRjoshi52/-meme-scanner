@@ -56,6 +56,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "24h": {
+          "at": "2026-08-31 20:53",
+          "price": 2.172e-06,
+          "liq": 2385.36,
+          "pct": -98.9,
+          "measured_at_h": 24.9
         }
       }
     },
@@ -82,6 +89,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "24h": {
+          "at": "2026-08-31 20:53",
+          "price": 0.002229,
+          "liq": 169745.61,
+          "pct": 83.2,
+          "measured_at_h": 24.9
         }
       }
     },
@@ -108,6 +122,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "24h": {
+          "at": "2026-08-31 20:53",
+          "price": 0.0006458,
+          "liq": 86293.5,
+          "pct": -8.9,
+          "measured_at_h": 24.9
         }
       }
     },
@@ -151,6 +172,42 @@
       "liq0": 42396.4,
       "mcap0": 244110,
       "age_h0": 1.0002550801595051,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
+    },
+    {
+      "mint": "AUFk4hnNFTxkJ6DWbYB6ZkL7urYcRFzHdKxeUTpxpump",
+      "symbol": "Ape-1",
+      "at": 1788209518.8617373,
+      "at_human": "2026-08-31 20:51",
+      "alerted": false,
+      "composite": 49.1,
+      "safety": 70.2,
+      "social": 0,
+      "price0": 0.0003257,
+      "liq0": 48504.54,
+      "mcap0": 321691,
+      "age_h0": 2.2582948036024306,
+      "marks": {}
+    },
+    {
+      "mint": "EEpng77ZPn9FbgbT4xsRjwuxNCcMBYq3HTwEscyTpump",
+      "symbol": "HeeHaw",
+      "at": 1788209579.0795817,
+      "at_human": "2026-08-31 20:52",
+      "alerted": false,
+      "composite": 56.6,
+      "safety": 70.1,
+      "social": 25,
+      "price0": 0.002335,
+      "liq0": 172999.47,
+      "mcap0": 2295595,
+      "age_h0": 20.555021997409398,
       "marks": {}
     }
   ]
