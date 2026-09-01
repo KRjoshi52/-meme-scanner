@@ -191,6 +191,13 @@
           "liq": 2271.9,
           "pct": -99.2,
           "measured_at_h": 9.4
+        },
+        "24h": {
+          "at": "2026-09-01 15:12",
+          "price": 2.023e-06,
+          "liq": 2218.82,
+          "pct": -99.2,
+          "measured_at_h": 24.1
         }
       }
     },
@@ -268,6 +275,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-09-01 15:12",
+          "price": 2.676e-06,
+          "liq": 2777.98,
+          "pct": -96.8,
+          "measured_at_h": 9.6
         }
       }
     },
@@ -289,6 +303,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-09-01 15:12",
+          "price": 2.169e-06,
+          "liq": 2431.07,
+          "pct": -98.6,
+          "measured_at_h": 9.6
         }
       }
     }
