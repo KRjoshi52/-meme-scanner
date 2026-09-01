@@ -326,7 +326,15 @@
       "liq0": 45558.7,
       "mcap0": 303338,
       "age_h0": 0.8223552605523003,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "at": "2026-09-01 20:12",
+          "price": 1.973e-06,
+          "liq": 2123.11,
+          "pct": -99.3,
+          "measured_at_h": 1.6
+        }
+      }
     },
     {
       "mint": "54CehqRcWZy4oNwuUkBMnXxTGRrbLGqJNPTDd6EUpump",
@@ -341,6 +349,44 @@
       "liq0": 22848.94,
       "mcap0": 78552,
       "age_h0": 2.227934122856988,
+      "marks": {
+        "1h": {
+          "at": "2026-09-01 20:12",
+          "price": 8.66e-05,
+          "liq": 24773.33,
+          "pct": 7.9,
+          "measured_at_h": 1.6
+        }
+      }
+    },
+    {
+      "mint": "AQV3ERV9wsMXYi7HC4LPef4NvXTzXZANUF76yMJRpump",
+      "symbol": "SOLSTOCK",
+      "at": 1788293375.935956,
+      "at_human": "2026-09-01 20:09",
+      "alerted": false,
+      "composite": 52.7,
+      "safety": 75.3,
+      "social": 0,
+      "price0": 0.0001633,
+      "liq0": 33157.87,
+      "mcap0": 163360,
+      "age_h0": 0.47748210659450957,
+      "marks": {}
+    },
+    {
+      "mint": "4i9eqfLNCbFmzJm8UAtVyfDk192mpiYDyDA4XDgDpump",
+      "symbol": "$ATLASX",
+      "at": 1788293380.679035,
+      "at_human": "2026-09-01 20:09",
+      "alerted": false,
+      "composite": 54.2,
+      "safety": 62.5,
+      "social": 35,
+      "price0": 9.614e-05,
+      "liq0": 25121.03,
+      "mcap0": 96143,
+      "age_h0": 0.5290773729112414,
       "marks": {}
     }
   ]
