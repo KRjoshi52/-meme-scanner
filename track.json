@@ -312,6 +312,36 @@
           "measured_at_h": 9.6
         }
       }
+    },
+    {
+      "mint": "BbLB3ikTnLkMH1HCNe1oXYYH29jjes7HP2s5VctApump",
+      "symbol": "PUMPACIA",
+      "at": 1788287599.4793603,
+      "at_human": "2026-09-01 18:33",
+      "alerted": false,
+      "composite": 58.6,
+      "safety": 83.7,
+      "social": 0,
+      "price0": 0.0003034,
+      "liq0": 45558.7,
+      "mcap0": 303338,
+      "age_h0": 0.8223552605523003,
+      "marks": {}
+    },
+    {
+      "mint": "54CehqRcWZy4oNwuUkBMnXxTGRrbLGqJNPTDd6EUpump",
+      "symbol": "GAMESTONK",
+      "at": 1788287608.563284,
+      "at_human": "2026-09-01 18:33",
+      "alerted": false,
+      "composite": 45.9,
+      "safety": 65.6,
+      "social": 0,
+      "price0": 8.028e-05,
+      "liq0": 22848.94,
+      "mcap0": 78552,
+      "age_h0": 2.227934122856988,
+      "marks": {}
     }
   ]
 }
