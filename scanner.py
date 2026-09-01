@@ -596,7 +596,9 @@ def scan_once(cfg, dry_run=False, verbose=False):
                 i, facts["symbol"][:12], sc, cfg["min_score_to_alert"], saf, soc))
             # the control group: cleared every gate, scored short. If these do as
             # well as the alerts, the threshold is not earning its keep.
-            track.record(mint, facts, sc, alerted=False)
+            # A dry run observes; it must never write to the record.
+            if not dry_run:
+                track.record(mint, facts, sc, alerted=False)
             time.sleep(0.6)
             continue
 
@@ -618,7 +620,7 @@ def scan_once(cfg, dry_run=False, verbose=False):
             log("  -> Telegram alert sent for " + str(facts["symbol"]))
 
     try:
-        filled = track.update()
+        filled = 0 if dry_run else track.update()
         if filled:
             log("Track record: {} checkpoint(s) filled.".format(filled))
     except Exception as e:
