@@ -212,6 +212,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-09-01 05:36",
+          "price": 0.0001792,
+          "liq": 36331.25,
+          "pct": -45.0,
+          "measured_at_h": 8.7
         }
       }
     },
@@ -233,8 +240,45 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-09-01 05:36",
+          "price": 0.002516,
+          "liq": 233960.41,
+          "pct": 7.8,
+          "measured_at_h": 8.7
         }
       }
+    },
+    {
+      "mint": "4eXGQJMBZp656x9eqerEc1hepSoe27zvuXBtNuqjpump",
+      "symbol": "084BEAR",
+      "at": 1788240876.3836067,
+      "at_human": "2026-09-01 05:34",
+      "alerted": false,
+      "composite": 54.9,
+      "safety": 69.8,
+      "social": 20,
+      "price0": 8.402e-05,
+      "liq0": 23076.82,
+      "mcap0": 84028,
+      "age_h0": 0.7145508589002821,
+      "marks": {}
+    },
+    {
+      "mint": "2GxKXFjjvYMD8Zm9iGqk31rBUomrM3azD74xZAKHpump",
+      "symbol": "MARKPRO",
+      "at": 1788240905.289341,
+      "at_human": "2026-09-01 05:35",
+      "alerted": false,
+      "composite": 55.0,
+      "safety": 75.6,
+      "social": 7,
+      "price0": 0.0001547,
+      "liq0": 32894.1,
+      "mcap0": 154705,
+      "age_h0": 0.7328580377197266,
+      "marks": {}
     }
   ]
 }
