@@ -347,6 +347,13 @@
           "liq": 2123.11,
           "pct": -99.3,
           "measured_at_h": 1.6
+        },
+        "6h": {
+          "at": "2026-09-02 01:21",
+          "price": 2.021e-06,
+          "liq": 2169.72,
+          "pct": -99.3,
+          "measured_at_h": 6.8
         }
       }
     },
@@ -370,6 +377,13 @@
           "liq": 24773.33,
           "pct": 7.9,
           "measured_at_h": 1.6
+        },
+        "6h": {
+          "at": "2026-09-02 01:21",
+          "price": 2.206e-06,
+          "liq": 2540.66,
+          "pct": -97.3,
+          "measured_at_h": 6.8
         }
       }
     },
@@ -464,6 +478,21 @@
           "measured_at_h": 2.2
         }
       }
+    },
+    {
+      "mint": "EW31jgvvHRLjzEAePWbgk6hbM37awppoEXBhnmNQpump",
+      "symbol": "TRUMPBUTT",
+      "at": 1788311981.8677807,
+      "at_human": "2026-09-02 01:19",
+      "alerted": false,
+      "composite": 52.4,
+      "safety": 74.8,
+      "social": 0,
+      "price0": 8.878e-05,
+      "liq0": 23914.2,
+      "mcap0": 88783,
+      "age_h0": 0.4405186980523004,
+      "marks": {}
     }
   ]
 }
