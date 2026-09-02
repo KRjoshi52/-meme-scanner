@@ -548,6 +548,21 @@
           "measured_at_h": 10.3
         }
       }
+    },
+    {
+      "mint": "HmJDgky11u77hpBss6D8sjNpYPD5B6fWgSVDj58jpump",
+      "symbol": "SOLCAT",
+      "at": 1788362347.8151739,
+      "at_human": "2026-09-02 15:19",
+      "alerted": false,
+      "composite": 42.0,
+      "safety": 60.0,
+      "social": 0,
+      "price0": 0.0003356,
+      "liq0": 59916.2,
+      "mcap0": 332172,
+      "age_h0": 26.049948497111004,
+      "marks": {}
     }
   ]
 }
