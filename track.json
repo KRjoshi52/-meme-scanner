@@ -442,6 +442,13 @@
           "liq": 2061.68,
           "pct": -98.8,
           "measured_at_h": 10.1
+        },
+        "24h": {
+          "at": "2026-09-02 21:40",
+          "price": 1.919e-06,
+          "liq": 2052.92,
+          "pct": -98.8,
+          "measured_at_h": 25.5
         }
       }
     },
@@ -472,6 +479,13 @@
           "liq": 2292.66,
           "pct": -97.8,
           "measured_at_h": 10.1
+        },
+        "24h": {
+          "at": "2026-09-02 21:40",
+          "price": 2.072e-06,
+          "liq": 2228.85,
+          "pct": -97.8,
+          "measured_at_h": 25.5
         }
       }
     },
@@ -502,6 +516,13 @@
           "liq": 2521.71,
           "pct": -98.3,
           "measured_at_h": 8.9
+        },
+        "24h": {
+          "at": "2026-09-02 21:40",
+          "price": 2.325e-06,
+          "liq": 2480.82,
+          "pct": -98.3,
+          "measured_at_h": 24.3
         }
       }
     },
@@ -532,6 +553,13 @@
           "liq": 47624.09,
           "pct": -7.7,
           "measured_at_h": 8.9
+        },
+        "24h": {
+          "at": "2026-09-02 21:40",
+          "price": 2.307e-06,
+          "liq": 2684.29,
+          "pct": -99.3,
+          "measured_at_h": 24.3
         }
       }
     },
@@ -581,8 +609,30 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-09-02 21:40",
+          "price": 0.0006411,
+          "liq": 93048.78,
+          "pct": 91.0,
+          "measured_at_h": 6.4
         }
       }
+    },
+    {
+      "mint": "DGxNfqdqQLxCdrNZrbcA9AutX2cobj7Nx4dpJmDVpump",
+      "symbol": "FONELESS",
+      "at": 1788385175.9314945,
+      "at_human": "2026-09-02 21:39",
+      "alerted": false,
+      "composite": 46.3,
+      "safety": 66.2,
+      "social": 0,
+      "price0": 0.0003144,
+      "liq0": 48315.75,
+      "mcap0": 310604,
+      "age_h0": 6.299980834147135,
+      "marks": {}
     }
   ]
 }
