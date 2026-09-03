@@ -623,6 +623,13 @@
           "liq": 93048.78,
           "pct": 91.0,
           "measured_at_h": 6.4
+        },
+        "24h": {
+          "at": "2026-09-03 18:47",
+          "price": 0.000927,
+          "liq": 118670.77,
+          "pct": 176.2,
+          "measured_at_h": 27.5
         }
       }
     },
@@ -674,6 +681,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-09-03 18:47",
+          "price": 2.298e-06,
+          "liq": 2654.8,
+          "pct": -99.0,
+          "measured_at_h": 7.2
         }
       }
     },
@@ -695,8 +709,60 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-09-03 18:47",
+          "price": 2.14e-06,
+          "liq": 2334.83,
+          "pct": -99.2,
+          "measured_at_h": 7.2
         }
       }
+    },
+    {
+      "mint": "6a6cFF36wkKsApqZ4kqepfev2ve5eSNRGMPaaX4wpump",
+      "symbol": "cat bull",
+      "at": 1788461039.0852525,
+      "at_human": "2026-09-03 18:43",
+      "alerted": false,
+      "composite": 55.5,
+      "safety": 78.5,
+      "social": 2,
+      "price0": 0.0003499,
+      "liq0": 50385.66,
+      "mcap0": 349954,
+      "age_h0": 0.7775235083685981,
+      "marks": {}
+    },
+    {
+      "mint": "FsMM8hMqz4fQhKfAv3beqGz5oiJWtXNdmdt3hQskpump",
+      "symbol": "SOLBROS",
+      "at": 1788461041.7596612,
+      "at_human": "2026-09-03 18:44",
+      "alerted": false,
+      "composite": 52.4,
+      "safety": 74.9,
+      "social": 0,
+      "price0": 0.0001723,
+      "liq0": 34942.81,
+      "mcap0": 169734,
+      "age_h0": 1.6529886638726128,
+      "marks": {}
+    },
+    {
+      "mint": "HKBbjr72nrEZuLL2tUbzx4CneNmwVrwTzTVxeBJmpump",
+      "symbol": "LIKESOL",
+      "at": 1788461090.9643877,
+      "at_human": "2026-09-03 18:44",
+      "alerted": false,
+      "composite": 54.7,
+      "safety": 78.2,
+      "social": 0,
+      "price0": 0.0003316,
+      "liq0": 49610.68,
+      "mcap0": 325546,
+      "age_h0": 1.7699899302842883,
+      "marks": {}
     }
   ]
 }
