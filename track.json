@@ -655,6 +655,36 @@
           "measured_at_h": 8.8
         }
       }
+    },
+    {
+      "mint": "EnYMMJKBdFMvx4WvajicJmktkSV4Zj4fcdD1w8LPpump",
+      "symbol": "TRUMPBEN",
+      "at": 1788435345.5161428,
+      "at_human": "2026-09-03 11:35",
+      "alerted": false,
+      "composite": 52.4,
+      "safety": 72.7,
+      "social": 5,
+      "price0": 0.0002363,
+      "liq0": 42147.63,
+      "mcap0": 236389,
+      "age_h0": 0.8609765817599826,
+      "marks": {}
+    },
+    {
+      "mint": "J6Rfx6ZTAycGaxTwzcLHEaQzMbnjo2ZUAUzz9ouVpump",
+      "symbol": "SOLCHUMP",
+      "at": 1788435391.341762,
+      "at_human": "2026-09-03 11:36",
+      "alerted": false,
+      "composite": 54.4,
+      "safety": 77.7,
+      "social": 0,
+      "price0": 0.0002583,
+      "liq0": 42559.7,
+      "mcap0": 254810,
+      "age_h0": 1.681761491563585,
+      "marks": {}
     }
   ]
 }
