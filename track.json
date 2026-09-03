@@ -732,7 +732,15 @@
       "liq0": 50385.66,
       "mcap0": 349954,
       "age_h0": 0.7775235083685981,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "at": "2026-09-03 21:25",
+          "price": 2.006e-06,
+          "liq": 2128.86,
+          "pct": -99.4,
+          "measured_at_h": 2.7
+        }
+      }
     },
     {
       "mint": "FsMM8hMqz4fQhKfAv3beqGz5oiJWtXNdmdt3hQskpump",
@@ -747,7 +755,15 @@
       "liq0": 34942.81,
       "mcap0": 169734,
       "age_h0": 1.6529886638726128,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "at": "2026-09-03 21:25",
+          "price": 2.138e-06,
+          "liq": 2369.16,
+          "pct": -98.8,
+          "measured_at_h": 2.7
+        }
+      }
     },
     {
       "mint": "HKBbjr72nrEZuLL2tUbzx4CneNmwVrwTzTVxeBJmpump",
@@ -762,7 +778,15 @@
       "liq0": 49610.68,
       "mcap0": 325546,
       "age_h0": 1.7699899302842883,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "at": "2026-09-03 21:25",
+          "price": 0.000382,
+          "liq": 54704.36,
+          "pct": 15.2,
+          "measured_at_h": 2.7
+        }
+      }
     }
   ]
 }
