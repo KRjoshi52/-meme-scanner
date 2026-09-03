@@ -660,6 +660,13 @@
           "liq": 36288.3,
           "pct": -45.7,
           "measured_at_h": 8.8
+        },
+        "24h": {
+          "at": "2026-09-03 23:29",
+          "price": 2.553e-06,
+          "liq": 2910.11,
+          "pct": -99.2,
+          "measured_at_h": 25.8
         }
       }
     },
@@ -787,6 +794,21 @@
           "measured_at_h": 2.7
         }
       }
+    },
+    {
+      "mint": "AK53BkSHcBMUmCzw6AVpmrjhFCuPfwbesmNahxSXpump",
+      "symbol": "SHITLESS",
+      "at": 1788478085.193964,
+      "at_human": "2026-09-03 23:28",
+      "alerted": false,
+      "composite": 50.9,
+      "safety": 71.8,
+      "social": 2,
+      "price0": 0.000155,
+      "liq0": 32649.95,
+      "mcap0": 153245,
+      "age_h0": 1.6483870388454862,
+      "marks": {}
     }
   ]
 }
