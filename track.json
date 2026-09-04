@@ -978,6 +978,29 @@
       "liq0": 36231.03,
       "mcap0": 194597,
       "age_h0": 0.4016338410780165,
+      "marks": {
+        "1h": {
+          "at": "2026-09-04 22:59",
+          "price": 2e-06,
+          "liq": 2142.38,
+          "pct": -99.0,
+          "measured_at_h": 2.0
+        }
+      }
+    },
+    {
+      "mint": "FiAum2V5D6QUBXrW8T4vEsEcGJtVzxCUoLLrSWCLpump",
+      "symbol": "MEMELESS",
+      "at": 1788562747.3029082,
+      "at_human": "2026-09-04 22:59",
+      "alerted": false,
+      "composite": 54.6,
+      "safety": 75.8,
+      "social": 5,
+      "price0": 0.0002933,
+      "liq0": 45386.16,
+      "mcap0": 289188,
+      "age_h0": 1.4903617046440971,
       "marks": {}
     }
   ]
