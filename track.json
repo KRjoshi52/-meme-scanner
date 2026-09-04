@@ -767,6 +767,13 @@
           "liq": 2104.41,
           "pct": -99.4,
           "measured_at_h": 6.6
+        },
+        "24h": {
+          "at": "2026-09-04 20:58",
+          "price": 1.965e-06,
+          "liq": 2083.98,
+          "pct": -99.4,
+          "measured_at_h": 26.2
         }
       }
     },
@@ -797,6 +804,13 @@
           "liq": 2388.88,
           "pct": -98.7,
           "measured_at_h": 6.6
+        },
+        "24h": {
+          "at": "2026-09-04 20:58",
+          "price": 2.06e-06,
+          "liq": 2283.05,
+          "pct": -98.8,
+          "measured_at_h": 26.2
         }
       }
     },
@@ -827,6 +841,13 @@
           "liq": 2439.75,
           "pct": -99.3,
           "measured_at_h": 6.6
+        },
+        "24h": {
+          "at": "2026-09-04 20:58",
+          "price": 2.179e-06,
+          "liq": 2436.61,
+          "pct": -99.3,
+          "measured_at_h": 26.2
         }
       }
     },
@@ -943,6 +964,21 @@
           "measured_at_h": 6.9
         }
       }
+    },
+    {
+      "mint": "AakXjyF6nSmFw2MKfuBR871cVWU9AQU5xA2fXErmpump",
+      "symbol": "HOPELESS",
+      "at": 1788555478.882376,
+      "at_human": "2026-09-04 20:57",
+      "alerted": false,
+      "composite": 57.3,
+      "safety": 81.9,
+      "social": 0,
+      "price0": 0.0001945,
+      "liq0": 36231.03,
+      "mcap0": 194597,
+      "age_h0": 0.4016338410780165,
+      "marks": {}
     }
   ]
 }
