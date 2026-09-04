@@ -836,6 +836,13 @@
           "liq": 26859.59,
           "pct": -31.5,
           "measured_at_h": 1.8
+        },
+        "6h": {
+          "at": "2026-09-04 06:24",
+          "price": 2.057e-06,
+          "liq": 2222.24,
+          "pct": -98.7,
+          "measured_at_h": 6.9
         }
       }
     },
@@ -852,7 +859,13 @@
       "liq0": 31062.57,
       "mcap0": 139714,
       "age_h0": 0.8218147823757596,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
     }
   ]
 }
