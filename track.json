@@ -1057,6 +1057,13 @@
           "liq": 2178.63,
           "pct": -99.3,
           "measured_at_h": 6.5
+        },
+        "24h": {
+          "at": "2026-09-05 23:57",
+          "price": 2.136e-06,
+          "liq": 2286.48,
+          "pct": -99.3,
+          "measured_at_h": 25.0
         }
       }
     },
@@ -1177,6 +1184,21 @@
           "measured_at_h": 6.3
         }
       }
+    },
+    {
+      "mint": "DVGFiRQv8XutVj7ELtM3KDb3dhuJ2XDx2LTuLzqDpump",
+      "symbol": "SOULANA",
+      "at": 1788652513.8184347,
+      "at_human": "2026-09-05 23:55",
+      "alerted": false,
+      "composite": 52.0,
+      "safety": 74.3,
+      "social": 0,
+      "price0": 0.0001396,
+      "liq0": 30818.76,
+      "mcap0": 137160,
+      "age_h0": 1.3157827678087022,
+      "marks": {}
     }
   ]
 }
