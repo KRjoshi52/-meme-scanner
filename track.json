@@ -878,6 +878,13 @@
           "liq": 2222.24,
           "pct": -98.7,
           "measured_at_h": 6.9
+        },
+        "24h": {
+          "at": "2026-09-05 00:51",
+          "price": 1.998e-06,
+          "liq": 2160.48,
+          "pct": -98.7,
+          "measured_at_h": 25.4
         }
       }
     },
@@ -1001,6 +1008,29 @@
       "liq0": 45386.16,
       "mcap0": 289188,
       "age_h0": 1.4903617046440971,
+      "marks": {
+        "1h": {
+          "at": "2026-09-05 00:51",
+          "price": 2.022e-06,
+          "liq": 2172.25,
+          "pct": -99.3,
+          "measured_at_h": 1.9
+        }
+      }
+    },
+    {
+      "mint": "Ax5dAamJPeuaLpFUzs9FdcpoUhHDcxyjPzxCJQidjups",
+      "symbol": "MINI",
+      "at": 1788569454.8669066,
+      "at_human": "2026-09-05 00:50",
+      "alerted": false,
+      "composite": 43.0,
+      "safety": 61.4,
+      "social": 0,
+      "price0": 0.0004871,
+      "liq0": 98791.29,
+      "mcap0": 487176,
+      "age_h0": 27.93440732869466,
       "marks": {}
     }
   ]
