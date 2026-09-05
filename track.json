@@ -948,6 +948,13 @@
           "liq": 2055.18,
           "pct": -98.6,
           "measured_at_h": 6.9
+        },
+        "24h": {
+          "at": "2026-09-05 12:58",
+          "price": 1.963e-06,
+          "liq": 2071.17,
+          "pct": -98.6,
+          "measured_at_h": 25.4
         }
       }
     },
@@ -976,6 +983,13 @@
           "liq": 2751.7,
           "pct": -98.9,
           "measured_at_h": 6.9
+        },
+        "24h": {
+          "at": "2026-09-05 12:58",
+          "price": 2.316e-06,
+          "liq": 2416.55,
+          "pct": -99.1,
+          "measured_at_h": 25.4
         }
       }
     },
@@ -1066,6 +1080,21 @@
           "measured_at_h": 8.4
         }
       }
+    },
+    {
+      "mint": "CbyTNf7UPzvewHh4Zp6umogM2RWahhmGRJWLJnPwpump",
+      "symbol": "biketyson",
+      "at": 1788613086.2520835,
+      "at_human": "2026-09-05 12:58",
+      "alerted": false,
+      "composite": 46.3,
+      "safety": 66.2,
+      "social": 0,
+      "price0": 0.000357,
+      "liq0": 58113.19,
+      "mcap0": 343413,
+      "age_h0": 44.69895868971083,
+      "marks": {}
     }
   ]
 }
