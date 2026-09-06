@@ -1376,6 +1376,21 @@
           "measured_at_h": 2.2
         }
       }
+    },
+    {
+      "mint": "GWTP6M5bxhaJ1k2Kxvf8hhYaHE6jZMhh4cKzFuCpnc83",
+      "symbol": "USEFUL",
+      "at": 1788737988.4564238,
+      "at_human": "2026-09-06 23:39",
+      "alerted": false,
+      "composite": 55.1,
+      "safety": 70.2,
+      "social": 20,
+      "price0": 0.002036,
+      "liq0": 179540.15,
+      "mcap0": 2036133,
+      "age_h0": 32.313459962565105,
+      "marks": {}
     }
   ]
 }
