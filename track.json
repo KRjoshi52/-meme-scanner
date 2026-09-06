@@ -1129,6 +1129,13 @@
           "liq": 48734.89,
           "pct": -30.1,
           "measured_at_h": 7.5
+        },
+        "24h": {
+          "at": "2026-09-06 15:42",
+          "price": 0.0003275,
+          "liq": 57227.68,
+          "pct": -8.3,
+          "measured_at_h": 26.7
         }
       }
     },
@@ -1233,6 +1240,44 @@
       "liq0": 37965.36,
       "mcap0": 190964,
       "age_h0": 0.6692435807291667,
+      "marks": {
+        "1h": {
+          "at": "2026-09-06 15:42",
+          "price": 2.22e-06,
+          "liq": 2515.64,
+          "pct": -98.8,
+          "measured_at_h": 3.4
+        }
+      }
+    },
+    {
+      "mint": "E1AT2T2Vd3bmhpxPde2MbhQ1VYjMMaHnZ9RjtBfvpump",
+      "symbol": "SOLDOGE",
+      "at": 1788709279.749897,
+      "at_human": "2026-09-06 15:41",
+      "alerted": false,
+      "composite": 53.8,
+      "safety": 76.9,
+      "social": 0,
+      "price0": 0.0001803,
+      "liq0": 35647.55,
+      "mcap0": 180312,
+      "age_h0": 0.783263745320638,
+      "marks": {}
+    },
+    {
+      "mint": "2HZ2kHzXTnHfVG7xsguWQEgNKrMUfjVz1qwU4srRpump",
+      "symbol": "stonkfone",
+      "at": 1788709293.1689699,
+      "at_human": "2026-09-06 15:41",
+      "alerted": false,
+      "composite": 43.2,
+      "safety": 60.9,
+      "social": 2,
+      "price0": 0.0002557,
+      "liq0": 43054.9,
+      "mcap0": 250958,
+      "age_h0": 2.8328245841471356,
       "marks": {}
     }
   ]
