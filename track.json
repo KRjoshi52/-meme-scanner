@@ -1261,6 +1261,13 @@
           "liq": 2515.64,
           "pct": -98.8,
           "measured_at_h": 3.4
+        },
+        "6h": {
+          "at": "2026-09-06 19:36",
+          "price": 2.225e-06,
+          "liq": 2522.59,
+          "pct": -98.8,
+          "measured_at_h": 7.3
         }
       }
     },
@@ -1309,6 +1316,36 @@
           "measured_at_h": 2.1
         }
       }
+    },
+    {
+      "mint": "4Zeg8aX3gGuC9sjsTHBzTyS1fZ643CV72pEemhbYpump",
+      "symbol": "CATBILL",
+      "at": 1788723324.3714707,
+      "at_human": "2026-09-06 19:35",
+      "alerted": false,
+      "composite": 56.7,
+      "safety": 81.0,
+      "social": 0,
+      "price0": 0.0001194,
+      "liq0": 28512.31,
+      "mcap0": 119464,
+      "age_h0": 0.5589918722873264,
+      "marks": {}
+    },
+    {
+      "mint": "CaWZeUM4FvX9dPkjGc2xHS6tSN3qJfTWyvaG77aM5o7h",
+      "symbol": "AGI",
+      "at": 1788723367.5336385,
+      "at_human": "2026-09-06 19:36",
+      "alerted": true,
+      "composite": 62.4,
+      "safety": 72.4,
+      "social": 39,
+      "price0": 0.004026,
+      "liq0": 291559.77,
+      "mcap0": 4026463,
+      "age_h0": 52.815097045491534,
+      "marks": {}
     }
   ]
 }
