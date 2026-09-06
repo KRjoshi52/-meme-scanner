@@ -1219,6 +1219,21 @@
           "measured_at_h": 8.6
         }
       }
+    },
+    {
+      "mint": "GSBZLSX8R8nq9qp2fs5oaLcQS72aG1SFEyuqbS1Apump",
+      "symbol": "SOLLIFE",
+      "at": 1788697247.2776034,
+      "at_human": "2026-09-06 12:20",
+      "alerted": false,
+      "composite": 47.3,
+      "safety": 67.6,
+      "social": 0,
+      "price0": 0.0001909,
+      "liq0": 37965.36,
+      "mcap0": 190964,
+      "age_h0": 0.6692435807291667,
+      "marks": {}
     }
   ]
 }
