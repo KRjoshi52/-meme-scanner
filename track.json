@@ -1312,6 +1312,13 @@
           "liq": 2179.25,
           "pct": -98.9,
           "measured_at_h": 6.1
+        },
+        "24h": {
+          "at": "2026-09-07 18:19",
+          "price": 2.137e-06,
+          "liq": 2261.69,
+          "pct": -98.8,
+          "measured_at_h": 26.6
         }
       }
     },
@@ -1342,6 +1349,13 @@
           "liq": 2405.34,
           "pct": -99.2,
           "measured_at_h": 6.1
+        },
+        "24h": {
+          "at": "2026-09-07 18:19",
+          "price": 2.126e-06,
+          "liq": 2357.12,
+          "pct": -99.2,
+          "measured_at_h": 26.6
         }
       }
     },
@@ -1448,7 +1462,13 @@
       "liq0": 47229.98,
       "mcap0": 309545,
       "age_h0": 0.7719795739067925,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
     },
     {
       "mint": "FZpngrJ1Z2BbAthurPHVQT3eBqQkK37wnJJCDpD2pump",
@@ -1463,6 +1483,57 @@
       "liq0": 35065.31,
       "mcap0": 169139,
       "age_h0": 0.864171946750217,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
+    },
+    {
+      "mint": "2dDDtevvn5V3sHCRQtMiSM3KoTDRfYdDkFrdigHNpump",
+      "symbol": "CATIFY",
+      "at": 1788804974.8517396,
+      "at_human": "2026-09-07 18:16",
+      "alerted": false,
+      "composite": 55.6,
+      "safety": 78.6,
+      "social": 2,
+      "price0": 0.0003085,
+      "liq0": 48184.76,
+      "mcap0": 304854,
+      "age_h0": 1.5524586151801216,
+      "marks": {}
+    },
+    {
+      "mint": "CFy3EVygd3RNTLmkzsjTBQWfUznngr24okPPvWXGpump",
+      "symbol": "TESLASS",
+      "at": 1788805001.4699106,
+      "at_human": "2026-09-07 18:16",
+      "alerted": false,
+      "composite": 49.1,
+      "safety": 70.1,
+      "social": 0,
+      "price0": 0.0001615,
+      "liq0": 34019.53,
+      "mcap0": 159494,
+      "age_h0": 1.248741418117947,
+      "marks": {}
+    },
+    {
+      "mint": "rxczFZFvzksquCazjtv9vtEBYW7q4SwiqXkzBcw8NFW",
+      "symbol": "NFW",
+      "at": 1788805045.85563,
+      "at_human": "2026-09-07 18:17",
+      "alerted": false,
+      "composite": 51.6,
+      "safety": 60.0,
+      "social": 32,
+      "price0": 0.00533,
+      "liq0": 193555.58,
+      "mcap0": 5330954,
+      "age_h0": 7.759681910807291,
       "marks": {}
     }
   ]
