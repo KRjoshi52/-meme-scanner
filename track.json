@@ -1460,6 +1460,13 @@
           "liq": 149583.11,
           "pct": -31.0,
           "measured_at_h": 6.9
+        },
+        "24h": {
+          "at": "2026-09-07 23:50",
+          "price": 0.001324,
+          "liq": 148655.91,
+          "pct": -35.0,
+          "measured_at_h": 24.2
         }
       }
     },
@@ -1587,6 +1594,21 @@
           "measured_at_h": 3.5
         }
       }
+    },
+    {
+      "mint": "D8thZLXaSCpYi4uCT9Sb38JThgxF8kPXjZKXraoGpump",
+      "symbol": "MEOWGN",
+      "at": 1788824927.7044458,
+      "at_human": "2026-09-07 23:48",
+      "alerted": false,
+      "composite": 49.8,
+      "safety": 71.2,
+      "social": 0,
+      "price0": 0.0001652,
+      "liq0": 34236.07,
+      "mcap0": 165246,
+      "age_h0": 0.7515843169487847,
+      "marks": {}
     }
   ]
 }
