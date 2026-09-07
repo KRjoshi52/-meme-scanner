@@ -1275,6 +1275,13 @@
           "liq": 2522.59,
           "pct": -98.8,
           "measured_at_h": 7.3
+        },
+        "24h": {
+          "at": "2026-09-07 13:05",
+          "price": 2.22e-06,
+          "liq": 2516.48,
+          "pct": -98.8,
+          "measured_at_h": 24.7
         }
       }
     },
@@ -1427,6 +1434,36 @@
           "measured_at_h": 6.9
         }
       }
+    },
+    {
+      "mint": "38fFmvnHU2QFWTN9uwLwSwpvAJ3DcnyESYopPyTUpump",
+      "symbol": "NVIDUCK",
+      "at": 1788786178.127208,
+      "at_human": "2026-09-07 13:02",
+      "alerted": false,
+      "composite": 58.6,
+      "safety": 83.7,
+      "social": 0,
+      "price0": 0.0003095,
+      "liq0": 47229.98,
+      "mcap0": 309545,
+      "age_h0": 0.7719795739067925,
+      "marks": {}
+    },
+    {
+      "mint": "FZpngrJ1Z2BbAthurPHVQT3eBqQkK37wnJJCDpD2pump",
+      "symbol": "zcatfone",
+      "at": 1788786200.0198758,
+      "at_human": "2026-09-07 13:03",
+      "alerted": false,
+      "composite": 48.2,
+      "safety": 68.9,
+      "social": 0,
+      "price0": 0.0001691,
+      "liq0": 35065.31,
+      "mcap0": 169139,
+      "age_h0": 0.864171946750217,
+      "marks": {}
     }
   ]
 }
