@@ -1495,6 +1495,13 @@
           "liq": 2427.54,
           "pct": -99.3,
           "measured_at_h": 8.7
+        },
+        "24h": {
+          "at": "2026-09-08 13:07",
+          "price": 2.163e-06,
+          "liq": 2382.56,
+          "pct": -99.3,
+          "measured_at_h": 24.1
         }
       }
     },
@@ -1523,6 +1530,13 @@
           "liq": 2463.06,
           "pct": -98.7,
           "measured_at_h": 8.7
+        },
+        "24h": {
+          "at": "2026-09-08 13:07",
+          "price": 2.221e-06,
+          "liq": 2500.72,
+          "pct": -98.7,
+          "measured_at_h": 24.1
         }
       }
     },
@@ -1657,6 +1671,42 @@
       "liq0": 41861.98,
       "mcap0": 191227,
       "age_h0": 36.05423125298394,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
+    },
+    {
+      "mint": "9e2g754kYeUjNuLkPuZUbUxyYwNhCr9iaKDPJbphpump",
+      "symbol": "Nascat",
+      "at": 1788872758.0299335,
+      "at_human": "2026-09-08 13:05",
+      "alerted": false,
+      "composite": 52.8,
+      "safety": 75.5,
+      "social": 0,
+      "price0": 0.0001871,
+      "liq0": 35976.77,
+      "mcap0": 187149,
+      "age_h0": 0.46806369283040367,
+      "marks": {}
+    },
+    {
+      "mint": "7ef82emcje2RvFYx5jK2dHsTmcr3ubQteAWM4rqSpump",
+      "symbol": "POINTLESS",
+      "at": 1788872779.44585,
+      "at_human": "2026-09-08 13:06",
+      "alerted": false,
+      "composite": 54.1,
+      "safety": 77.3,
+      "social": 0,
+      "price0": 0.0001835,
+      "liq0": 35871.06,
+      "mcap0": 183558,
+      "age_h0": 0.4265125528971354,
       "marks": {}
     }
   ]
