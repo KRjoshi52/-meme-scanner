@@ -1567,6 +1567,13 @@
           "liq": 2712.57,
           "pct": -99.2,
           "measured_at_h": 9.6
+        },
+        "24h": {
+          "at": "2026-09-08 20:10",
+          "price": 2.339e-06,
+          "liq": 2737.18,
+          "pct": -99.2,
+          "measured_at_h": 25.9
         }
       }
     },
@@ -1597,6 +1604,13 @@
           "liq": 2454.84,
           "pct": -98.7,
           "measured_at_h": 9.6
+        },
+        "24h": {
+          "at": "2026-09-08 20:10",
+          "price": 2.173e-06,
+          "liq": 2460.35,
+          "pct": -98.7,
+          "measured_at_h": 25.9
         }
       }
     },
@@ -1627,6 +1641,13 @@
           "liq": 165836.89,
           "pct": -27.4,
           "measured_at_h": 9.6
+        },
+        "24h": {
+          "at": "2026-09-08 20:10",
+          "price": 0.003981,
+          "liq": 169272.67,
+          "pct": -25.3,
+          "measured_at_h": 25.9
         }
       }
     },
@@ -1704,6 +1725,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-09-08 20:10",
+          "price": 2.267e-06,
+          "liq": 2426.07,
+          "pct": -98.8,
+          "measured_at_h": 7.1
         }
       }
     },
@@ -1725,6 +1753,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-09-08 20:10",
+          "price": 2.088e-06,
+          "liq": 2295.82,
+          "pct": -98.9,
+          "measured_at_h": 7.1
         }
       }
     },
@@ -1741,7 +1776,15 @@
       "liq0": 41101.6,
       "mcap0": 231292,
       "age_h0": 1.0119532999674479,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "at": "2026-09-08 20:10",
+          "price": 0.0002847,
+          "liq": 47143.16,
+          "pct": 21.8,
+          "measured_at_h": 2.9
+        }
+      }
     },
     {
       "mint": "3d2UiLwJmRUtgnH5FG7K55GYBmojZmJn5GHPyCUCpump",
@@ -1756,7 +1799,15 @@
       "liq0": 27687.53,
       "mcap0": 109400,
       "age_h0": 20.223614833102754,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "at": "2026-09-08 20:10",
+          "price": 7.616e-05,
+          "liq": 22300.9,
+          "pct": -34.0,
+          "measured_at_h": 2.9
+        }
+      }
     },
     {
       "mint": "5cNaeFkSqLGVE3BJufKVAzJtxkH2zHhKu3Ao7PCipump",
@@ -1771,7 +1822,15 @@
       "liq0": 46977.66,
       "mcap0": 292302,
       "age_h0": 3.3631061882188584,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "at": "2026-09-08 20:10",
+          "price": 2.193e-06,
+          "liq": 2469.55,
+          "pct": -99.3,
+          "measured_at_h": 2.9
+        }
+      }
     }
   ]
 }
