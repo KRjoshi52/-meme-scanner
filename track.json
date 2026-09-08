@@ -1676,6 +1676,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-09-08 17:17",
+          "price": 0.0003043,
+          "liq": 53763.61,
+          "pct": 59.2,
+          "measured_at_h": 8.5
         }
       }
     },
@@ -1692,7 +1699,13 @@
       "liq0": 35976.77,
       "mcap0": 187149,
       "age_h0": 0.46806369283040367,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
     },
     {
       "mint": "7ef82emcje2RvFYx5jK2dHsTmcr3ubQteAWM4rqSpump",
@@ -1707,6 +1720,57 @@
       "liq0": 35871.06,
       "mcap0": 183558,
       "age_h0": 0.4265125528971354,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
+    },
+    {
+      "mint": "8epBCVHVZHdiAYweM9vAF57ngKtGVLC9k7oRTh2pump",
+      "symbol": "STONKLESS",
+      "at": 1788887779.032588,
+      "at_human": "2026-09-08 17:16",
+      "alerted": false,
+      "composite": 52.5,
+      "safety": 75.0,
+      "social": 0,
+      "price0": 0.0002338,
+      "liq0": 41101.6,
+      "mcap0": 231292,
+      "age_h0": 1.0119532999674479,
+      "marks": {}
+    },
+    {
+      "mint": "3d2UiLwJmRUtgnH5FG7K55GYBmojZmJn5GHPyCUCpump",
+      "symbol": "KILLER",
+      "at": 1788887782.0141253,
+      "at_human": "2026-09-08 17:16",
+      "alerted": false,
+      "composite": 44.3,
+      "safety": 63.3,
+      "social": 0,
+      "price0": 0.0001154,
+      "liq0": 27687.53,
+      "mcap0": 109400,
+      "age_h0": 20.223614833102754,
+      "marks": {}
+    },
+    {
+      "mint": "5cNaeFkSqLGVE3BJufKVAzJtxkH2zHhKu3Ao7PCipump",
+      "symbol": "INTC",
+      "at": 1788887795.182966,
+      "at_human": "2026-09-08 17:16",
+      "alerted": false,
+      "composite": 50.3,
+      "safety": 71.8,
+      "social": 0,
+      "price0": 0.0002951,
+      "liq0": 46977.66,
+      "mcap0": 292302,
+      "age_h0": 3.3631061882188584,
       "marks": {}
     }
   ]
