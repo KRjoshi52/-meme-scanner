@@ -1634,8 +1634,30 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-09-08 08:46",
+          "price": 2.263e-06,
+          "liq": 2620.56,
+          "pct": -98.6,
+          "measured_at_h": 9.0
         }
       }
+    },
+    {
+      "mint": "8RAFGyzajpYX96ppL7MXEL5DwjBSnbAqjBTfhUXDhVYj",
+      "symbol": "GPT",
+      "at": 1788857214.4152305,
+      "at_human": "2026-09-08 08:46",
+      "alerted": true,
+      "composite": 63.5,
+      "safety": 63.3,
+      "social": 64,
+      "price0": 0.0001912,
+      "liq0": 41861.98,
+      "mcap0": 191227,
+      "age_h0": 36.05423125298394,
+      "marks": {}
     }
   ]
 }
