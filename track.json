@@ -1818,6 +1818,13 @@
           "liq": 36234.27,
           "pct": -32.0,
           "measured_at_h": 7.4
+        },
+        "24h": {
+          "at": "2026-09-09 18:02",
+          "price": 2.476e-06,
+          "liq": 2944.27,
+          "pct": -98.9,
+          "measured_at_h": 24.8
         }
       }
     },
@@ -1848,6 +1855,13 @@
           "liq": 36349.55,
           "pct": 61.6,
           "measured_at_h": 7.4
+        },
+        "24h": {
+          "at": "2026-09-09 18:02",
+          "price": 0.0002392,
+          "liq": 41942.79,
+          "pct": 107.3,
+          "measured_at_h": 24.8
         }
       }
     },
@@ -1878,6 +1892,13 @@
           "liq": 2506.39,
           "pct": -99.2,
           "measured_at_h": 7.4
+        },
+        "24h": {
+          "at": "2026-09-09 18:02",
+          "price": 2.213e-06,
+          "liq": 2489.98,
+          "pct": -99.3,
+          "measured_at_h": 24.8
         }
       }
     },
@@ -1899,6 +1920,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-09-09 18:02",
+          "price": 2.044e-06,
+          "liq": 2210.78,
+          "pct": -97.8,
+          "measured_at_h": 8.0
         }
       }
     },
@@ -1920,6 +1948,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-09-09 18:02",
+          "price": 0.001437,
+          "liq": 146575.65,
+          "pct": -37.5,
+          "measured_at_h": 8.0
         }
       }
     },
@@ -1941,6 +1976,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-09-09 18:02",
+          "price": 0.000142,
+          "liq": 39658.58,
+          "pct": -24.5,
+          "measured_at_h": 8.0
         }
       }
     },
@@ -1957,7 +1999,15 @@
       "liq0": 34002.16,
       "mcap0": 164480,
       "age_h0": 0.39687096618652346,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "at": "2026-09-09 18:02",
+          "price": 2.316e-06,
+          "liq": 2490.54,
+          "pct": -98.6,
+          "measured_at_h": 3.4
+        }
+      }
     },
     {
       "mint": "FKGzRQFuYsmo2gHixW8fjJm6CwKyFKpTsz5g5g1upump",
@@ -1972,6 +2022,29 @@
       "liq0": 36664.4,
       "mcap0": 185123,
       "age_h0": 0.5870381960720487,
+      "marks": {
+        "1h": {
+          "at": "2026-09-09 18:02",
+          "price": 2.246e-06,
+          "liq": 2553.26,
+          "pct": -98.8,
+          "measured_at_h": 3.4
+        }
+      }
+    },
+    {
+      "mint": "B1EsntvpYGmZAjxD1DZEp7sxZR6LCdMNKzfJ9mnppump",
+      "symbol": "STKLYNX",
+      "at": 1788976909.6767268,
+      "at_human": "2026-09-09 18:01",
+      "alerted": false,
+      "composite": 48.5,
+      "safety": 69.3,
+      "social": 0,
+      "price0": 0.0001675,
+      "liq0": 34839.83,
+      "mcap0": 164165,
+      "age_h0": 1.463521083170573,
       "marks": {}
     }
   ]
