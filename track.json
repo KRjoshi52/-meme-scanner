@@ -1711,6 +1711,13 @@
           "liq": 53763.61,
           "pct": 59.2,
           "measured_at_h": 8.5
+        },
+        "24h": {
+          "at": "2026-09-09 10:03",
+          "price": 0.0005364,
+          "liq": 72966.25,
+          "pct": 180.5,
+          "measured_at_h": 25.3
         }
       }
     },
@@ -1859,6 +1866,51 @@
           "measured_at_h": 7.4
         }
       }
+    },
+    {
+      "mint": "3jqVb5xPR1pTbFr7VTVoEpNauBuUteqGBdfeFbY2pump",
+      "symbol": "LARRY",
+      "at": 1788948159.5254607,
+      "at_human": "2026-09-09 10:02",
+      "alerted": false,
+      "composite": 46.2,
+      "safety": 66.0,
+      "social": 0,
+      "price0": 9.333e-05,
+      "liq0": 25283.69,
+      "mcap0": 93330,
+      "age_h0": 0.8282012798394097,
+      "marks": {}
+    },
+    {
+      "mint": "7Y7V1a4m2nWK7BMgbka5B4vR1pDvCK7yva3Hnrqkraze",
+      "symbol": "Nasduck",
+      "at": 1788948178.8847148,
+      "at_human": "2026-09-09 10:02",
+      "alerted": false,
+      "composite": 46.6,
+      "safety": 64.8,
+      "social": 4,
+      "price0": 0.0023,
+      "liq0": 183965.71,
+      "mcap0": 2211721,
+      "age_h0": 57.27107881585015,
+      "marks": {}
+    },
+    {
+      "mint": "9GGGhze1NnQwcABTzxdxx89BEFLFtDueHhkwh6japump",
+      "symbol": "CatGPT",
+      "at": 1788948189.1239283,
+      "at_human": "2026-09-09 10:03",
+      "alerted": false,
+      "composite": 44.4,
+      "safety": 63.5,
+      "social": 0,
+      "price0": 0.0001882,
+      "liq0": 45677.07,
+      "mcap0": 183474,
+      "age_h0": 55.2211452734375,
+      "marks": {}
     }
   ]
 }
