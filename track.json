@@ -1746,6 +1746,13 @@
           "liq": 2426.07,
           "pct": -98.8,
           "measured_at_h": 7.1
+        },
+        "24h": {
+          "at": "2026-09-09 14:38",
+          "price": 2.302e-06,
+          "liq": 2460.98,
+          "pct": -98.8,
+          "measured_at_h": 25.5
         }
       }
     },
@@ -1774,6 +1781,13 @@
           "liq": 2295.82,
           "pct": -98.9,
           "measured_at_h": 7.1
+        },
+        "24h": {
+          "at": "2026-09-09 14:38",
+          "price": 2.08e-06,
+          "liq": 2286.67,
+          "pct": -98.9,
+          "measured_at_h": 25.5
         }
       }
     },
@@ -1880,7 +1894,13 @@
       "liq0": 25283.69,
       "mcap0": 93330,
       "age_h0": 0.8282012798394097,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
     },
     {
       "mint": "7Y7V1a4m2nWK7BMgbka5B4vR1pDvCK7yva3Hnrqkraze",
@@ -1895,7 +1915,13 @@
       "liq0": 183965.71,
       "mcap0": 2211721,
       "age_h0": 57.27107881585015,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
     },
     {
       "mint": "9GGGhze1NnQwcABTzxdxx89BEFLFtDueHhkwh6japump",
@@ -1910,6 +1936,42 @@
       "liq0": 45677.07,
       "mcap0": 183474,
       "age_h0": 55.2211452734375,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
+    },
+    {
+      "mint": "DhHSjZCE3X7d6M5T5BV2RrtK1X9tsxiWjfk1B41Epump",
+      "symbol": "ANSEMINU",
+      "at": 1788964679.7363303,
+      "at_human": "2026-09-09 14:37",
+      "alerted": false,
+      "composite": 49.4,
+      "safety": 60.3,
+      "social": 24,
+      "price0": 0.0001644,
+      "liq0": 34002.16,
+      "mcap0": 164480,
+      "age_h0": 0.39687096618652346,
+      "marks": {}
+    },
+    {
+      "mint": "FKGzRQFuYsmo2gHixW8fjJm6CwKyFKpTsz5g5g1upump",
+      "symbol": "LEPTEP",
+      "at": 1788964681.3382587,
+      "at_human": "2026-09-09 14:38",
+      "alerted": false,
+      "composite": 50.3,
+      "safety": 71.9,
+      "social": 0,
+      "price0": 0.0001851,
+      "liq0": 36664.4,
+      "mcap0": 185123,
+      "age_h0": 0.5870381960720487,
       "marks": {}
     }
   ]
