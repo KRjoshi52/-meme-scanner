@@ -2034,6 +2034,13 @@
           "liq": 2445.52,
           "pct": -98.6,
           "measured_at_h": 6.3
+        },
+        "24h": {
+          "at": "2026-09-10 15:00",
+          "price": 2.212e-06,
+          "liq": 2381.14,
+          "pct": -98.7,
+          "measured_at_h": 24.4
         }
       }
     },
@@ -2064,6 +2071,13 @@
           "liq": 2518.04,
           "pct": -98.8,
           "measured_at_h": 6.3
+        },
+        "24h": {
+          "at": "2026-09-10 15:00",
+          "price": 2.185e-06,
+          "liq": 2486.72,
+          "pct": -98.8,
+          "measured_at_h": 24.4
         }
       }
     },
@@ -2096,6 +2110,36 @@
           "measured_at_h": 7.1
         }
       }
+    },
+    {
+      "mint": "5Srsp89BUAuGTf1sFMntp6aW9GnUocrXfHJRYnFxpump",
+      "symbol": "PUSSY",
+      "at": 1789052414.2493253,
+      "at_human": "2026-09-10 15:00",
+      "alerted": false,
+      "composite": 52.4,
+      "safety": 74.8,
+      "social": 0,
+      "price0": 0.0002055,
+      "liq0": 37076.04,
+      "mcap0": 205596,
+      "age_h0": 0.8814578908962674,
+      "marks": {}
+    },
+    {
+      "mint": "5eUV19iGj3a5J92T2FGocWtFgJpUTnEwwcomWzdUpump",
+      "symbol": "SOLCHAN",
+      "at": 1789052431.2605033,
+      "at_human": "2026-09-10 15:00",
+      "alerted": false,
+      "composite": 49.7,
+      "safety": 71.0,
+      "social": 0,
+      "price0": 0.0003546,
+      "liq0": 50736.31,
+      "mcap0": 347318,
+      "age_h0": 3.4875721010335288,
+      "marks": {}
     }
   ]
 }
