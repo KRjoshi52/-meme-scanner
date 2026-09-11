@@ -2145,6 +2145,13 @@
           "liq": 2045.3,
           "pct": -99.1,
           "measured_at_h": 6.1
+        },
+        "24h": {
+          "at": "2026-09-11 15:10",
+          "price": 1.937e-06,
+          "liq": 2035.63,
+          "pct": -99.1,
+          "measured_at_h": 24.2
         }
       }
     },
@@ -2175,6 +2182,13 @@
           "liq": 2348.73,
           "pct": -99.4,
           "measured_at_h": 6.1
+        },
+        "24h": {
+          "at": "2026-09-11 15:10",
+          "price": 2.123e-06,
+          "liq": 2348.73,
+          "pct": -99.4,
+          "measured_at_h": 24.2
         }
       }
     },
@@ -2252,8 +2266,45 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-09-11 15:10",
+          "price": 0.0001117,
+          "liq": 27836.84,
+          "pct": 44.9,
+          "measured_at_h": 9.1
         }
       }
+    },
+    {
+      "mint": "DDwHYggYCVc8XGj56UEv4bvFBhcSPhm29MPHB5Nipump",
+      "symbol": "HELIUSCAT",
+      "at": 1789139368.277827,
+      "at_human": "2026-09-11 15:09",
+      "alerted": false,
+      "composite": 54.0,
+      "safety": 76.3,
+      "social": 2,
+      "price0": 0.0003217,
+      "liq0": 47896.95,
+      "mcap0": 321754,
+      "age_h0": 0.5350769919162326,
+      "marks": {}
+    },
+    {
+      "mint": "AaCBdbi8DiBvWiSjTG2xkkqeshDCSifsvYqZrkpDpump",
+      "symbol": "USESTONK",
+      "at": 1789139374.4488919,
+      "at_human": "2026-09-11 15:09",
+      "alerted": false,
+      "composite": 44.9,
+      "safety": 64.1,
+      "social": 0,
+      "price0": 0.0001766,
+      "liq0": 35626.49,
+      "mcap0": 174667,
+      "age_h0": 1.1995689676920573,
+      "marks": {}
     }
   ]
 }
