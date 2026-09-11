@@ -2191,7 +2191,13 @@
       "liq0": 203625.34,
       "mcap0": 2665072,
       "age_h0": 28.57393768005371,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
     },
     {
       "mint": "5dvXTZ5qwgafnHtwu3Ls3QrWx1U4LQsFeCuJgkk4QEC6",
@@ -2206,6 +2212,27 @@
       "liq0": 188486.62,
       "mcap0": 3341206,
       "age_h0": 26.752435931803387,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
+    },
+    {
+      "mint": "7paKY5zJ98AgtGsMvRxw68uo9WefQ4eryB5SNfH2pump",
+      "symbol": "holyfrog",
+      "at": 1789106552.0908988,
+      "at_human": "2026-09-11 06:02",
+      "alerted": false,
+      "composite": 43.7,
+      "safety": 62.4,
+      "social": 0,
+      "price0": 7.708e-05,
+      "liq0": 22240.8,
+      "mcap0": 75081,
+      "age_h0": 15.396969399753146,
       "marks": {}
     }
   ]
