@@ -2289,7 +2289,15 @@
       "liq0": 47896.95,
       "mcap0": 321754,
       "age_h0": 0.5350769919162326,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "at": "2026-09-11 18:36",
+          "price": 0.0009263,
+          "liq": 83798.34,
+          "pct": 187.9,
+          "measured_at_h": 3.4
+        }
+      }
     },
     {
       "mint": "AaCBdbi8DiBvWiSjTG2xkkqeshDCSifsvYqZrkpDpump",
@@ -2304,6 +2312,44 @@
       "liq0": 35626.49,
       "mcap0": 174667,
       "age_h0": 1.1995689676920573,
+      "marks": {
+        "1h": {
+          "at": "2026-09-11 18:36",
+          "price": 2.143e-06,
+          "liq": 2410.93,
+          "pct": -98.8,
+          "measured_at_h": 3.4
+        }
+      }
+    },
+    {
+      "mint": "2pRVUtGgbUpFVtY9dFhH5pLeyJZX6vhmaG89uXgcpump",
+      "symbol": "STONKITTY",
+      "at": 1789151730.6592612,
+      "at_human": "2026-09-11 18:35",
+      "alerted": false,
+      "composite": 45.4,
+      "safety": 64.9,
+      "social": 0,
+      "price0": 0.0001862,
+      "liq0": 36268.41,
+      "mcap0": 182855,
+      "age_h0": 1.2515717631700303,
+      "marks": {}
+    },
+    {
+      "mint": "7MCgYMzq3fov6oERdtTMAYbN2U9LZrrSYS1MBhjixZFr",
+      "symbol": "POLLY",
+      "at": 1789151773.2334118,
+      "at_human": "2026-09-11 18:36",
+      "alerted": true,
+      "composite": 64.7,
+      "safety": 65.0,
+      "social": 64,
+      "price0": 0.00123,
+      "liq0": 100023.18,
+      "mcap0": 1230900,
+      "age_h0": 27.16807000196669,
       "marks": {}
     }
   ]
