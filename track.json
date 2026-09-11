@@ -2177,6 +2177,36 @@
           "measured_at_h": 6.1
         }
       }
+    },
+    {
+      "mint": "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump",
+      "symbol": "baton",
+      "at": 1789089000.1768937,
+      "at_human": "2026-09-11 01:10",
+      "alerted": false,
+      "composite": 56.8,
+      "safety": 81.2,
+      "social": 0,
+      "price0": 0.002666,
+      "liq0": 203625.34,
+      "mcap0": 2665072,
+      "age_h0": 28.57393768005371,
+      "marks": {}
+    },
+    {
+      "mint": "5dvXTZ5qwgafnHtwu3Ls3QrWx1U4LQsFeCuJgkk4QEC6",
+      "symbol": "EMBER",
+      "at": 1789089009.770269,
+      "at_human": "2026-09-11 01:10",
+      "alerted": false,
+      "composite": 47.1,
+      "safety": 63.4,
+      "social": 9,
+      "price0": 0.003345,
+      "liq0": 188486.62,
+      "mcap0": 3341206,
+      "age_h0": 26.752435931803387,
+      "marks": {}
     }
   ]
 }
