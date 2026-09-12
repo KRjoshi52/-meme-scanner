@@ -2463,8 +2463,30 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-09-12 14:10",
+          "price": 0.002787,
+          "liq": 140461.57,
+          "pct": 55.3,
+          "measured_at_h": 7.7
         }
       }
+    },
+    {
+      "mint": "7VXWhZtDuUt85xqKWjkcbfBkX6LcRPod4SazmCkSpump",
+      "symbol": "NEKO",
+      "at": 1789222214.0430954,
+      "at_human": "2026-09-12 14:10",
+      "alerted": false,
+      "composite": 51.0,
+      "safety": 71.2,
+      "social": 4,
+      "price0": 0.0003927,
+      "liq0": 53468.3,
+      "mcap0": 389731,
+      "age_h0": 1.8905672334798178,
+      "marks": {}
     }
   ]
 }
