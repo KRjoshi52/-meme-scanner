@@ -2551,6 +2551,13 @@
           "liq": 2506.41,
           "pct": -98.8,
           "measured_at_h": 2.2
+        },
+        "6h": {
+          "at": "2026-09-12 23:26",
+          "price": 2.326e-06,
+          "liq": 2592.6,
+          "pct": -98.8,
+          "measured_at_h": 6.2
         }
       }
     },
@@ -2567,6 +2574,29 @@
       "liq0": 50061.95,
       "mcap0": 338300,
       "age_h0": 4.027806461452908,
+      "marks": {
+        "1h": {
+          "at": "2026-09-12 23:26",
+          "price": 2.122e-06,
+          "liq": 2371.22,
+          "pct": -99.4,
+          "measured_at_h": 1.9
+        }
+      }
+    },
+    {
+      "mint": "BifUDWQFpbTrSxYXBnqCpAVYgcyQGzHzJk2MDmeM2Gyv",
+      "symbol": "TCAT",
+      "at": 1789255534.0265996,
+      "at_human": "2026-09-12 23:25",
+      "alerted": false,
+      "composite": 57.1,
+      "safety": 72.2,
+      "social": 22,
+      "price0": 0.001542,
+      "liq0": 101719.45,
+      "mcap0": 1542724,
+      "age_h0": 48.888062681342234,
       "marks": {}
     }
   ]
