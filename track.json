@@ -2521,6 +2521,13 @@
           "liq": 2629.28,
           "pct": -99.4,
           "measured_at_h": 3.1
+        },
+        "6h": {
+          "at": "2026-09-12 21:35",
+          "price": 2.212e-06,
+          "liq": 2609.47,
+          "pct": -99.4,
+          "measured_at_h": 7.4
         }
       }
     },
@@ -2546,6 +2553,21 @@
           "measured_at_h": 2.2
         }
       }
+    },
+    {
+      "mint": "66aBzVKucLmWvY2JEU5CjAYcUSz7YcpoBDfXXWV9pump",
+      "symbol": "stonkbaton",
+      "at": 1789248883.1041617,
+      "at_human": "2026-09-12 21:34",
+      "alerted": false,
+      "composite": 50.6,
+      "safety": 72.3,
+      "social": 0,
+      "price0": 0.0003414,
+      "liq0": 50061.95,
+      "mcap0": 338300,
+      "age_h0": 4.027806461452908,
+      "marks": {}
     }
   ]
 }
