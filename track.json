@@ -2542,6 +2542,13 @@
           "liq": 2609.47,
           "pct": -99.4,
           "measured_at_h": 7.4
+        },
+        "24h": {
+          "at": "2026-09-13 16:35",
+          "price": 2.183e-06,
+          "liq": 2575.74,
+          "pct": -99.4,
+          "measured_at_h": 26.4
         }
       }
     },
@@ -2634,6 +2641,51 @@
           "measured_at_h": 7.2
         }
       }
+    },
+    {
+      "mint": "Bobw9yYiRS4Qvcy1Moa1amCa9z1KvpjAuP4RXQ9Wpump",
+      "symbol": "CATFLIX",
+      "at": 1789317286.9311209,
+      "at_human": "2026-09-13 16:34",
+      "alerted": false,
+      "composite": 51.6,
+      "safety": 71.6,
+      "social": 5,
+      "price0": 0.0002227,
+      "liq0": 40176.23,
+      "mcap0": 218860,
+      "age_h0": 1.2049805902099608,
+      "marks": {}
+    },
+    {
+      "mint": "C7962B3qAPC2ova24tVYDAy6Hi4hNFeXvBYn9A72pump",
+      "symbol": "AAPLCAT",
+      "at": 1789317290.2037694,
+      "at_human": "2026-09-13 16:34",
+      "alerted": false,
+      "composite": 49.4,
+      "safety": 70.6,
+      "social": 0,
+      "price0": 0.0002289,
+      "liq0": 40081.47,
+      "mcap0": 226323,
+      "age_h0": 1.3017230242919922,
+      "marks": {}
+    },
+    {
+      "mint": "9oXA1VWKNiYDYa6VKHBFFBBvZdvuhw1b2eD5Aka7YrVt",
+      "symbol": "FLAME",
+      "at": 1789317325.8848195,
+      "at_human": "2026-09-13 16:35",
+      "alerted": false,
+      "composite": 48.6,
+      "safety": 69.4,
+      "social": 0,
+      "price0": 0.003002,
+      "liq0": 318115.19,
+      "mcap0": 3002925,
+      "age_h0": 54.04218997639974,
+      "marks": {}
     }
   ]
 }
