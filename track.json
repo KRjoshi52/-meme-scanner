@@ -2717,6 +2717,21 @@
           "measured_at_h": 2.4
         }
       }
+    },
+    {
+      "mint": "7nMzUALgE9fZCg1nkfF32aU2Yo4VNTceoLcANq81pump",
+      "symbol": "STOCKNINA",
+      "at": 1789334648.5065267,
+      "at_human": "2026-09-13 21:24",
+      "alerted": false,
+      "composite": 56.6,
+      "safety": 80.9,
+      "social": 0,
+      "price0": 8.665e-05,
+      "liq0": 23569.41,
+      "mcap0": 86650,
+      "age_h0": 0.4690293167453342,
+      "marks": {}
     }
   ]
 }
