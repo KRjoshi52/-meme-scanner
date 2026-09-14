@@ -2690,6 +2690,13 @@
           "liq": 2407.25,
           "pct": -99.0,
           "measured_at_h": 6.8
+        },
+        "24h": {
+          "at": "2026-09-14 19:08",
+          "price": 2.134e-06,
+          "liq": 2404.71,
+          "pct": -99.0,
+          "measured_at_h": 26.6
         }
       }
     },
@@ -2720,6 +2727,13 @@
           "liq": 2194.47,
           "pct": -99.1,
           "measured_at_h": 6.8
+        },
+        "24h": {
+          "at": "2026-09-14 19:08",
+          "price": 3.075e-06,
+          "liq": 3200.64,
+          "pct": -98.7,
+          "measured_at_h": 26.6
         }
       }
     },
@@ -2750,6 +2764,13 @@
           "liq": 198083.36,
           "pct": -43.4,
           "measured_at_h": 6.8
+        },
+        "24h": {
+          "at": "2026-09-14 19:08",
+          "price": 0.0009577,
+          "liq": 125846.83,
+          "pct": -68.1,
+          "measured_at_h": 26.6
         }
       }
     },
@@ -2840,6 +2861,51 @@
           "measured_at_h": 6.9
         }
       }
+    },
+    {
+      "mint": "4zAwF6Q5a7ntNEJwk2fYyybJhECJFVcG9MTGRNfrpump",
+      "symbol": "TRONK",
+      "at": 1789412866.9406416,
+      "at_human": "2026-09-14 19:07",
+      "alerted": false,
+      "composite": 50.0,
+      "safety": 71.5,
+      "social": 0,
+      "price0": 0.0002021,
+      "liq0": 38263.09,
+      "mcap0": 199831,
+      "age_h0": 0.9791498956298829,
+      "marks": {}
+    },
+    {
+      "mint": "CfEaZjy8sZcP5trncm9AeswuZUeCpfZJ4ZDMePu1pump",
+      "symbol": "BIKELUGA",
+      "at": 1789412868.7890992,
+      "at_human": "2026-09-14 19:07",
+      "alerted": false,
+      "composite": 47.8,
+      "safety": 67.4,
+      "social": 2,
+      "price0": 0.0002693,
+      "liq0": 44133.66,
+      "mcap0": 265868,
+      "age_h0": 1.1210522644721137,
+      "marks": {}
+    },
+    {
+      "mint": "J6AzegrwPyA8ti3Q6qvByEqM4r3E77A62xSdGZ7Xpump",
+      "symbol": "TRUMPET",
+      "at": 1789412870.3928523,
+      "at_human": "2026-09-14 19:07",
+      "alerted": false,
+      "composite": 53.5,
+      "safety": 76.4,
+      "social": 0,
+      "price0": 0.0003056,
+      "liq0": 46767.42,
+      "mcap0": 302867,
+      "age_h0": 1.733442194688585,
+      "marks": {}
     }
   ]
 }
