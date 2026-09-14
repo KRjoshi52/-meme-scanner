@@ -2773,6 +2773,13 @@
           "liq": 1996.94,
           "pct": -97.8,
           "measured_at_h": 2.0
+        },
+        "6h": {
+          "at": "2026-09-14 06:55",
+          "price": 1.935e-06,
+          "liq": 2021.45,
+          "pct": -97.8,
+          "measured_at_h": 9.5
         }
       }
     },
@@ -2796,8 +2803,30 @@
           "liq": 55982.43,
           "pct": 5.3,
           "measured_at_h": 2.1
+        },
+        "6h": {
+          "at": "2026-09-14 06:55",
+          "price": 0.0003805,
+          "liq": 53180.23,
+          "pct": -5.3,
+          "measured_at_h": 7.6
         }
       }
+    },
+    {
+      "mint": "HEFhhy7qzmfv2rtUfG8VLL4ioXfqePApzzzspzzDpump",
+      "symbol": "FakeTaxi",
+      "at": 1789368891.861375,
+      "at_human": "2026-09-14 06:54",
+      "alerted": false,
+      "composite": 48.6,
+      "safety": 60.8,
+      "social": 20,
+      "price0": 0.0001739,
+      "liq0": 34749.75,
+      "mcap0": 167111,
+      "age_h0": 1.1657945534261067,
+      "marks": {}
     }
   ]
 }
