@@ -2896,6 +2896,13 @@
           "liq": 2256.58,
           "pct": -99.0,
           "measured_at_h": 3.4
+        },
+        "6h": {
+          "at": "2026-09-15 06:01",
+          "price": 2.067e-06,
+          "liq": 2265.72,
+          "pct": -99.0,
+          "measured_at_h": 10.9
         }
       }
     },
@@ -2919,6 +2926,13 @@
           "liq": 2373.49,
           "pct": -99.2,
           "measured_at_h": 3.4
+        },
+        "6h": {
+          "at": "2026-09-15 06:01",
+          "price": 2.071e-06,
+          "liq": 2300.62,
+          "pct": -99.2,
+          "measured_at_h": 10.9
         }
       }
     },
@@ -2942,6 +2956,13 @@
           "liq": 2373.02,
           "pct": -99.3,
           "measured_at_h": 3.4
+        },
+        "6h": {
+          "at": "2026-09-15 06:01",
+          "price": 2.009e-06,
+          "liq": 2192.28,
+          "pct": -99.3,
+          "measured_at_h": 10.9
         }
       }
     },
@@ -2958,6 +2979,72 @@
       "liq0": 40753.19,
       "mcap0": 237284,
       "age_h0": 0.4486267931450738,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
+    },
+    {
+      "mint": "Atcos2tvQi3CnaTJmnzkf7UzCHgcRCVYRMmYQGmmpump",
+      "symbol": "ALMOND",
+      "at": 1789452020.1108654,
+      "at_human": "2026-09-15 06:00",
+      "alerted": false,
+      "composite": 49.9,
+      "safety": 71.3,
+      "social": 0,
+      "price0": 0.0001466,
+      "liq0": 31249.79,
+      "mcap0": 146619,
+      "age_h0": 0.5772527270507812,
+      "marks": {}
+    },
+    {
+      "mint": "9vMx25gJ31NNjhvxSkmibaw3hh4CzwWQEDppYiEhpump",
+      "symbol": "NENEM",
+      "at": 1789452021.6765256,
+      "at_human": "2026-09-15 06:00",
+      "alerted": false,
+      "composite": 54.0,
+      "safety": 77.1,
+      "social": 0,
+      "price0": 0.0002063,
+      "liq0": 37959.69,
+      "mcap0": 206314,
+      "age_h0": 0.6057431753879123,
+      "marks": {}
+    },
+    {
+      "mint": "BzZvaeoitoXoVUuaWDZVLZAKY392Xw2ihNjg4Ka4pump",
+      "symbol": "HUHDOG",
+      "at": 1789452023.7894013,
+      "at_human": "2026-09-15 06:00",
+      "alerted": false,
+      "composite": 50.8,
+      "safety": 72.6,
+      "social": 0,
+      "price0": 0.000151,
+      "liq0": 31835.66,
+      "mcap0": 151018,
+      "age_h0": 0.7479966503228082,
+      "marks": {}
+    },
+    {
+      "mint": "AqoPZcUumKUBHrnfBsNtoNuneYEjoimaiWYq8GH8gpX9",
+      "symbol": "STONK10",
+      "at": 1789452061.4475632,
+      "at_human": "2026-09-15 06:01",
+      "alerted": false,
+      "composite": 49.2,
+      "safety": 68.2,
+      "social": 5,
+      "price0": 0.001726,
+      "liq0": 128861.62,
+      "mcap0": 1726547,
+      "age_h0": 52.13956847581652,
       "marks": {}
     }
   ]
