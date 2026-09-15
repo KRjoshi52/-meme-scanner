@@ -3147,6 +3147,29 @@
       "liq0": 39743.69,
       "mcap0": 233263,
       "age_h0": 0.8963791027153862,
+      "marks": {
+        "1h": {
+          "at": "2026-09-15 22:25",
+          "price": 0.000475,
+          "liq": 57744.05,
+          "pct": 100.6,
+          "measured_at_h": 3.2
+        }
+      }
+    },
+    {
+      "mint": "AQFsCfJp5s897bKTcYd4fjm1ryFjWUtFPsUz1s8Lpump",
+      "symbol": "Pilly",
+      "at": 1789511068.8079965,
+      "at_human": "2026-09-15 22:24",
+      "alerted": false,
+      "composite": 54.2,
+      "safety": 77.5,
+      "social": 0,
+      "price0": 0.0002009,
+      "liq0": 36342.5,
+      "mcap0": 200917,
+      "age_h0": 0.6168907590738932,
       "marks": {}
     }
   ]
