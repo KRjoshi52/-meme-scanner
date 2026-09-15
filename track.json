@@ -2838,6 +2838,13 @@
           "liq": 53180.23,
           "pct": -5.3,
           "measured_at_h": 7.6
+        },
+        "24h": {
+          "at": "2026-09-15 00:56",
+          "price": 0.0001433,
+          "liq": 33546.71,
+          "pct": -64.3,
+          "measured_at_h": 25.6
         }
       }
     },
@@ -2937,6 +2944,21 @@
           "measured_at_h": 3.4
         }
       }
+    },
+    {
+      "mint": "8KGGEASotRFLqdvTrxaxz3sSSvyCP25qtwrt82XEpump",
+      "symbol": "JUDE",
+      "at": 1789433769.0574346,
+      "at_human": "2026-09-15 00:56",
+      "alerted": false,
+      "composite": 54.0,
+      "safety": 77.1,
+      "social": 0,
+      "price0": 0.0002372,
+      "liq0": 40753.19,
+      "mcap0": 237284,
+      "age_h0": 0.4486267931450738,
+      "marks": {}
     }
   ]
 }
