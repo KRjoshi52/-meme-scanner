@@ -3019,6 +3019,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-09-15 15:43",
+          "price": 2.039e-06,
+          "liq": 2186.51,
+          "pct": -98.6,
+          "measured_at_h": 9.7
         }
       }
     },
@@ -3040,6 +3047,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-09-15 15:43",
+          "price": 2.145e-06,
+          "liq": 2344.37,
+          "pct": -99.0,
+          "measured_at_h": 9.7
         }
       }
     },
@@ -3061,6 +3075,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-09-15 15:43",
+          "price": 1.949e-06,
+          "liq": 2058.83,
+          "pct": -98.7,
+          "measured_at_h": 9.7
         }
       }
     },
@@ -3082,6 +3103,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-09-15 15:43",
+          "price": 0.001674,
+          "liq": 126488.86,
+          "pct": -3.0,
+          "measured_at_h": 9.7
         }
       }
     }
