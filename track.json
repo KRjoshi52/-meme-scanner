@@ -3277,6 +3277,21 @@
           "measured_at_h": 28.7
         }
       }
+    },
+    {
+      "mint": "GY9mZfyPpxXxBXBxS2hB2XjhP3kfUsywTvgveozxpump",
+      "symbol": "ELON",
+      "at": 1789724906.8554366,
+      "at_human": "2026-09-18 09:48",
+      "alerted": false,
+      "composite": 49.1,
+      "safety": 70.2,
+      "social": 0,
+      "price0": 0.004411,
+      "liq0": 256128.03,
+      "mcap0": 4093966,
+      "age_h0": 62.373015024956594,
+      "marks": {}
     }
   ]
 }
