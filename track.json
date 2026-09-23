@@ -3326,7 +3326,15 @@
       "liq0": 37173.67,
       "mcap0": 184545,
       "age_h0": 0.6480960294596354,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "at": "2026-09-23 20:38",
+          "price": 0.0004739,
+          "liq": 61754.67,
+          "pct": 156.9,
+          "measured_at_h": 3.3
+        }
+      }
     },
     {
       "mint": "ALuAQm3PqLK2G2oGewwdPC1yYadRuiQ6C5jg5GZopump",
@@ -3341,7 +3349,15 @@
       "liq0": 36311.63,
       "mcap0": 170257,
       "age_h0": 0.8333718256293403,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "at": "2026-09-23 20:38",
+          "price": 2.285e-06,
+          "liq": 2455.4,
+          "pct": -98.7,
+          "measured_at_h": 3.3
+        }
+      }
     },
     {
       "mint": "CbouD8khLcz1Y1QngvRtQufUimSRKpHkvGn6y1n8pump",
@@ -3356,7 +3372,15 @@
       "liq0": 39213.98,
       "mcap0": 195098,
       "age_h0": 44.80289940517849,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "at": "2026-09-23 20:38",
+          "price": 0.0002127,
+          "liq": 40963.42,
+          "pct": 6.8,
+          "measured_at_h": 3.2
+        }
+      }
     },
     {
       "mint": "JA2GsWfRHF59aaxCy7wyp54VYc1eidNgV4MRMFZdpump",
@@ -3371,6 +3395,44 @@
       "liq0": 32361.71,
       "mcap0": 132813,
       "age_h0": 2.600006500379774,
+      "marks": {
+        "1h": {
+          "at": "2026-09-23 20:38",
+          "price": 2.28e-06,
+          "liq": 2490.06,
+          "pct": -98.3,
+          "measured_at_h": 3.2
+        }
+      }
+    },
+    {
+      "mint": "FDumYKfbqDnMxWCa9N2eW1Y2wGUiPU9ci6rb22pEpump",
+      "symbol": "COST",
+      "at": 1790195850.8708704,
+      "at_human": "2026-09-23 20:37",
+      "alerted": false,
+      "composite": 51.4,
+      "safety": 73.5,
+      "social": 0,
+      "price0": 0.0001211,
+      "liq0": 29838.38,
+      "mcap0": 121164,
+      "age_h0": 0.35718605631510414,
+      "marks": {}
+    },
+    {
+      "mint": "7vGyP5iCqm6Z9JwMW4wQPVNe1NSpNrM7qej6E8B9pump",
+      "symbol": "HYPERINU",
+      "at": 1790195864.9163876,
+      "at_human": "2026-09-23 20:37",
+      "alerted": false,
+      "composite": 50.4,
+      "safety": 72.0,
+      "social": 0,
+      "price0": 0.000233,
+      "liq0": 43802.15,
+      "mcap0": 230347,
+      "age_h0": 2.2013652842203775,
       "marks": {}
     }
   ]
