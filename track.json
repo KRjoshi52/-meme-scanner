@@ -3312,6 +3312,66 @@
           "measured_at_h": 27.7
         }
       }
+    },
+    {
+      "mint": "4WECKfvfgEiojyZJq5Xm12Hvk76rhM4VHQAZGaELpump",
+      "symbol": "JEANCOIN",
+      "at": 1790184195.1467547,
+      "at_human": "2026-09-23 17:23",
+      "alerted": false,
+      "composite": 55.4,
+      "safety": 79.2,
+      "social": 0,
+      "price0": 0.0001845,
+      "liq0": 37173.67,
+      "mcap0": 184545,
+      "age_h0": 0.6480960294596354,
+      "marks": {}
+    },
+    {
+      "mint": "ALuAQm3PqLK2G2oGewwdPC1yYadRuiQ6C5jg5GZopump",
+      "symbol": "MO",
+      "at": 1790184198.1395128,
+      "at_human": "2026-09-23 17:23",
+      "alerted": false,
+      "composite": 53.5,
+      "safety": 76.4,
+      "social": 0,
+      "price0": 0.0001729,
+      "liq0": 36311.63,
+      "mcap0": 170257,
+      "age_h0": 0.8333718256293403,
+      "marks": {}
+    },
+    {
+      "mint": "CbouD8khLcz1Y1QngvRtQufUimSRKpHkvGn6y1n8pump",
+      "symbol": "UTILITY",
+      "at": 1790184207.4389,
+      "at_human": "2026-09-23 17:23",
+      "alerted": false,
+      "composite": 49.8,
+      "safety": 63.9,
+      "social": 17,
+      "price0": 0.0001991,
+      "liq0": 39213.98,
+      "mcap0": 195098,
+      "age_h0": 44.80289940517849,
+      "marks": {}
+    },
+    {
+      "mint": "JA2GsWfRHF59aaxCy7wyp54VYc1eidNgV4MRMFZdpump",
+      "symbol": "PIPEJEAN",
+      "at": 1790184212.0244064,
+      "at_human": "2026-09-23 17:23",
+      "alerted": false,
+      "composite": 47.2,
+      "safety": 67.4,
+      "social": 0,
+      "price0": 0.0001351,
+      "liq0": 32361.71,
+      "mcap0": 132813,
+      "age_h0": 2.600006500379774,
+      "marks": {}
     }
   ]
 }
