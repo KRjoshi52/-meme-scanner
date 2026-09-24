@@ -3492,6 +3492,21 @@
           "measured_at_h": 10.1
         }
       }
+    },
+    {
+      "mint": "HQfciZiVsxbqW8DV6BaaDDyg1WU9k7V37KvFj5qTpump",
+      "symbol": "miao",
+      "at": 1790252166.2956946,
+      "at_human": "2026-09-24 12:16",
+      "alerted": false,
+      "composite": 42.0,
+      "safety": 60.0,
+      "social": 0,
+      "price0": 0.000101,
+      "liq0": 27298.83,
+      "mcap0": 96937,
+      "age_h0": 3.309526331448025,
+      "marks": {}
     }
   ]
 }
