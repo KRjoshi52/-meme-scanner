@@ -3576,7 +3576,15 @@
       "liq0": 36868.77,
       "mcap0": 175077,
       "age_h0": 0.35723121439615885,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "at": "2026-09-24 23:32",
+          "price": 2.357e-06,
+          "liq": 2572.88,
+          "pct": -98.7,
+          "measured_at_h": 2.8
+        }
+      }
     },
     {
       "mint": "8Vte25yt28L8BfLXm8DrzjSYEyaKX8yry6hRKRmX7FGd",
@@ -3591,7 +3599,15 @@
       "liq0": 45263.9,
       "mcap0": 230946,
       "age_h0": 53.02773496270074,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "at": "2026-09-24 23:32",
+          "price": 0.0003072,
+          "liq": 51917.33,
+          "pct": 29.4,
+          "measured_at_h": 2.8
+        }
+      }
     },
     {
       "mint": "2PENPmfgJfq6CG3k4byj4oWwHf8SerqakmYHMkUupump",
@@ -3606,7 +3622,15 @@
       "liq0": 195847.43,
       "mcap0": 2506419,
       "age_h0": 21.022534619954428,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "at": "2026-09-24 23:33",
+          "price": 0.001635,
+          "liq": 190738.53,
+          "pct": -38.0,
+          "measured_at_h": 2.8
+        }
+      }
     },
     {
       "mint": "HSUMi4rMgjrx7zRUabw3ogGu1pa5hmF2eVcXj9Apump",
@@ -3621,7 +3645,15 @@
       "liq0": 156208.16,
       "mcap0": 1235352,
       "age_h0": 21.963966166653105,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "at": "2026-09-24 23:33",
+          "price": 0.001869,
+          "liq": 156380.19,
+          "pct": 47.9,
+          "measured_at_h": 2.8
+        }
+      }
     }
   ]
 }
