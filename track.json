@@ -3488,6 +3488,13 @@
           "liq": 2385.75,
           "pct": -98.1,
           "measured_at_h": 10.1
+        },
+        "24h": {
+          "at": "2026-09-24 20:43",
+          "price": 2.246e-06,
+          "liq": 2357.47,
+          "pct": -98.1,
+          "measured_at_h": 24.1
         }
       }
     },
@@ -3518,6 +3525,13 @@
           "liq": 2881.42,
           "pct": -98.9,
           "measured_at_h": 10.1
+        },
+        "24h": {
+          "at": "2026-09-24 20:43",
+          "price": 2.445e-06,
+          "liq": 2699.18,
+          "pct": -99.0,
+          "measured_at_h": 24.1
         }
       }
     },
@@ -3539,8 +3553,75 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-09-24 20:43",
+          "price": 2.601e-06,
+          "liq": 2832.45,
+          "pct": -97.4,
+          "measured_at_h": 8.5
         }
       }
+    },
+    {
+      "mint": "64xwhN5Rshirb1rB6KAC5Qw26zhYhPEXGPxLkpNmpump",
+      "symbol": "ASSCAT",
+      "at": 1790282570.0334933,
+      "at_human": "2026-09-24 20:42",
+      "alerted": false,
+      "composite": 46.7,
+      "safety": 65.8,
+      "social": 2,
+      "price0": 0.000175,
+      "liq0": 36868.77,
+      "mcap0": 175077,
+      "age_h0": 0.35723121439615885,
+      "marks": {}
+    },
+    {
+      "mint": "8Vte25yt28L8BfLXm8DrzjSYEyaKX8yry6hRKRmX7FGd",
+      "symbol": "UPTOBER",
+      "at": 1790282589.8472176,
+      "at_human": "2026-09-24 20:43",
+      "alerted": false,
+      "composite": 59.4,
+      "safety": 65.2,
+      "social": 46,
+      "price0": 0.0002374,
+      "liq0": 45263.9,
+      "mcap0": 230946,
+      "age_h0": 53.02773496270074,
+      "marks": {}
+    },
+    {
+      "mint": "2PENPmfgJfq6CG3k4byj4oWwHf8SerqakmYHMkUupump",
+      "symbol": "familiars",
+      "at": 1790282596.1259074,
+      "at_human": "2026-09-24 20:43",
+      "alerted": false,
+      "composite": 50.2,
+      "safety": 68.3,
+      "social": 8,
+      "price0": 0.002636,
+      "liq0": 195847.43,
+      "mcap0": 2506419,
+      "age_h0": 21.022534619954428,
+      "marks": {}
+    },
+    {
+      "mint": "HSUMi4rMgjrx7zRUabw3ogGu1pa5hmF2eVcXj9Apump",
+      "symbol": "goon",
+      "at": 1790282599.2793138,
+      "at_human": "2026-09-24 20:43",
+      "alerted": false,
+      "composite": 58.7,
+      "safety": 81.7,
+      "social": 5,
+      "price0": 0.001264,
+      "liq0": 156208.16,
+      "mcap0": 1235352,
+      "age_h0": 21.963966166653105,
+      "marks": {}
     }
   ]
 }
