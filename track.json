@@ -3787,6 +3787,57 @@
       "liq0": 338580.12,
       "mcap0": 8017181,
       "age_h0": 16.441473143107096,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
+    },
+    {
+      "mint": "3xfsfopm2xR89PFbsGGBhT1BfJqrbcoN8Mpxcp1jpump",
+      "symbol": "OnlyPump",
+      "at": 1790358890.796272,
+      "at_human": "2026-09-25 17:54",
+      "alerted": false,
+      "composite": 56.4,
+      "safety": 78.0,
+      "social": 6,
+      "price0": 0.0002109,
+      "liq0": 41083.69,
+      "mcap0": 210995,
+      "age_h0": 0.41660982794867624,
+      "marks": {}
+    },
+    {
+      "mint": "7tPks6AbTE2Kz4KkxxVYN9sBETMtzSL5Kqj2jbrXpump",
+      "symbol": "OnlyJeans",
+      "at": 1790358894.7840877,
+      "at_human": "2026-09-25 17:54",
+      "alerted": false,
+      "composite": 51.5,
+      "safety": 72.7,
+      "social": 2,
+      "price0": 0.0002055,
+      "liq0": 40898.63,
+      "mcap0": 202088,
+      "age_h0": 0.7699397219509548,
+      "marks": {}
+    },
+    {
+      "mint": "9EwEYhqzRHmE87ypWKUU1zZKP8uMeGdunmJ4etTmpump",
+      "symbol": "JEANWORK",
+      "at": 1790358903.481985,
+      "at_human": "2026-09-25 17:55",
+      "alerted": false,
+      "composite": 56.2,
+      "safety": 79.5,
+      "social": 2,
+      "price0": 0.0003946,
+      "liq0": 58355.09,
+      "mcap0": 389568,
+      "age_h0": 1.2854114059109158,
       "marks": {}
     }
   ]
