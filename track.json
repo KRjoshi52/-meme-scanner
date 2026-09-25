@@ -3654,6 +3654,51 @@
           "measured_at_h": 2.8
         }
       }
+    },
+    {
+      "mint": "D5qLnkRpzvuizsp4BfcrEWgUHiwrLoxVNZHoCx3Rpump",
+      "symbol": "OG",
+      "at": 1790301377.9134736,
+      "at_human": "2026-09-25 01:56",
+      "alerted": false,
+      "composite": 52.0,
+      "safety": 73.5,
+      "social": 2,
+      "price0": 0.0003514,
+      "liq0": 53604.24,
+      "mcap0": 345695,
+      "age_h0": 1.1385867369249132,
+      "marks": {}
+    },
+    {
+      "mint": "nDZknLvfFRp5rgUHdzTrQsmSY5NKzoavqdLjSHVpump",
+      "symbol": "COLLECT",
+      "at": 1790301379.5372658,
+      "at_human": "2026-09-25 01:56",
+      "alerted": false,
+      "composite": 47.4,
+      "safety": 66.8,
+      "social": 2,
+      "price0": 0.0008085,
+      "liq0": 104699.24,
+      "mcap0": 800035,
+      "age_h0": 0.8445933814154731,
+      "marks": {}
+    },
+    {
+      "mint": "UpBBfyC75u3kxDGWmmmW2yauk9YY3CqZhdt1KUDkids",
+      "symbol": "SHARTCOIN",
+      "at": 1790301428.9148014,
+      "at_human": "2026-09-25 01:57",
+      "alerted": true,
+      "composite": 85.3,
+      "safety": 84.6,
+      "social": 87,
+      "price0": 0.001781,
+      "liq0": 604568.8,
+      "mcap0": 1781573,
+      "age_h0": 24.373890748765735,
+      "marks": {}
     }
   ]
 }
