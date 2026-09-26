@@ -4052,6 +4052,21 @@
           "measured_at_h": 9.2
         }
       }
+    },
+    {
+      "mint": "3B84bg2kvqzPLhczcXoALdxUBeUs6GU823rd5hP8pump",
+      "symbol": "PAIDEBT",
+      "at": 1790465181.6444242,
+      "at_human": "2026-09-26 23:26",
+      "alerted": false,
+      "composite": 55.7,
+      "safety": 79.6,
+      "social": 0,
+      "price0": 0.0003425,
+      "liq0": 54072.67,
+      "mcap0": 337968,
+      "age_h0": 1.2462897501627603,
+      "marks": {}
     }
   ]
 }
