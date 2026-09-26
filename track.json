@@ -3848,6 +3848,13 @@
           "liq": 268122.73,
           "pct": -1.1,
           "measured_at_h": 8.3
+        },
+        "24h": {
+          "at": "2026-09-26 14:16",
+          "price": 0.004092,
+          "liq": 193708.47,
+          "pct": -49.5,
+          "measured_at_h": 25.3
         }
       }
     },
@@ -4015,6 +4022,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-09-26 14:16",
+          "price": 0.0007438,
+          "liq": 100027.72,
+          "pct": -46.8,
+          "measured_at_h": 9.2
         }
       }
     }
