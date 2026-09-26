@@ -3850,6 +3850,13 @@
           "liq": 2643.84,
           "pct": -98.8,
           "measured_at_h": 3.4
+        },
+        "6h": {
+          "at": "2026-09-26 00:03",
+          "price": 2.429e-06,
+          "liq": 2643.84,
+          "pct": -98.8,
+          "measured_at_h": 6.2
         }
       }
     },
@@ -3873,6 +3880,13 @@
           "liq": 2824.61,
           "pct": -98.8,
           "measured_at_h": 3.4
+        },
+        "6h": {
+          "at": "2026-09-26 00:03",
+          "price": 2.509e-06,
+          "liq": 2813.29,
+          "pct": -98.8,
+          "measured_at_h": 6.2
         }
       }
     },
@@ -3896,8 +3910,45 @@
           "liq": 47866.7,
           "pct": -37.2,
           "measured_at_h": 3.4
+        },
+        "6h": {
+          "at": "2026-09-26 00:03",
+          "price": 2.803e-06,
+          "liq": 3328.01,
+          "pct": -99.3,
+          "measured_at_h": 6.1
         }
       }
+    },
+    {
+      "mint": "AJzWtzVh77uQxK1aLPt4STMtFnHVQKNkNPRA4ebfpump",
+      "symbol": "ASI",
+      "at": 1790380989.5634599,
+      "at_human": "2026-09-26 00:03",
+      "alerted": false,
+      "composite": 49.3,
+      "safety": 70.4,
+      "social": 0,
+      "price0": 0.0003934,
+      "liq0": 58103.74,
+      "mcap0": 388218,
+      "age_h0": 0.8004339411756728,
+      "marks": {}
+    },
+    {
+      "mint": "bGpXrniA1kzqubTCCexxR4Zh4Hrx8eoYY1Sqtt3pump",
+      "symbol": "SJP",
+      "at": 1790380996.1788871,
+      "at_human": "2026-09-26 00:03",
+      "alerted": false,
+      "composite": 59.0,
+      "safety": 82.2,
+      "social": 5,
+      "price0": 0.0003286,
+      "liq0": 52214.19,
+      "mcap0": 323739,
+      "age_h0": 1.8747715541585286,
+      "marks": {}
     }
   ]
 }
