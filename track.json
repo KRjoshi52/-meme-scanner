@@ -3994,6 +3994,13 @@
           "liq": 2763.0,
           "pct": -99.4,
           "measured_at_h": 9.9
+        },
+        "24h": {
+          "at": "2026-09-27 01:42",
+          "price": 2.522e-06,
+          "liq": 2813.39,
+          "pct": -99.4,
+          "measured_at_h": 25.7
         }
       }
     },
@@ -4022,6 +4029,13 @@
           "liq": 57160.26,
           "pct": 12.8,
           "measured_at_h": 9.9
+        },
+        "24h": {
+          "at": "2026-09-27 01:42",
+          "price": 2.663e-06,
+          "liq": 3037.24,
+          "pct": -99.2,
+          "measured_at_h": 25.7
         }
       }
     },
@@ -4066,6 +4080,74 @@
       "liq0": 54072.67,
       "mcap0": 337968,
       "age_h0": 1.2462897501627603,
+      "marks": {
+        "1h": {
+          "at": "2026-09-27 01:42",
+          "price": 2.41e-06,
+          "liq": 2651.46,
+          "pct": -99.3,
+          "measured_at_h": 2.3
+        }
+      }
+    },
+    {
+      "mint": "J9PVhNvGA1hXhHwmUUYQgHpPRxZch3cmCRzTnD6Dpump",
+      "symbol": "CASHED",
+      "at": 1790473296.6267984,
+      "at_human": "2026-09-27 01:41",
+      "alerted": false,
+      "composite": 49.3,
+      "safety": 70.5,
+      "social": 0,
+      "price0": 0.0001534,
+      "liq0": 34742.99,
+      "mcap0": 153424,
+      "age_h0": 0.39628491000705296,
+      "marks": {}
+    },
+    {
+      "mint": "BT9rceccbaWJbX3tXJUZMHYpPKaTGk2ykUJnpxe2pump",
+      "symbol": "PAIDCAT",
+      "at": 1790473299.8633342,
+      "at_human": "2026-09-27 01:41",
+      "alerted": false,
+      "composite": 53.5,
+      "safety": 76.5,
+      "social": 0,
+      "price0": 0.0001522,
+      "liq0": 34680.34,
+      "mcap0": 148865,
+      "age_h0": 0.9082950960964626,
+      "marks": {}
+    },
+    {
+      "mint": "BULbQ4j9WU6r63idgdQVsjt6i3nKSTXgyj7Qqcdpump",
+      "symbol": "a/acc",
+      "at": 1790473302.4031162,
+      "at_human": "2026-09-27 01:41",
+      "alerted": false,
+      "composite": 55.2,
+      "safety": 78.8,
+      "social": 0,
+      "price0": 0.0003106,
+      "liq0": 50710.93,
+      "mcap0": 306855,
+      "age_h0": 0.9934450170220269,
+      "marks": {}
+    },
+    {
+      "mint": "jLz71QZfjnZZMLjUaCBw7KmUyftkkNq8NkWi2u9dyap",
+      "symbol": "YAP",
+      "at": 1790473364.9027548,
+      "at_human": "2026-09-27 01:42",
+      "alerted": true,
+      "composite": 60.4,
+      "safety": 82.9,
+      "social": 8,
+      "price0": 0.002375,
+      "liq0": 245677.6,
+      "mcap0": 2180279,
+      "age_h0": 32.478206426255966,
       "marks": {}
     }
   ]
