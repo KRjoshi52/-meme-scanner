@@ -4101,6 +4101,13 @@
           "liq": 2644.51,
           "pct": -99.3,
           "measured_at_h": 7.7
+        },
+        "24h": {
+          "at": "2026-09-27 23:49",
+          "price": 2.43e-06,
+          "liq": 2673.63,
+          "pct": -99.3,
+          "measured_at_h": 24.4
         }
       }
     },
@@ -4215,6 +4222,36 @@
           "measured_at_h": 11.4
         }
       }
+    },
+    {
+      "mint": "BvnqdYwuFrvi9ds63EtwQLYME89ikJkULnJPAd83pump",
+      "symbol": "CATSTR",
+      "at": 1790552939.0743957,
+      "at_human": "2026-09-27 23:48",
+      "alerted": false,
+      "composite": 54.6,
+      "safety": 78.0,
+      "social": 0,
+      "price0": 0.0002503,
+      "liq0": 45959.25,
+      "mcap0": 246172,
+      "age_h0": 1.4489091073947482,
+      "marks": {}
+    },
+    {
+      "mint": "5NhN6zzDkzwXFGPFqtpTopV4ttBeZ6CWy1oRL9Rkpump",
+      "symbol": "Bagwork",
+      "at": 1790552940.4673178,
+      "at_human": "2026-09-27 23:49",
+      "alerted": false,
+      "composite": 49.2,
+      "safety": 68.2,
+      "social": 5,
+      "price0": 0.0001436,
+      "liq0": 41421.77,
+      "mcap0": 139512,
+      "age_h0": 57.5684627553304,
+      "marks": {}
     }
   ]
 }
