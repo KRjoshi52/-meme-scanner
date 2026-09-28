@@ -4306,6 +4306,21 @@
           "measured_at_h": 11.5
         }
       }
+    },
+    {
+      "mint": "4Xw11nXa1wVnBs93XdvPS5LV5B6FmqarFfCcUKiKpump",
+      "symbol": "TRUMINK",
+      "at": 1790638361.489195,
+      "at_human": "2026-09-28 23:32",
+      "alerted": false,
+      "composite": 51.7,
+      "safety": 73.9,
+      "social": 0,
+      "price0": 0.0001044,
+      "liq0": 28298.02,
+      "mcap0": 104442,
+      "age_h0": 0.5187466258409288,
+      "marks": {}
     }
   ]
 }
