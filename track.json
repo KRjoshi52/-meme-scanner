@@ -4276,6 +4276,13 @@
           "liq": 2643.9,
           "pct": -99.0,
           "measured_at_h": 11.5
+        },
+        "24h": {
+          "at": "2026-09-29 02:46",
+          "price": 2.419e-06,
+          "liq": 2672.73,
+          "pct": -99.0,
+          "measured_at_h": 27.0
         }
       }
     },
@@ -4304,6 +4311,13 @@
           "liq": 37237.09,
           "pct": -16.6,
           "measured_at_h": 11.5
+        },
+        "24h": {
+          "at": "2026-09-29 02:46",
+          "price": 4.131e-05,
+          "liq": 20962.65,
+          "pct": -71.2,
+          "measured_at_h": 27.0
         }
       }
     },
@@ -4320,6 +4334,44 @@
       "liq0": 28298.02,
       "mcap0": 104442,
       "age_h0": 0.5187466258409288,
+      "marks": {
+        "1h": {
+          "at": "2026-09-29 02:46",
+          "price": 2.362e-06,
+          "liq": 2529.48,
+          "pct": -97.7,
+          "measured_at_h": 3.2
+        }
+      }
+    },
+    {
+      "mint": "4tvcXSyhPfb1vQQWunMmMzmVNCJGMYrXgtv3bEbSpump",
+      "symbol": "SITRUMP",
+      "at": 1790649941.7088523,
+      "at_human": "2026-09-29 02:45",
+      "alerted": false,
+      "composite": 53.6,
+      "safety": 74.5,
+      "social": 5,
+      "price0": 0.0001642,
+      "liq0": 35794.02,
+      "mcap0": 161367,
+      "age_h0": 2.8204743148464626,
+      "marks": {}
+    },
+    {
+      "mint": "2n3bPZcfbcUNgaP6Ktw8E1wYoycAhuR1sSHa7uB6pump",
+      "symbol": "INKCHAN",
+      "at": 1790649995.1458302,
+      "at_human": "2026-09-29 02:46",
+      "alerted": true,
+      "composite": 61.4,
+      "safety": 83.8,
+      "social": 9,
+      "price0": 0.0002563,
+      "liq0": 44926.28,
+      "mcap0": 253030,
+      "age_h0": 0.7566301628282335,
       "marks": {}
     }
   ]
