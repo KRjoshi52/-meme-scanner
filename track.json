@@ -4348,6 +4348,13 @@
           "liq": 2550.43,
           "pct": -97.7,
           "measured_at_h": 10.1
+        },
+        "24h": {
+          "at": "2026-09-30 00:12",
+          "price": 2.378e-06,
+          "liq": 2545.07,
+          "pct": -97.7,
+          "measured_at_h": 24.7
         }
       }
     },
@@ -4406,6 +4413,21 @@
           "measured_at_h": 6.8
         }
       }
+    },
+    {
+      "mint": "BYaxkgDfkUApMgsXu4SiJ5yc6DTSfLxp6an3PvVVpump",
+      "symbol": "SS",
+      "at": 1790727076.3989725,
+      "at_human": "2026-09-30 00:11",
+      "alerted": false,
+      "composite": 55.8,
+      "safety": 77.5,
+      "social": 5,
+      "price0": 0.0003837,
+      "liq0": 55814.47,
+      "mcap0": 378199,
+      "age_h0": 1.597332620578342,
+      "marks": {}
     }
   ]
 }
