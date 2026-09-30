@@ -4474,8 +4474,45 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-09-30 16:57",
+          "price": 2.321e-06,
+          "liq": 2430.87,
+          "pct": -98.3,
+          "measured_at_h": 11.3
         }
       }
+    },
+    {
+      "mint": "E2ujjsdFjh5yiM8jbVc1HeXEeuaQ7q4prNM6RGVppump",
+      "symbol": "USA",
+      "at": 1790787389.8577628,
+      "at_human": "2026-09-30 16:56",
+      "alerted": false,
+      "composite": 54.7,
+      "safety": 78.1,
+      "social": 0,
+      "price0": 0.00024,
+      "liq0": 44496.59,
+      "mcap0": 235806,
+      "age_h0": 0.965793429429796,
+      "marks": {}
+    },
+    {
+      "mint": "DaBi5ZdRJSgZPu3qKe36zFRhpsnFexgKbL6CWx4gpump",
+      "symbol": "SI",
+      "at": 1790787396.9588277,
+      "at_human": "2026-09-30 16:56",
+      "alerted": false,
+      "composite": 54.4,
+      "safety": 76.9,
+      "social": 2,
+      "price0": 0.000185,
+      "liq0": 38531.17,
+      "mcap0": 181594,
+      "age_h0": 1.23887707417806,
+      "marks": {}
     }
   ]
 }
