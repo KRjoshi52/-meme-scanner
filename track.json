@@ -4383,6 +4383,13 @@
           "liq": 43940.14,
           "pct": 38.7,
           "measured_at_h": 6.9
+        },
+        "24h": {
+          "at": "2026-09-30 05:37",
+          "price": 9.384e-06,
+          "liq": 7372.44,
+          "pct": -94.3,
+          "measured_at_h": 26.9
         }
       }
     },
@@ -4411,6 +4418,13 @@
           "liq": 2750.44,
           "pct": -99.0,
           "measured_at_h": 6.8
+        },
+        "24h": {
+          "at": "2026-09-30 05:37",
+          "price": 2.371e-06,
+          "liq": 2577.0,
+          "pct": -99.1,
+          "measured_at_h": 26.9
         }
       }
     },
@@ -4427,6 +4441,27 @@
       "liq0": 55814.47,
       "mcap0": 378199,
       "age_h0": 1.597332620578342,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
+    },
+    {
+      "mint": "6EedU34v7qsJrzoCGNDv8fRHeYafWhVAyFZjnBBfpump",
+      "symbol": "ST",
+      "at": 1790746609.6093357,
+      "at_human": "2026-09-30 05:36",
+      "alerted": false,
+      "composite": 50.5,
+      "safety": 72.2,
+      "social": 0,
+      "price0": 0.0001374,
+      "liq0": 32590.56,
+      "mcap0": 137463,
+      "age_h0": 0.49572444932725696,
       "marks": {}
     }
   ]
