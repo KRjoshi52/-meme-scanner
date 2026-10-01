@@ -4523,6 +4523,13 @@
           "liq": 2704.34,
           "pct": -99.0,
           "measured_at_h": 7.8
+        },
+        "24h": {
+          "at": "2026-10-01 19:26",
+          "price": 2.412e-06,
+          "liq": 2683.8,
+          "pct": -99.0,
+          "measured_at_h": 26.5
         }
       }
     },
@@ -4551,6 +4558,13 @@
           "liq": 2477.08,
           "pct": -98.7,
           "measured_at_h": 7.8
+        },
+        "24h": {
+          "at": "2026-10-01 19:26",
+          "price": 2.307e-06,
+          "liq": 2463.91,
+          "pct": -98.8,
+          "measured_at_h": 26.5
         }
       }
     },
@@ -4607,6 +4621,21 @@
           "measured_at_h": 7.3
         }
       }
+    },
+    {
+      "mint": "3kmygWKZBkCYrgZHKfiuB9UFKTcDLTFFsKo3BWpmpump",
+      "symbol": "PARASITE",
+      "at": 1790882771.6010618,
+      "at_human": "2026-10-01 19:26",
+      "alerted": false,
+      "composite": 47.9,
+      "safety": 64.2,
+      "social": 10,
+      "price0": 0.0007928,
+      "liq0": 103213.49,
+      "mcap0": 760059,
+      "age_h0": 66.1459998727756,
+      "marks": {}
     }
   ]
 }
