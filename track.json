@@ -4635,6 +4635,72 @@
       "liq0": 103213.49,
       "mcap0": 760059,
       "age_h0": 66.1459998727756,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
+    },
+    {
+      "mint": "4uTHA7hUfZD1PKWQBVtuCEWnBjgB6xaL7GfJrPRDpump",
+      "symbol": "SIX6900",
+      "at": 1790896924.8222558,
+      "at_human": "2026-10-01 23:22",
+      "alerted": false,
+      "composite": 57.2,
+      "safety": 81.7,
+      "social": 0,
+      "price0": 0.0001662,
+      "liq0": 35777.88,
+      "mcap0": 166295,
+      "age_h0": 0.5213391634114584,
+      "marks": {}
+    },
+    {
+      "mint": "ERxLYPjqeFfLsnChuPnvS6f3y5Me8BjgJi9oWaTJpump",
+      "symbol": "e/acc",
+      "at": 1790896928.1539855,
+      "at_human": "2026-10-01 23:22",
+      "alerted": false,
+      "composite": 58.1,
+      "safety": 80.8,
+      "social": 5,
+      "price0": 0.0001638,
+      "liq0": 35572.58,
+      "mcap0": 163891,
+      "age_h0": 0.6611534783257379,
+      "marks": {}
+    },
+    {
+      "mint": "11mwXYNHsK5orsvHokxsYgRbpo145k6SbXTYYkYpump",
+      "symbol": "AMC",
+      "at": 1790896939.6815574,
+      "at_human": "2026-10-01 23:22",
+      "alerted": false,
+      "composite": 50.9,
+      "safety": 71.9,
+      "social": 2,
+      "price0": 0.0002283,
+      "liq0": 43419.43,
+      "mcap0": 224974,
+      "age_h0": 1.8074109552001953,
+      "marks": {}
+    },
+    {
+      "mint": "BHyCgyour6WUPmxZLYZEpeeZLtjtnFkwK3vKdmrUpump",
+      "symbol": "ROACH",
+      "at": 1790896955.3689544,
+      "at_human": "2026-10-01 23:22",
+      "alerted": false,
+      "composite": 49.4,
+      "safety": 69.7,
+      "social": 2,
+      "price0": 0.0002921,
+      "liq0": 49281.05,
+      "mcap0": 287459,
+      "age_h0": 2.9670465556504992,
       "marks": {}
     }
   ]
