@@ -4591,6 +4591,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "24h": {
+          "at": "2026-10-02 02:30",
+          "price": 2.318e-06,
+          "liq": 2505.72,
+          "pct": -98.7,
+          "measured_at_h": 25.8
         }
       }
     },
@@ -4640,6 +4647,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-10-02 02:30",
+          "price": 0.0008726,
+          "liq": 109632.62,
+          "pct": 10.1,
+          "measured_at_h": 7.1
         }
       }
     },
@@ -4656,7 +4670,15 @@
       "liq0": 35777.88,
       "mcap0": 166295,
       "age_h0": 0.5213391634114584,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "at": "2026-10-02 02:30",
+          "price": 9.403e-05,
+          "liq": 27884.68,
+          "pct": -43.4,
+          "measured_at_h": 3.1
+        }
+      }
     },
     {
       "mint": "ERxLYPjqeFfLsnChuPnvS6f3y5Me8BjgJi9oWaTJpump",
@@ -4671,7 +4693,15 @@
       "liq0": 35572.58,
       "mcap0": 163891,
       "age_h0": 0.6611534783257379,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "at": "2026-10-02 02:30",
+          "price": 0.0002727,
+          "liq": 47257.44,
+          "pct": 66.5,
+          "measured_at_h": 3.1
+        }
+      }
     },
     {
       "mint": "11mwXYNHsK5orsvHokxsYgRbpo145k6SbXTYYkYpump",
@@ -4686,7 +4716,15 @@
       "liq0": 43419.43,
       "mcap0": 224974,
       "age_h0": 1.8074109552001953,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "at": "2026-10-02 02:30",
+          "price": 2.438e-06,
+          "liq": 2704.3,
+          "pct": -98.9,
+          "measured_at_h": 3.1
+        }
+      }
     },
     {
       "mint": "BHyCgyour6WUPmxZLYZEpeeZLtjtnFkwK3vKdmrUpump",
@@ -4701,7 +4739,15 @@
       "liq0": 49281.05,
       "mcap0": 287459,
       "age_h0": 2.9670465556504992,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "at": "2026-10-02 02:30",
+          "price": 0.0002954,
+          "liq": 50557.26,
+          "pct": 1.1,
+          "measured_at_h": 3.1
+        }
+      }
     }
   ]
 }
