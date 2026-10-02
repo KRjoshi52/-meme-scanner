@@ -4626,6 +4626,13 @@
           "liq": 41886.65,
           "pct": 0.4,
           "measured_at_h": 7.3
+        },
+        "24h": {
+          "at": "2026-10-02 08:59",
+          "price": 1.995e-05,
+          "liq": 15230.19,
+          "pct": -87.4,
+          "measured_at_h": 26.4
         }
       }
     },
@@ -4677,6 +4684,13 @@
           "liq": 27884.68,
           "pct": -43.4,
           "measured_at_h": 3.1
+        },
+        "6h": {
+          "at": "2026-10-02 08:59",
+          "price": 2.586e-06,
+          "liq": 2945.43,
+          "pct": -98.4,
+          "measured_at_h": 9.6
         }
       }
     },
@@ -4700,6 +4714,13 @@
           "liq": 47257.44,
           "pct": 66.5,
           "measured_at_h": 3.1
+        },
+        "6h": {
+          "at": "2026-10-02 08:59",
+          "price": 0.0007297,
+          "liq": 80640.72,
+          "pct": 345.5,
+          "measured_at_h": 9.6
         }
       }
     },
@@ -4723,6 +4744,13 @@
           "liq": 2704.3,
           "pct": -98.9,
           "measured_at_h": 3.1
+        },
+        "6h": {
+          "at": "2026-10-02 08:59",
+          "price": 2.469e-06,
+          "liq": 2742.24,
+          "pct": -98.9,
+          "measured_at_h": 9.6
         }
       }
     },
@@ -4746,8 +4774,45 @@
           "liq": 50557.26,
           "pct": 1.1,
           "measured_at_h": 3.1
+        },
+        "6h": {
+          "at": "2026-10-02 08:59",
+          "price": 2.49e-06,
+          "liq": 2748.51,
+          "pct": -99.1,
+          "measured_at_h": 9.6
         }
       }
+    },
+    {
+      "mint": "DvNcJZTiSMD1RBCtZ2J31mh7s42CVCwrzGapv1Lypump",
+      "symbol": "MICRO",
+      "at": 1790931532.172613,
+      "at_human": "2026-10-02 08:58",
+      "alerted": false,
+      "composite": 45.2,
+      "safety": 60.3,
+      "social": 10,
+      "price0": 0.0007938,
+      "liq0": 99433.94,
+      "mcap0": 757927,
+      "age_h0": 33.70032531582302,
+      "marks": {}
+    },
+    {
+      "mint": "GAwhcphCqCv5bKHmCiN4VDdNWfbXJL4npmkc8L3Q9S9H",
+      "symbol": "www",
+      "at": 1790931534.0089574,
+      "at_human": "2026-10-02 08:58",
+      "alerted": false,
+      "composite": 56.4,
+      "safety": 77.2,
+      "social": 8,
+      "price0": 0.003792,
+      "liq0": 407462.2,
+      "mcap0": 3763587,
+      "age_h0": 4.786668782552083,
+      "marks": {}
     }
   ]
 }
