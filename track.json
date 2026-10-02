@@ -4698,6 +4698,13 @@
           "liq": 2945.43,
           "pct": -98.4,
           "measured_at_h": 9.6
+        },
+        "24h": {
+          "at": "2026-10-02 23:49",
+          "price": 2.541e-06,
+          "liq": 2896.25,
+          "pct": -98.5,
+          "measured_at_h": 24.5
         }
       }
     },
@@ -4728,6 +4735,13 @@
           "liq": 80640.72,
           "pct": 345.5,
           "measured_at_h": 9.6
+        },
+        "24h": {
+          "at": "2026-10-02 23:49",
+          "price": 0.0005771,
+          "liq": 71735.84,
+          "pct": 252.3,
+          "measured_at_h": 24.5
         }
       }
     },
@@ -4758,6 +4772,13 @@
           "liq": 2742.24,
           "pct": -98.9,
           "measured_at_h": 9.6
+        },
+        "24h": {
+          "at": "2026-10-02 23:49",
+          "price": 2.473e-06,
+          "liq": 2738.65,
+          "pct": -98.9,
+          "measured_at_h": 24.5
         }
       }
     },
@@ -4788,6 +4809,13 @@
           "liq": 2748.51,
           "pct": -99.1,
           "measured_at_h": 9.6
+        },
+        "24h": {
+          "at": "2026-10-02 23:49",
+          "price": 2.442e-06,
+          "liq": 2695.41,
+          "pct": -99.2,
+          "measured_at_h": 24.5
         }
       }
     },
@@ -4865,6 +4893,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-10-02 23:49",
+          "price": 0.001051,
+          "liq": 105020.55,
+          "pct": 131.6,
+          "measured_at_h": 8.1
         }
       }
     },
@@ -4881,7 +4916,13 @@
       "liq0": 32617.91,
       "mcap0": 137008,
       "age_h0": 1.3189289691840278,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
     },
     {
       "mint": "EFtMJryTCBdDcc7MS1wnsW41wD6edXcvLkUvH3v1pump",
@@ -4896,7 +4937,13 @@
       "liq0": 77158.4,
       "mcap0": 661278,
       "age_h0": 19.863763854437934,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
     }
   ]
 }
