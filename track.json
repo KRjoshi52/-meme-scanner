@@ -4949,6 +4949,13 @@
           "liq": 43917.08,
           "pct": 64.7,
           "measured_at_h": 8.5
+        },
+        "24h": {
+          "at": "2026-10-03 21:41",
+          "price": 2.641e-06,
+          "liq": 2977.1,
+          "pct": -98.1,
+          "measured_at_h": 25.5
         }
       }
     },
@@ -4977,6 +4984,13 @@
           "liq": 3880.51,
           "pct": -99.4,
           "measured_at_h": 8.5
+        },
+        "24h": {
+          "at": "2026-10-03 21:41",
+          "price": 5.496e-06,
+          "liq": 5148.91,
+          "pct": -99.2,
+          "measured_at_h": 25.5
         }
       }
     },
@@ -5054,6 +5068,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-10-03 21:41",
+          "price": 0.0003437,
+          "liq": 63010.8,
+          "pct": -73.9,
+          "measured_at_h": 6.9
         }
       }
     },
@@ -5075,6 +5096,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-10-03 21:41",
+          "price": 0.01425,
+          "liq": 717137.18,
+          "pct": 402.1,
+          "measured_at_h": 6.9
         }
       }
     },
@@ -5091,6 +5119,44 @@
       "liq0": 113197.31,
       "mcap0": 976765,
       "age_h0": 36.34089194851345,
+      "marks": {
+        "1h": {
+          "at": "2026-10-03 21:41",
+          "price": 0.0009069,
+          "liq": 103021.48,
+          "pct": -9.3,
+          "measured_at_h": 3.4
+        }
+      }
+    },
+    {
+      "mint": "HVTyrR8fgesuVUajoXjUgHK7tAeQqeN7hJepu8Vtpump",
+      "symbol": "CLAWDIA",
+      "at": 1791063625.0947428,
+      "at_human": "2026-10-03 21:40",
+      "alerted": false,
+      "composite": 53.5,
+      "safety": 76.4,
+      "social": 0,
+      "price0": 0.0001669,
+      "liq0": 36201.55,
+      "mcap0": 164890,
+      "age_h0": 0.880859206882053,
+      "marks": {}
+    },
+    {
+      "mint": "HXAMq5WF7sR8Dih6GDzUczsWJMU6VHPFaNKxfxqwpump",
+      "symbol": "GrokBot",
+      "at": 1791063630.904737,
+      "at_human": "2026-10-03 21:40",
+      "alerted": false,
+      "composite": 55.2,
+      "safety": 78.8,
+      "social": 0,
+      "price0": 0.0002597,
+      "liq0": 45975.11,
+      "mcap0": 255984,
+      "age_h0": 1.3046953403727213,
       "marks": {}
     }
   ]
