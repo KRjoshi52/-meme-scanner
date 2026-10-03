@@ -4914,6 +4914,13 @@
           "liq": 105020.55,
           "pct": 131.6,
           "measured_at_h": 8.1
+        },
+        "24h": {
+          "at": "2026-10-03 18:20",
+          "price": 3.848e-06,
+          "liq": 4597.22,
+          "pct": -99.2,
+          "measured_at_h": 26.6
         }
       }
     },
@@ -5042,7 +5049,13 @@
       "liq0": 122549.73,
       "mcap0": 1285250,
       "age_h0": 26.69318384636773,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
     },
     {
       "mint": "7VertkgF9KLhxxJXHX6uaWuoYZTP9LdGj2bWmVXVpump",
@@ -5057,6 +5070,27 @@
       "liq0": 215909.87,
       "mcap0": 2742836,
       "age_h0": 29.754444334920247,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
+    },
+    {
+      "mint": "8nnaeWCw8mUypcGAgbmSuzAT85uWx4UN12adDrMhXrGF",
+      "symbol": "HOTBOT",
+      "at": 1791051624.2124588,
+      "at_human": "2026-10-03 18:20",
+      "alerted": false,
+      "composite": 50.2,
+      "safety": 67.4,
+      "social": 10,
+      "price0": 0.0009997,
+      "liq0": 113197.31,
+      "mcap0": 976765,
+      "age_h0": 36.34089194851345,
       "marks": {}
     }
   ]
