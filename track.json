@@ -4921,6 +4921,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-10-03 04:39",
+          "price": 0.0002291,
+          "liq": 43917.08,
+          "pct": 64.7,
+          "measured_at_h": 8.5
         }
       }
     },
@@ -4942,8 +4949,45 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-10-03 04:39",
+          "price": 3.748e-06,
+          "liq": 3880.51,
+          "pct": -99.4,
+          "measured_at_h": 8.5
         }
       }
+    },
+    {
+      "mint": "YbYhD93eSsgyCbMEUBWHpUc5wNjUbWe7VWQTvdPpump",
+      "symbol": "GENIUS",
+      "at": 1791002295.4099846,
+      "at_human": "2026-10-03 04:38",
+      "alerted": false,
+      "composite": 49.6,
+      "safety": 62.3,
+      "social": 20,
+      "price0": 5.937e-05,
+      "liq0": 20418.13,
+      "mcap0": 57176,
+      "age_h0": 0.7781690218777126,
+      "marks": {}
+    },
+    {
+      "mint": "F94bbEHfPkHGBKNBAQqbGksvUrxXcCYdNF4BFTMupump",
+      "symbol": "CHAD",
+      "at": 1791002297.1568394,
+      "at_human": "2026-10-03 04:38",
+      "alerted": false,
+      "composite": 52.8,
+      "safety": 75.5,
+      "social": 0,
+      "price0": 0.0001484,
+      "liq0": 34164.81,
+      "mcap0": 146545,
+      "age_h0": 1.2128209397379557,
+      "marks": {}
     }
   ]
 }
