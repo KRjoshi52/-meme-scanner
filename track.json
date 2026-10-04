@@ -5228,6 +5228,11 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
         }
       }
     },
@@ -5244,7 +5249,20 @@
       "liq0": 142894.98,
       "mcap0": 1352475,
       "age_h0": 12.341749142388238,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-10-04 12:14",
+          "price": 0.0007892,
+          "liq": 100035.2,
+          "pct": -43.2,
+          "measured_at_h": 6.3
+        }
+      }
     }
   ]
 }
