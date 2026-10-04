@@ -5198,6 +5198,13 @@
           "liq": 2978.15,
           "pct": -98.4,
           "measured_at_h": 8.3
+        },
+        "24h": {
+          "at": "2026-10-04 23:01",
+          "price": 2.634e-06,
+          "liq": 2976.48,
+          "pct": -98.4,
+          "measured_at_h": 25.4
         }
       }
     },
@@ -5228,6 +5235,13 @@
           "liq": 2436.16,
           "pct": -99.1,
           "measured_at_h": 8.3
+        },
+        "24h": {
+          "at": "2026-10-04 23:01",
+          "price": 2.317e-06,
+          "liq": 2452.48,
+          "pct": -99.1,
+          "measured_at_h": 25.4
         }
       }
     },
@@ -5284,6 +5298,36 @@
           "measured_at_h": 6.3
         }
       }
+    },
+    {
+      "mint": "3Dgwn5E7H5a8k6iGrz3qirkaJqUaJrKHEZ2xPcLRpump",
+      "symbol": "knightcat",
+      "at": 1791154863.60742,
+      "at_human": "2026-10-04 23:01",
+      "alerted": false,
+      "composite": 53.7,
+      "safety": 73.7,
+      "social": 7,
+      "price0": 0.001545,
+      "liq0": 152027.75,
+      "mcap0": 1511496,
+      "age_h0": 28.3973904361301,
+      "marks": {}
+    },
+    {
+      "mint": "BXoHJddsWJLHtAopeiSbKUSELsu8hSFMs8baGMDkpump",
+      "symbol": "CRAWL",
+      "at": 1791154892.8912637,
+      "at_human": "2026-10-04 23:01",
+      "alerted": true,
+      "composite": 60.3,
+      "safety": 76.3,
+      "social": 23,
+      "price0": 0.002708,
+      "liq0": 255893.82,
+      "mcap0": 2677052,
+      "age_h0": 24.688431601630317,
+      "marks": {}
     }
   ]
 }
