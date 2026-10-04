@@ -5019,6 +5019,13 @@
           "liq": 2354.87,
           "pct": -96.1,
           "measured_at_h": 10.1
+        },
+        "24h": {
+          "at": "2026-10-04 05:58",
+          "price": 2.313e-06,
+          "liq": 2355.43,
+          "pct": -96.1,
+          "measured_at_h": 25.3
         }
       }
     },
@@ -5047,6 +5054,13 @@
           "liq": 2618.5,
           "pct": -98.4,
           "measured_at_h": 10.1
+        },
+        "24h": {
+          "at": "2026-10-04 05:58",
+          "price": 2.41e-06,
+          "liq": 2613.98,
+          "pct": -98.4,
+          "measured_at_h": 25.3
         }
       }
     },
@@ -5126,6 +5140,13 @@
           "liq": 103021.48,
           "pct": -9.3,
           "measured_at_h": 3.4
+        },
+        "6h": {
+          "at": "2026-10-04 05:58",
+          "price": 0.0006872,
+          "liq": 90395.98,
+          "pct": -31.3,
+          "measured_at_h": 11.6
         }
       }
     },
@@ -5149,6 +5170,13 @@
           "liq": 40150.6,
           "pct": 16.4,
           "measured_at_h": 2.4
+        },
+        "6h": {
+          "at": "2026-10-04 05:58",
+          "price": 2.639e-06,
+          "liq": 2978.15,
+          "pct": -98.4,
+          "measured_at_h": 8.3
         }
       }
     },
@@ -5172,6 +5200,13 @@
           "liq": 2446.16,
           "pct": -99.1,
           "measured_at_h": 2.4
+        },
+        "6h": {
+          "at": "2026-10-04 05:58",
+          "price": 2.302e-06,
+          "liq": 2436.16,
+          "pct": -99.1,
+          "measured_at_h": 8.3
         }
       }
     },
@@ -5188,6 +5223,27 @@
       "liq0": 58086.3,
       "mcap0": 359885,
       "age_h0": 25.315502488742403,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
+    },
+    {
+      "mint": "9dSMwFfPezQ8WPcW1uZV7ns4rcviEj2LssSAg75WBLXd",
+      "symbol": "Aiden",
+      "at": 1791093499.2980685,
+      "at_human": "2026-10-04 05:58",
+      "alerted": false,
+      "composite": 53.0,
+      "safety": 70.2,
+      "social": 13,
+      "price0": 0.001389,
+      "liq0": 142894.98,
+      "mcap0": 1352475,
+      "age_h0": 12.341749142388238,
       "marks": {}
     }
   ]
