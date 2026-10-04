@@ -5142,7 +5142,15 @@
       "liq0": 36201.55,
       "mcap0": 164890,
       "age_h0": 0.880859206882053,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "at": "2026-10-04 00:05",
+          "price": 0.0001943,
+          "liq": 40150.6,
+          "pct": 16.4,
+          "measured_at_h": 2.4
+        }
+      }
     },
     {
       "mint": "HXAMq5WF7sR8Dih6GDzUczsWJMU6VHPFaNKxfxqwpump",
@@ -5157,6 +5165,29 @@
       "liq0": 45975.11,
       "mcap0": 255984,
       "age_h0": 1.3046953403727213,
+      "marks": {
+        "1h": {
+          "at": "2026-10-04 00:06",
+          "price": 2.314e-06,
+          "liq": 2446.16,
+          "pct": -99.1,
+          "measured_at_h": 2.4
+        }
+      }
+    },
+    {
+      "mint": "6hTLdzZaaCjmqtn7RtaEMQsCbXT5Pg8q76tRViEGpump",
+      "symbol": "ABU",
+      "at": 1791072352.810267,
+      "at_human": "2026-10-04 00:05",
+      "alerted": false,
+      "composite": 47.7,
+      "safety": 65.2,
+      "social": 7,
+      "price0": 0.0003725,
+      "liq0": 58086.3,
+      "mcap0": 359885,
+      "age_h0": 25.315502488742403,
       "marks": {}
     }
   ]
