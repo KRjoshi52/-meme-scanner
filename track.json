@@ -5372,6 +5372,21 @@
           "measured_at_h": 9.7
         }
       }
+    },
+    {
+      "mint": "CZJfrAmMs5Cz4H22PWzfqTJu5FkP7Q2Vvx1oPVL9pump",
+      "symbol": "AGENTCAT",
+      "at": 1791221217.0242062,
+      "at_human": "2026-10-05 17:26",
+      "alerted": false,
+      "composite": 58.2,
+      "safety": 81.5,
+      "social": 4,
+      "price0": 0.02643,
+      "liq0": 518663.23,
+      "mcap0": 26240663,
+      "age_h0": 42.56667288431803,
+      "marks": {}
     }
   ]
 }
