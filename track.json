@@ -5340,6 +5340,13 @@
           "liq": 96394.92,
           "pct": -49.9,
           "measured_at_h": 9.7
+        },
+        "24h": {
+          "at": "2026-10-05 23:21",
+          "price": 0.0008574,
+          "liq": 103951.78,
+          "pct": -44.5,
+          "measured_at_h": 24.3
         }
       }
     },
@@ -5370,6 +5377,13 @@
           "liq": 170975.98,
           "pct": -27.2,
           "measured_at_h": 9.7
+        },
+        "24h": {
+          "at": "2026-10-05 23:21",
+          "price": 0.005133,
+          "liq": 284024.98,
+          "pct": 89.5,
+          "measured_at_h": 24.3
         }
       }
     },
@@ -5386,6 +5400,27 @@
       "liq0": 518663.23,
       "mcap0": 26240663,
       "age_h0": 42.56667288431803,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
+    },
+    {
+      "mint": "GYFLuEAZMDdpUsTmyGdHstuXQC3JB9ZqtZbfktpppump",
+      "symbol": "SWAP",
+      "at": 1791242420.2935634,
+      "at_human": "2026-10-05 23:20",
+      "alerted": false,
+      "composite": 49.5,
+      "safety": 68.6,
+      "social": 5,
+      "price0": 0.0006617,
+      "liq0": 80037.52,
+      "mcap0": 577523,
+      "age_h0": 28.685636667141384,
       "marks": {}
     }
   ]
