@@ -5412,6 +5412,13 @@
           "liq": 9829.63,
           "pct": -99.9,
           "measured_at_h": 9.8
+        },
+        "24h": {
+          "at": "2026-10-06 21:34",
+          "price": 1.053e-05,
+          "liq": 8488.66,
+          "pct": -100.0,
+          "measured_at_h": 28.1
         }
       }
     },
@@ -5456,7 +5463,13 @@
       "liq0": 41864.76,
       "mcap0": 213503,
       "age_h0": 2.3232744227430557,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
     },
     {
       "mint": "9XKzy4KahcZaGJPJtz1PtqGPB3CiseoBrx7TcQhEpump",
@@ -5471,7 +5484,13 @@
       "liq0": 123116.79,
       "mcap0": 1426817,
       "age_h0": 43.12023935329861,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
     },
     {
       "mint": "CBLx6CRcCTtbmgTdxpqnF2dP1MpWbMUjngtNbFTApump",
@@ -5486,6 +5505,27 @@
       "liq0": 93655.48,
       "mcap0": 761753,
       "age_h0": 34.775267824232316,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
+    },
+    {
+      "mint": "GfBwZAaRLdarL7mmUce8wkFc2xALuTSzyrREVKixpump",
+      "symbol": "DONSOM",
+      "at": 1791322422.2280717,
+      "at_human": "2026-10-06 21:33",
+      "alerted": false,
+      "composite": 43.5,
+      "safety": 62.1,
+      "social": 0,
+      "price0": 0.0001049,
+      "liq0": 28381.75,
+      "mcap0": 104921,
+      "age_h0": 0.47506285841200085,
       "marks": {}
     }
   ]
