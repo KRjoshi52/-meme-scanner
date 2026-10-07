@@ -5482,6 +5482,13 @@
           "liq": 2465.13,
           "pct": -98.9,
           "measured_at_h": 8.1
+        },
+        "24h": {
+          "at": "2026-10-07 20:12",
+          "price": null,
+          "liq": null,
+          "pct": null,
+          "note": "no priced pair"
         }
       }
     },
@@ -5510,6 +5517,13 @@
           "liq": 131537.86,
           "pct": 10.6,
           "measured_at_h": 8.1
+        },
+        "24h": {
+          "at": "2026-10-07 20:12",
+          "price": null,
+          "liq": null,
+          "pct": null,
+          "note": "no priced pair"
         }
       }
     },
@@ -5538,6 +5552,13 @@
           "liq": 74061.71,
           "pct": -37.8,
           "measured_at_h": 8.1
+        },
+        "24h": {
+          "at": "2026-10-07 20:12",
+          "price": null,
+          "liq": null,
+          "pct": null,
+          "note": "no priced pair"
         }
       }
     },
@@ -5584,7 +5605,13 @@
       "liq0": 243795.63,
       "mcap0": 1936252,
       "age_h0": 10.871386393636067,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
     }
   ]
 }
