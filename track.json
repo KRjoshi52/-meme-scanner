@@ -5570,6 +5570,21 @@
           "measured_at_h": 9.7
         }
       }
+    },
+    {
+      "mint": "HzYCHqAN2uoHGRnL9v2ChCfFQX3bvJuJd5zu2Hd5MZQy",
+      "symbol": "TWEETCRAFT",
+      "at": 1791384117.470581,
+      "at_human": "2026-10-07 14:41",
+      "alerted": true,
+      "composite": 72.2,
+      "safety": 85.2,
+      "social": 42,
+      "price0": 0.001954,
+      "liq0": 243795.63,
+      "mcap0": 1936252,
+      "age_h0": 10.871386393636067,
+      "marks": {}
     }
   ]
 }
