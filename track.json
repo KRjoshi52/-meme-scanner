@@ -5640,6 +5640,34 @@
       "liq0": 294236.54,
       "mcap0": 2595234,
       "age_h0": 27.366592414957683,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-10-08 06:18",
+          "price": 0.001669,
+          "liq": 177329.19,
+          "pct": -35.9,
+          "measured_at_h": 6.1
+        }
+      }
+    },
+    {
+      "mint": "2BVfJ4AHMvHdKtEZNHaBr48dQzTfZvYkjaaxbM6bpump",
+      "symbol": "swordinu",
+      "at": 1791440314.837198,
+      "at_human": "2026-10-08 06:18",
+      "alerted": true,
+      "composite": 61.4,
+      "safety": 86.9,
+      "social": 2,
+      "price0": 0.009012,
+      "liq0": 298795.91,
+      "mcap0": 8950579,
+      "age_h0": 35.73905302361382,
       "marks": {}
     }
   ]
