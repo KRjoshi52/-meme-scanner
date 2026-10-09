@@ -5729,6 +5729,13 @@
           "liq": 3427.71,
           "pct": -98.5,
           "measured_at_h": 10.1
+        },
+        "24h": {
+          "at": "2026-10-09 18:51",
+          "price": 3.306e-06,
+          "liq": 3321.63,
+          "pct": -98.6,
+          "measured_at_h": 29.0
         }
       }
     },
@@ -5757,6 +5764,13 @@
           "liq": 289728.97,
           "pct": -19.7,
           "measured_at_h": 10.1
+        },
+        "24h": {
+          "at": "2026-10-09 18:51",
+          "price": 9.795e-07,
+          "liq": 331198.13,
+          "pct": -100.0,
+          "measured_at_h": 28.9
         }
       }
     },
@@ -5825,6 +5839,42 @@
       "liq0": 56364.68,
       "mcap0": 410690,
       "age_h0": 3.1677766795518663,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
+    },
+    {
+      "mint": "8TiMkgvsrat9tM2esko8zVTt99LZLpefUM4SnZaziXaQ",
+      "symbol": "QI",
+      "at": 1791571839.2727232,
+      "at_human": "2026-10-09 18:50",
+      "alerted": false,
+      "composite": 45.4,
+      "safety": 64.9,
+      "social": 0,
+      "price0": 0.002149,
+      "liq0": 169205.91,
+      "mcap0": 2048058,
+      "age_h0": 8.141741927218966,
+      "marks": {}
+    },
+    {
+      "mint": "7SsZWPvLHpMizSGD8RByEbjUA8VatHWAts4UpjB4pump",
+      "symbol": "QCOIN",
+      "at": 1791571874.3660743,
+      "at_human": "2026-10-09 18:51",
+      "alerted": true,
+      "composite": 62.4,
+      "safety": 87.5,
+      "social": 4,
+      "price0": 0.0008396,
+      "liq0": 80871.45,
+      "mcap0": 831440,
+      "age_h0": 3.340877171630859,
       "marks": {}
     }
   ]
