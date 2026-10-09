@@ -5694,6 +5694,13 @@
           "liq": 46197.5,
           "pct": -97.6,
           "measured_at_h": 7.6
+        },
+        "24h": {
+          "at": "2026-10-09 13:06",
+          "price": 9.574e-06,
+          "liq": 8466.32,
+          "pct": -99.9,
+          "measured_at_h": 30.8
         }
       }
     },
@@ -5771,6 +5778,11 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
         }
       }
     },
@@ -5792,8 +5804,28 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
         }
       }
+    },
+    {
+      "mint": "DK1enXZB5wKaDtvTGPy1dt6qh2kvhkZnFKEGg4Ypump",
+      "symbol": "TRUMPSI",
+      "at": 1791551168.2009187,
+      "at_human": "2026-10-09 13:06",
+      "alerted": true,
+      "composite": 60.3,
+      "safety": 84.0,
+      "social": 5,
+      "price0": 0.0004157,
+      "liq0": 56364.68,
+      "mcap0": 410690,
+      "age_h0": 3.1677766795518663,
+      "marks": {}
     }
   ]
 }
