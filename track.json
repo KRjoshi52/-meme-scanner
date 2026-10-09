@@ -5708,6 +5708,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-10-09 00:00",
+          "price": 3.44e-06,
+          "liq": 3427.71,
+          "pct": -98.5,
+          "measured_at_h": 10.1
         }
       }
     },
@@ -5729,8 +5736,45 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-10-09 00:00",
+          "price": 0.003947,
+          "liq": 289728.97,
+          "pct": -19.7,
+          "measured_at_h": 10.1
         }
       }
+    },
+    {
+      "mint": "B3wB91NRRW7XzssWqeMoDpCGCdhNvMNb9ZSWXfKrpump",
+      "symbol": "SC",
+      "at": 1791503950.3753676,
+      "at_human": "2026-10-08 23:59",
+      "alerted": false,
+      "composite": 56.6,
+      "safety": 80.9,
+      "social": 0,
+      "price0": 0.0001592,
+      "liq0": 33712.02,
+      "mcap0": 159234,
+      "age_h0": 0.3576038229031033,
+      "marks": {}
+    },
+    {
+      "mint": "AdYYicVan8uUPv5YMaqoSNKPPSmZvSNphMuBewqHpump",
+      "symbol": "Instagram",
+      "at": 1791503951.8934891,
+      "at_human": "2026-10-08 23:59",
+      "alerted": false,
+      "composite": 53.9,
+      "safety": 77.0,
+      "social": 0,
+      "price0": 0.0001422,
+      "liq0": 31810.76,
+      "mcap0": 142154,
+      "age_h0": 0.5744144285753038,
+      "marks": {}
     }
   ]
 }
