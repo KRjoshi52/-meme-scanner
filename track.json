@@ -6086,6 +6086,21 @@
           "measured_at_h": 24.1
         }
       }
+    },
+    {
+      "mint": "GTLUP5qjgxsmcx1Gn5xSvBQcLZCKtFfTEet8pLY7pump",
+      "symbol": "DOGECAT",
+      "at": 1791759927.4937024,
+      "at_human": "2026-10-11 23:05",
+      "alerted": false,
+      "composite": 57.1,
+      "safety": 80.7,
+      "social": 2,
+      "price0": 0.0001665,
+      "liq0": 34860.14,
+      "mcap0": 166598,
+      "age_h0": 0.3756921749538846,
+      "marks": {}
     }
   ]
 }
