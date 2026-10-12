@@ -6200,6 +6200,36 @@
           "measured_at_h": 7.2
         }
       }
+    },
+    {
+      "mint": "69GcabKAhQrxo6vJPAjsFgbEQjzQgx1vNPbfULiNpump",
+      "symbol": "MARSDOGE",
+      "at": 1791832905.0509381,
+      "at_human": "2026-10-12 19:21",
+      "alerted": false,
+      "composite": 56.6,
+      "safety": 80.8,
+      "social": 0,
+      "price0": 0.0001935,
+      "liq0": 37007.12,
+      "mcap0": 193574,
+      "age_h0": 0.3683469818115234,
+      "marks": {}
+    },
+    {
+      "mint": "2ZUMLMnuVatFdDBWZZXfP3HDbwWoBiyshH3fACUypump",
+      "symbol": "AIRFROG",
+      "at": 1791832967.9238207,
+      "at_human": "2026-10-12 19:22",
+      "alerted": true,
+      "composite": 69.5,
+      "safety": 60.7,
+      "social": 90,
+      "price0": 0.0001887,
+      "liq0": 36117.23,
+      "mcap0": 185187,
+      "age_h0": 4.822786983439127,
+      "marks": {}
     }
   ]
 }
