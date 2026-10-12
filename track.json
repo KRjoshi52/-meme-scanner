@@ -6100,6 +6100,59 @@
       "liq0": 34860.14,
       "mcap0": 166598,
       "age_h0": 0.3756921749538846,
+      "marks": {
+        "1h": {
+          "at": "2026-10-12 02:27",
+          "price": 2.317e-06,
+          "liq": 2400.6,
+          "pct": -98.6,
+          "measured_at_h": 3.4
+        }
+      }
+    },
+    {
+      "mint": "9Twd5vXAPYSWwuPTVPgDmdxvVHsUQwijC4a1QvYZpump",
+      "symbol": "GOIF",
+      "at": 1791771985.2524476,
+      "at_human": "2026-10-12 02:26",
+      "alerted": false,
+      "composite": 57.6,
+      "safety": 81.5,
+      "social": 2,
+      "price0": 0.009179,
+      "liq0": 268890.99,
+      "mcap0": 9179094,
+      "age_h0": 55.291180730794274,
+      "marks": {}
+    },
+    {
+      "mint": "AVfEas6mLgkXNvVWcc6qeHLpYeA8nRx42iB9WBKhpump",
+      "symbol": "GOMODOGE",
+      "at": 1791771992.878122,
+      "at_human": "2026-10-12 02:26",
+      "alerted": false,
+      "composite": 56.3,
+      "safety": 77.4,
+      "social": 7,
+      "price0": 0.0003119,
+      "liq0": 48730.53,
+      "mcap0": 308983,
+      "age_h0": 1.8274656180826823,
+      "marks": {}
+    },
+    {
+      "mint": "6KDpQM4BVDdtAkjtyFDiBCkbii8q8BieEyXXm6kNpump",
+      "symbol": "TM",
+      "at": 1791771995.9360645,
+      "at_human": "2026-10-12 02:26",
+      "alerted": false,
+      "composite": 51.1,
+      "safety": 62.3,
+      "social": 25,
+      "price0": 0.0005492,
+      "liq0": 77784.58,
+      "mcap0": 528106,
+      "age_h0": 44.32220381991916,
       "marks": {}
     }
   ]
