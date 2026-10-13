@@ -6114,6 +6114,13 @@
           "liq": 2340.25,
           "pct": -98.6,
           "measured_at_h": 10.6
+        },
+        "24h": {
+          "at": "2026-10-13 01:35",
+          "price": 2.192e-06,
+          "liq": 2274.89,
+          "pct": -98.7,
+          "measured_at_h": 26.5
         }
       }
     },
@@ -6214,7 +6221,20 @@
       "liq0": 37007.12,
       "mcap0": 193574,
       "age_h0": 0.3683469818115234,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-10-13 01:35",
+          "price": 2.112e-06,
+          "liq": 2282.64,
+          "pct": -98.9,
+          "measured_at_h": 6.2
+        }
+      }
     },
     {
       "mint": "2ZUMLMnuVatFdDBWZZXfP3HDbwWoBiyshH3fACUypump",
@@ -6229,6 +6249,34 @@
       "liq0": 36117.23,
       "mcap0": 185187,
       "age_h0": 4.822786983439127,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-10-13 01:35",
+          "price": 1.148e-05,
+          "liq": 7428.06,
+          "pct": -93.9,
+          "measured_at_h": 6.2
+        }
+      }
+    },
+    {
+      "mint": "9LEmajzfB3GJaJpKgXSu8MW5riEnY7F8AMWuwcQRpump",
+      "symbol": "VRAX",
+      "at": 1791855239.7371812,
+      "at_human": "2026-10-13 01:33",
+      "alerted": false,
+      "composite": 58.6,
+      "safety": 82.8,
+      "social": 2,
+      "price0": 0.0002161,
+      "liq0": 38808.33,
+      "mcap0": 212240,
+      "age_h0": 1.3552041950819227,
       "marks": {}
     }
   ]
