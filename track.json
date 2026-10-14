@@ -6408,8 +6408,30 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-10-14 19:44",
+          "price": 0.006264,
+          "liq": 258976.32,
+          "pct": -44.2,
+          "measured_at_h": 9.2
         }
       }
+    },
+    {
+      "mint": "79BsZySKboFFz6CvHpCxhe7Cpa3hwBr1nrbaXUCEpump",
+      "symbol": "MEOWGENT",
+      "at": 1792006984.4060972,
+      "at_human": "2026-10-14 19:43",
+      "alerted": false,
+      "composite": 48.2,
+      "safety": 68.9,
+      "social": 0,
+      "price0": 0.0001569,
+      "liq0": 33342.45,
+      "mcap0": 155159,
+      "age_h0": 0.9281679474555121,
+      "marks": {}
     }
   ]
 }
