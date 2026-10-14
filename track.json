@@ -6352,6 +6352,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-10-14 10:32",
+          "price": 0.0001701,
+          "liq": 42933.93,
+          "pct": -5.4,
+          "measured_at_h": 10.0
         }
       }
     },
@@ -6373,8 +6380,30 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-10-14 10:32",
+          "price": 0.001525,
+          "liq": 116722.28,
+          "pct": -92.8,
+          "measured_at_h": 10.0
         }
       }
+    },
+    {
+      "mint": "HgTGdc29D5bDMrDvsCLnorxz899VyDj7ZN7FPa6vpump",
+      "symbol": "VEIL",
+      "at": 1791973937.1076713,
+      "at_human": "2026-10-14 10:32",
+      "alerted": true,
+      "composite": 61.2,
+      "safety": 82.3,
+      "social": 12,
+      "price0": 0.01122,
+      "liq0": 321303.76,
+      "mcap0": 10964637,
+      "age_h0": 37.733877090115016,
+      "marks": {}
     }
   ]
 }
