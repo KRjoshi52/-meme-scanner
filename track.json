@@ -6431,6 +6431,29 @@
       "liq0": 33342.45,
       "mcap0": 155159,
       "age_h0": 0.9281679474555121,
+      "marks": {
+        "1h": {
+          "at": "2026-10-14 22:42",
+          "price": 2.117e-06,
+          "liq": 2336.18,
+          "pct": -98.7,
+          "measured_at_h": 3.0
+        }
+      }
+    },
+    {
+      "mint": "XtogpWjiAgvkemc5gr1auxkh77w3vKgSQN1nxJeJfHt",
+      "symbol": "XTO",
+      "at": 1792017732.3459375,
+      "at_human": "2026-10-14 22:42",
+      "alerted": true,
+      "composite": 65.6,
+      "safety": 85.1,
+      "social": 20,
+      "price0": 0.006144,
+      "liq0": 189532.76,
+      "mcap0": 6144407,
+      "age_h0": 24.666599259507922,
       "marks": {}
     }
   ]
