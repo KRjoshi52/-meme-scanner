@@ -6498,6 +6498,21 @@
           "measured_at_h": 7.1
         }
       }
+    },
+    {
+      "mint": "7fumw7GYTHZJJxkKJ8sSh1CqTdHmB234vX3xsKjepump",
+      "symbol": "VEILTRUMP",
+      "at": 1792092344.260407,
+      "at_human": "2026-10-15 19:25",
+      "alerted": false,
+      "composite": 50.3,
+      "safety": 70.2,
+      "social": 4,
+      "price0": 0.001431,
+      "liq0": 110134.65,
+      "mcap0": 1416833,
+      "age_h0": 29.070349584147134,
+      "marks": {}
     }
   ]
 }
