@@ -6561,6 +6561,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-10-16 10:08",
+          "price": 0.0003872,
+          "liq": 62620.14,
+          "pct": -16.8,
+          "measured_at_h": 9.3
         }
       }
     }
