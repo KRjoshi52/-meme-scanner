@@ -6503,6 +6503,13 @@
           "liq": 189101.9,
           "pct": -0.5,
           "measured_at_h": 7.1
+        },
+        "24h": {
+          "at": "2026-10-16 00:48",
+          "price": 0.005735,
+          "liq": 183118.65,
+          "pct": -6.7,
+          "measured_at_h": 26.1
         }
       }
     },
@@ -6528,6 +6535,21 @@
           "measured_at_h": 3.2
         }
       }
+    },
+    {
+      "mint": "A2yA6AFtfKkfVkfsnGpvsKoUV5kQPpMYboZsBPvmkA9T",
+      "symbol": "SAINDRA",
+      "at": 1792111679.5750144,
+      "at_human": "2026-10-16 00:47",
+      "alerted": false,
+      "composite": 44.7,
+      "safety": 61.7,
+      "social": 5,
+      "price0": 0.0004655,
+      "liq0": 68217.13,
+      "mcap0": 458331,
+      "age_h0": 42.691548098687065,
+      "marks": {}
     }
   ]
 }
