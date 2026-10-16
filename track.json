@@ -6600,6 +6600,21 @@
           "measured_at_h": 3.1
         }
       }
+    },
+    {
+      "mint": "C1rW6ETo5GiwW5YYL6es9pCwwo6M5B4WUaoh2HE7pump",
+      "symbol": "WAIFU",
+      "at": 1792195074.970985,
+      "at_human": "2026-10-16 23:57",
+      "alerted": false,
+      "composite": 54.2,
+      "safety": 77.5,
+      "social": 0,
+      "price0": 0.0002205,
+      "liq0": 39681.89,
+      "mcap0": 216015,
+      "age_h0": 1.6949913700358072,
+      "marks": {}
     }
   ]
 }
