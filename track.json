@@ -6570,6 +6570,21 @@
           "measured_at_h": 9.3
         }
       }
+    },
+    {
+      "mint": "5x6QQvpRpd1PsFTTTJe6sJFFSqrA21H1j3GZLmo2pump",
+      "symbol": "FTR",
+      "at": 1792176108.1210651,
+      "at_human": "2026-10-16 18:41",
+      "alerted": false,
+      "composite": 52.6,
+      "safety": 74.3,
+      "social": 2,
+      "price0": 0.0002067,
+      "liq0": 37639.08,
+      "mcap0": 206670,
+      "age_h0": 0.4536443867323134,
+      "marks": {}
     }
   ]
 }
