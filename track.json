@@ -6633,8 +6633,30 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-10-17 08:36",
+          "price": 2.079e-06,
+          "liq": 2238.86,
+          "pct": -99.1,
+          "measured_at_h": 8.6
         }
       }
+    },
+    {
+      "mint": "AeLonprCt3y4dZEWEeRTkPqnUPW2FngSD2YeUmPP6GDk",
+      "symbol": "AE",
+      "at": 1792226149.2843494,
+      "at_human": "2026-10-17 08:35",
+      "alerted": false,
+      "composite": 42.8,
+      "safety": 61.1,
+      "social": 0,
+      "price0": 9.125e-05,
+      "liq0": 24751.96,
+      "mcap0": 91112,
+      "age_h0": 0.3689673370361328,
+      "marks": {}
     }
   ]
 }
