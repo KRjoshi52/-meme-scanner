@@ -6677,6 +6677,21 @@
           "measured_at_h": 7.3
         }
       }
+    },
+    {
+      "mint": "GtWTP5hHxwXHE21nQkKHP1atDh9fEAgVQ2n9dHfGpump",
+      "symbol": "Inuvestor",
+      "at": 1792277870.5449405,
+      "at_human": "2026-10-17 22:57",
+      "alerted": false,
+      "composite": 52.8,
+      "safety": 75.4,
+      "social": 0,
+      "price0": 0.0001359,
+      "liq0": 30520.62,
+      "mcap0": 134102,
+      "age_h0": 0.9154285871039497,
+      "marks": {}
     }
   ]
 }
