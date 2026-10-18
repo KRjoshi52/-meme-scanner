@@ -6647,6 +6647,13 @@
           "liq": 2238.86,
           "pct": -99.1,
           "measured_at_h": 8.6
+        },
+        "24h": {
+          "at": "2026-10-18 00:52",
+          "price": 2.075e-06,
+          "liq": 2235.22,
+          "pct": -99.1,
+          "measured_at_h": 24.9
         }
       }
     },
@@ -6691,6 +6698,29 @@
       "liq0": 30520.62,
       "mcap0": 134102,
       "age_h0": 0.9154285871039497,
+      "marks": {
+        "1h": {
+          "at": "2026-10-18 00:52",
+          "price": 2.101e-06,
+          "liq": 2266.51,
+          "pct": -98.5,
+          "measured_at_h": 1.9
+        }
+      }
+    },
+    {
+      "mint": "68yywen51ppvR2zWptcpvmc5H5a5SC6tsz8evAP2pump",
+      "symbol": "Catcoin",
+      "at": 1792284681.5231435,
+      "at_human": "2026-10-18 00:51",
+      "alerted": false,
+      "composite": 58.1,
+      "safety": 80.8,
+      "social": 5,
+      "price0": 0.0001655,
+      "liq0": 33645.42,
+      "mcap0": 165443,
+      "age_h0": 0.5073672185601128,
       "marks": {}
     }
   ]
