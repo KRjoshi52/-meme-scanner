@@ -6682,6 +6682,13 @@
           "liq": 12630.0,
           "pct": -72.6,
           "measured_at_h": 7.3
+        },
+        "24h": {
+          "at": "2026-10-18 09:55",
+          "price": 7.008e-06,
+          "liq": 5829.48,
+          "pct": -92.3,
+          "measured_at_h": 25.3
         }
       }
     },
@@ -6733,6 +6740,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-10-18 09:55",
+          "price": 2.23e-06,
+          "liq": 2471.51,
+          "pct": -98.7,
+          "measured_at_h": 9.1
         }
       }
     }
