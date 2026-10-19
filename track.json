@@ -6793,6 +6793,21 @@
           "measured_at_h": 7.9
         }
       }
+    },
+    {
+      "mint": "8CYyivwMZPg6Edaofxo3eHiveZkDrU6TtUDwtMjTpump",
+      "symbol": "Mimi",
+      "at": 1792405212.168552,
+      "at_human": "2026-10-19 10:20",
+      "alerted": false,
+      "composite": 55.9,
+      "safety": 66.2,
+      "social": 32,
+      "price0": 0.0006127,
+      "liq0": 98182.86,
+      "mcap0": 585979,
+      "age_h0": 0.5931017805989584,
+      "marks": {}
     }
   ]
 }
