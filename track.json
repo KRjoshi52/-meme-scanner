@@ -6826,6 +6826,13 @@
           "liq": 43384.72,
           "pct": -64.4,
           "measured_at_h": 6.8
+        },
+        "24h": {
+          "at": "2026-10-20 15:18",
+          "price": 0.0001008,
+          "liq": 29829.22,
+          "pct": -83.5,
+          "measured_at_h": 29.0
         }
       }
     },
@@ -6875,6 +6882,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-10-20 15:18",
+          "price": 2.397e-06,
+          "liq": 2664.24,
+          "pct": -97.1,
+          "measured_at_h": 9.9
         }
       }
     },
@@ -6896,6 +6910,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-10-20 15:18",
+          "price": 2.145e-06,
+          "liq": 2243.79,
+          "pct": -98.8,
+          "measured_at_h": 9.9
         }
       }
     },
@@ -6917,8 +6938,30 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-10-20 15:18",
+          "price": 2.157e-06,
+          "liq": 2282.79,
+          "pct": -97.9,
+          "measured_at_h": 9.9
         }
       }
+    },
+    {
+      "mint": "BjvruPbagrnmGKGbjWjSxVD3hYYeRE4VDSkfeysnpump",
+      "symbol": "JARVIS",
+      "at": 1792509462.3266382,
+      "at_human": "2026-10-20 15:17",
+      "alerted": false,
+      "composite": 49.2,
+      "safety": 60.4,
+      "social": 23,
+      "price0": 0.0001435,
+      "liq0": 31612.96,
+      "mcap0": 143502,
+      "age_h0": 0.5137013110351563,
+      "marks": {}
     }
   ]
 }
