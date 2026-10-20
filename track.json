@@ -6961,6 +6961,42 @@
       "liq0": 31612.96,
       "mcap0": 143502,
       "age_h0": 0.5137013110351563,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
+    },
+    {
+      "mint": "9SzQ2oUyxALCmbGd3isX9RTaXBWdDpV6B3fK8Tovpump",
+      "symbol": "Punani",
+      "at": 1792524637.3073971,
+      "at_human": "2026-10-20 19:30",
+      "alerted": false,
+      "composite": 53.2,
+      "safety": 75.1,
+      "social": 2,
+      "price0": 0.0002278,
+      "liq0": 40301.45,
+      "mcap0": 227897,
+      "age_h0": 0.37147380181206596,
+      "marks": {}
+    },
+    {
+      "mint": "F6Kw7crAAXQp4hjXVSe8ZuyvnaLyjvJDVBpcxGUFpump",
+      "symbol": "DACITY",
+      "at": 1792524648.5743437,
+      "at_human": "2026-10-20 19:30",
+      "alerted": false,
+      "composite": 50.3,
+      "safety": 71.9,
+      "social": 0,
+      "price0": 0.0002425,
+      "liq0": 42297.72,
+      "mcap0": 241120,
+      "age_h0": 0.9304368718804253,
       "marks": {}
     }
   ]
