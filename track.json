@@ -6828,6 +6828,21 @@
           "measured_at_h": 6.8
         }
       }
+    },
+    {
+      "mint": "B86LTrZDrH8G9zqMvXzFfwH8txDy8Sy7TZabjabTkids",
+      "symbol": "YOKAI",
+      "at": 1792456940.5168774,
+      "at_human": "2026-10-20 00:42",
+      "alerted": true,
+      "composite": 62.5,
+      "safety": 75.6,
+      "social": 32,
+      "price0": 0.0005351,
+      "liq0": 102184.78,
+      "mcap0": 535120,
+      "age_h0": 1.0186188123236761,
+      "marks": {}
     }
   ]
 }
