@@ -6842,6 +6842,57 @@
       "liq0": 102184.78,
       "mcap0": 535120,
       "age_h0": 1.0186188123236761,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
+    },
+    {
+      "mint": "D3tSj2izyLwXMr1svmwmtg6sLr4RubYVJfvmCKJUpump",
+      "symbol": "STICKFU",
+      "at": 1792473751.7384946,
+      "at_human": "2026-10-20 05:22",
+      "alerted": false,
+      "composite": 51.8,
+      "safety": 65.4,
+      "social": 20,
+      "price0": 8.33e-05,
+      "liq0": 23295.57,
+      "mcap0": 78291,
+      "age_h0": 1.0357602584499783,
+      "marks": {}
+    },
+    {
+      "mint": "5YY5qcnh5F3JaAybXqr5wLvb2GXZcE34GgE7DPyzpump",
+      "symbol": "LEONIDA",
+      "at": 1792473753.3676074,
+      "at_human": "2026-10-20 05:22",
+      "alerted": false,
+      "composite": 44.6,
+      "safety": 62.8,
+      "social": 2,
+      "price0": 0.0001793,
+      "liq0": 34983.16,
+      "mcap0": 176787,
+      "age_h0": 0.7409350425889757,
+      "marks": {}
+    },
+    {
+      "mint": "FBaeVexVcny6spAS6LhEiH72LTPXzaUG8hrVRuQKpump",
+      "symbol": "ORYN",
+      "at": 1792473762.4755712,
+      "at_human": "2026-10-20 05:22",
+      "alerted": false,
+      "composite": 42.9,
+      "safety": 61.3,
+      "social": 0,
+      "price0": 0.0001042,
+      "liq0": 26403.84,
+      "mcap0": 100527,
+      "age_h0": 2.265409309149848,
       "marks": {}
     }
   ]
