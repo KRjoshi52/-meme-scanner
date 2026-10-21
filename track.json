@@ -6861,6 +6861,13 @@
           "liq": 124221.87,
           "pct": 48.3,
           "measured_at_h": 9.6
+        },
+        "24h": {
+          "at": "2026-10-21 01:01",
+          "price": 0.0002608,
+          "liq": 72073.89,
+          "pct": -51.3,
+          "measured_at_h": 24.3
         }
       }
     },
@@ -7021,6 +7028,21 @@
           "measured_at_h": 3.2
         }
       }
+    },
+    {
+      "mint": "4VKPhhDDuVRqCSQGTLXj33jK22cmM9KhN62TN5oGpump",
+      "symbol": "claytonkimm",
+      "at": 1792544512.1562355,
+      "at_human": "2026-10-21 01:01",
+      "alerted": true,
+      "composite": 61.2,
+      "safety": 78.9,
+      "social": 20,
+      "price0": 0.0003697,
+      "liq0": 52391.06,
+      "mcap0": 366650,
+      "age_h0": 1.0316174260118272,
+      "marks": {}
     }
   ]
 }
