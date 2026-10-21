@@ -7001,6 +7001,13 @@
           "liq": 2594.99,
           "pct": -98.4,
           "measured_at_h": 7.4
+        },
+        "24h": {
+          "at": "2026-10-21 16:55",
+          "price": 2.26e-06,
+          "liq": 2502.94,
+          "pct": -98.4,
+          "measured_at_h": 25.6
         }
       }
     },
@@ -7091,6 +7098,21 @@
           "measured_at_h": 10.9
         }
       }
+    },
+    {
+      "mint": "Cf6tUsfyQSracZjuKNFMBAGPeskUpGYdjfM5Qn3Lpump",
+      "symbol": "MILK",
+      "at": 1792601679.6368387,
+      "at_human": "2026-10-21 16:54",
+      "alerted": false,
+      "composite": 49.2,
+      "safety": 70.3,
+      "social": 0,
+      "price0": 0.0001533,
+      "liq0": 33745.9,
+      "mcap0": 152300,
+      "age_h0": 0.9701763002522786,
+      "marks": {}
     }
   ]
 }
