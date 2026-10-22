@@ -7168,6 +7168,13 @@
           "liq": 2108.6,
           "pct": -98.9,
           "measured_at_h": 3.1
+        },
+        "6h": {
+          "at": "2026-10-22 07:20",
+          "price": 2.018e-06,
+          "liq": 2091.97,
+          "pct": -98.9,
+          "measured_at_h": 10.9
         }
       }
     },
@@ -7184,6 +7191,27 @@
       "liq0": 60754.02,
       "mcap0": 351434,
       "age_h0": 61.62211801534017,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
+    },
+    {
+      "mint": "FxzUDJHc9TbMJjGmthmnjbC9AF6FnGxNuFmbP1Jepump",
+      "symbol": "\u30e4\u30ae",
+      "at": 1792653596.5621045,
+      "at_human": "2026-10-22 07:19",
+      "alerted": false,
+      "composite": 52.5,
+      "safety": 61.3,
+      "social": 32,
+      "price0": 0.0004427,
+      "liq0": 58452.87,
+      "mcap0": 439038,
+      "age_h0": 2.0554333926730686,
       "marks": {}
     }
   ]
