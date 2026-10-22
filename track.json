@@ -7110,6 +7110,13 @@
           "liq": 2830.32,
           "pct": -99.3,
           "measured_at_h": 10.9
+        },
+        "24h": {
+          "at": "2026-10-22 01:55",
+          "price": 2.848e-06,
+          "liq": 2914.59,
+          "pct": -99.2,
+          "measured_at_h": 24.9
         }
       }
     },
@@ -7163,6 +7170,21 @@
           "measured_at_h": 3.1
         }
       }
+    },
+    {
+      "mint": "GWe3TNg1UPxeaSazxK8U49PDAqXCaX9Jc8zbttFLpump",
+      "symbol": "COMPUTE",
+      "at": 1792634100.6267335,
+      "at_human": "2026-10-22 01:55",
+      "alerted": false,
+      "composite": 50.9,
+      "safety": 68.5,
+      "social": 10,
+      "price0": 0.0003653,
+      "liq0": 60754.02,
+      "mcap0": 351434,
+      "age_h0": 61.62211801534017,
+      "marks": {}
     }
   ]
 }
