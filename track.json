@@ -7289,6 +7289,21 @@
           "measured_at_h": 9.7
         }
       }
+    },
+    {
+      "mint": "2JSj9dzLQwAi3q1dHYjCPF5Gveg81hBTRy8EeM3Fpump",
+      "symbol": "ARCTIS",
+      "at": 1792766817.1137822,
+      "at_human": "2026-10-23 14:46",
+      "alerted": false,
+      "composite": 59.8,
+      "safety": 65.3,
+      "social": 47,
+      "price0": 8.484e-05,
+      "liq0": 23502.53,
+      "mcap0": 81502,
+      "age_h0": 4.706697585923937,
+      "marks": {}
     }
   ]
 }
