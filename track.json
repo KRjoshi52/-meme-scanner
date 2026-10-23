@@ -7247,6 +7247,21 @@
           "measured_at_h": 10.7
         }
       }
+    },
+    {
+      "mint": "F9Yz51QZpvS5fWdqgmt8wgEWHjg2E5YdwLvSjsrGpump",
+      "symbol": "SHADOW",
+      "at": 1792714036.3744583,
+      "at_human": "2026-10-23 00:07",
+      "alerted": false,
+      "composite": 43.5,
+      "safety": 60.5,
+      "social": 4,
+      "price0": 0.0001767,
+      "liq0": 35747.04,
+      "mcap0": 166578,
+      "age_h0": 30.892047875705295,
+      "marks": {}
     }
   ]
 }
