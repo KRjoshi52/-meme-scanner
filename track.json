@@ -7322,6 +7322,13 @@
           "liq": 28751.81,
           "pct": 43.2,
           "measured_at_h": 7.2
+        },
+        "24h": {
+          "at": "2026-10-24 17:01",
+          "price": 0.0001035,
+          "liq": 26292.31,
+          "pct": 22.0,
+          "measured_at_h": 26.2
         }
       }
     },
@@ -7366,6 +7373,29 @@
       "liq0": 25804.37,
       "mcap0": 101471,
       "age_h0": 0.5280631035698785,
+      "marks": {
+        "1h": {
+          "at": "2026-10-24 17:01",
+          "price": 5.924e-05,
+          "liq": 19559.42,
+          "pct": -41.6,
+          "measured_at_h": 3.4
+        }
+      }
+    },
+    {
+      "mint": "3CQpA59r3Tw9qpwiVHEcDxj2HGoHXiX1gsn7YNEapump",
+      "symbol": "TRUMPE",
+      "at": 1792861223.0337858,
+      "at_human": "2026-10-24 17:00",
+      "alerted": false,
+      "composite": 42.9,
+      "safety": 60.4,
+      "social": 2,
+      "price0": 0.0001173,
+      "liq0": 27685.01,
+      "mcap0": 116147,
+      "age_h0": 2.7736198851182725,
       "marks": {}
     }
   ]
