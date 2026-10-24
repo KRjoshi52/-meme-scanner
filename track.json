@@ -7343,8 +7343,30 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-10-24 13:37",
+          "price": 1.969e-06,
+          "liq": 2098.95,
+          "pct": -99.0,
+          "measured_at_h": 8.6
         }
       }
+    },
+    {
+      "mint": "BzoYWZL3fXC5KkzkA6dEh9pBKcv9NAqwkTxJReNxpump",
+      "symbol": "VELK",
+      "at": 1792849010.0288475,
+      "at_human": "2026-10-24 13:36",
+      "alerted": false,
+      "composite": 48.5,
+      "safety": 60.7,
+      "social": 20,
+      "price0": 0.0001014,
+      "liq0": 25804.37,
+      "mcap0": 101471,
+      "age_h0": 0.5280631035698785,
+      "marks": {}
     }
   ]
 }
