@@ -7324,6 +7324,21 @@
           "measured_at_h": 7.2
         }
       }
+    },
+    {
+      "mint": "59NZWxgJWRoHdXxsBFrXLBq4NEa9RBsmmFUqseLzpump",
+      "symbol": "DPM",
+      "at": 1792818236.645328,
+      "at_human": "2026-10-24 05:03",
+      "alerted": false,
+      "composite": 54.7,
+      "safety": 77.3,
+      "social": 2,
+      "price0": 0.0001989,
+      "liq0": 36927.28,
+      "mcap0": 196384,
+      "age_h0": 0.6074008489990235,
+      "marks": {}
     }
   ]
 }
