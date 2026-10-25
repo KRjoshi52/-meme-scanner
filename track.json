@@ -7357,6 +7357,13 @@
           "liq": 2098.95,
           "pct": -99.0,
           "measured_at_h": 8.6
+        },
+        "24h": {
+          "at": "2026-10-25 09:28",
+          "price": 1.985e-06,
+          "liq": 2115.77,
+          "pct": -99.0,
+          "measured_at_h": 28.4
         }
       }
     },
@@ -7438,8 +7445,30 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-10-25 09:28",
+          "price": 0.0007468,
+          "liq": 79330.74,
+          "pct": 3.4,
+          "measured_at_h": 9.4
         }
       }
+    },
+    {
+      "mint": "2LVYAfg3ZtgFLp2B9QrTZy18sVzxqmocNmAgBS9Vpump",
+      "symbol": "Chubby",
+      "at": 1792920437.7217972,
+      "at_human": "2026-10-25 09:27",
+      "alerted": false,
+      "composite": 42.6,
+      "safety": 60.9,
+      "social": 0,
+      "price0": 0.0001427,
+      "liq0": 31158.2,
+      "mcap0": 136784,
+      "age_h0": 1.6282554557969835,
+      "marks": {}
     }
   ]
 }
