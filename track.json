@@ -7433,7 +7433,13 @@
       "liq0": 77874.39,
       "mcap0": 712209,
       "age_h0": 24.94375314331055,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
     }
   ]
 }
