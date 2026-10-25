@@ -7524,6 +7524,21 @@
           "measured_at_h": 6.1
         }
       }
+    },
+    {
+      "mint": "5mwvdzB1CoYDoLTAKBUX9kSxxUALgU5YHKmgm4Lhpump",
+      "symbol": "STT",
+      "at": 1792967274.6388526,
+      "at_human": "2026-10-25 22:27",
+      "alerted": false,
+      "composite": 59.0,
+      "safety": 82.1,
+      "social": 5,
+      "price0": 0.0001419,
+      "liq0": 30682.42,
+      "mcap0": 141946,
+      "age_h0": 0.4246214534505208,
+      "marks": {}
     }
   ]
 }
