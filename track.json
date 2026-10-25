@@ -7410,8 +7410,30 @@
           "liq": 25352.08,
           "pct": -16.4,
           "measured_at_h": 2.4
+        },
+        "6h": {
+          "at": "2026-10-25 00:07",
+          "price": 1.933e-06,
+          "liq": 2040.57,
+          "pct": -98.4,
+          "measured_at_h": 7.1
         }
       }
+    },
+    {
+      "mint": "CA8q2mkYWZnUNqYmf6pxyxAPZsmSe2EG9P7hHMW5pump",
+      "symbol": "REMUS",
+      "at": 1792886825.5130281,
+      "at_human": "2026-10-25 00:07",
+      "alerted": false,
+      "composite": 45.9,
+      "safety": 63.5,
+      "social": 5,
+      "price0": 0.0007223,
+      "liq0": 77874.39,
+      "mcap0": 712209,
+      "age_h0": 24.94375314331055,
+      "marks": {}
     }
   ]
 }
