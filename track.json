@@ -7466,6 +7466,13 @@
           "liq": 79330.74,
           "pct": 3.4,
           "measured_at_h": 9.4
+        },
+        "24h": {
+          "at": "2026-10-26 00:39",
+          "price": 0.0008826,
+          "liq": 88719.56,
+          "pct": 22.2,
+          "measured_at_h": 24.5
         }
       }
     },
@@ -7538,6 +7545,29 @@
       "liq0": 30682.42,
       "mcap0": 141946,
       "age_h0": 0.4246214534505208,
+      "marks": {
+        "1h": {
+          "at": "2026-10-26 00:39",
+          "price": 2.036e-06,
+          "liq": 2116.26,
+          "pct": -98.6,
+          "measured_at_h": 2.2
+        }
+      }
+    },
+    {
+      "mint": "9qyUWAY2LsccnYxNh5UCF8pybsbjru7nZLP59SMfpump",
+      "symbol": "GTONK",
+      "at": 1792975100.553596,
+      "at_human": "2026-10-26 00:38",
+      "alerted": false,
+      "composite": 56.3,
+      "safety": 75.7,
+      "social": 11,
+      "price0": 0.0001456,
+      "liq0": 31507.81,
+      "mcap0": 142724,
+      "age_h0": 0.9232089674886068,
       "marks": {}
     }
   ]
