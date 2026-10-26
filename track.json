@@ -7659,6 +7659,36 @@
           "measured_at_h": 6.1
         }
       }
+    },
+    {
+      "mint": "72rZQyT14p1cNDCJsePibxKoZTsF5JxD5jaQnoyEpump",
+      "symbol": "Assay",
+      "at": 1793051632.7136886,
+      "at_human": "2026-10-26 21:53",
+      "alerted": false,
+      "composite": 42.7,
+      "safety": 60.1,
+      "social": 2,
+      "price0": 9.491e-05,
+      "liq0": 24374.35,
+      "mcap0": 94918,
+      "age_h0": 0.38880871168348524,
+      "marks": {}
+    },
+    {
+      "mint": "EwX2T1p2PmgTsSq2Bi6XtQYxPC5krR4P2fxPfN4Qpump",
+      "symbol": "\u2588\u2588\u2588",
+      "at": 1793051686.9286795,
+      "at_human": "2026-10-26 21:54",
+      "alerted": false,
+      "composite": 49.2,
+      "safety": 69.4,
+      "social": 2,
+      "price0": 0.001045,
+      "liq0": 103511.09,
+      "mcap0": 1017731,
+      "age_h0": 66.48636850606283,
+      "marks": {}
     }
   ]
 }
