@@ -7552,6 +7552,13 @@
           "liq": 2116.26,
           "pct": -98.6,
           "measured_at_h": 2.2
+        },
+        "6h": {
+          "at": "2026-10-26 05:23",
+          "price": 1.973e-06,
+          "liq": 2055.23,
+          "pct": -98.6,
+          "measured_at_h": 6.9
         }
       }
     },
@@ -7568,6 +7575,27 @@
       "liq0": 31507.81,
       "mcap0": 142724,
       "age_h0": 0.9232089674886068,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
+    },
+    {
+      "mint": "BTvAbqm2z6r81UX9f3Kt9eijZwAr824QyjCeYaNCpump",
+      "symbol": "ApeLax",
+      "at": 1792992150.699779,
+      "at_human": "2026-10-26 05:22",
+      "alerted": false,
+      "composite": 45.7,
+      "safety": 64.4,
+      "social": 2,
+      "price0": 0.0001093,
+      "liq0": 26417.44,
+      "mcap0": 105306,
+      "age_h0": 1.4568604554578992,
       "marks": {}
     }
   ]
