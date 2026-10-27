@@ -7643,6 +7643,13 @@
           "liq": 2244.4,
           "pct": -98.1,
           "measured_at_h": 6.1
+        },
+        "24h": {
+          "at": "2026-10-27 06:42",
+          "price": 2.056e-06,
+          "liq": 2185.61,
+          "pct": -98.1,
+          "measured_at_h": 25.3
         }
       }
     },
@@ -7694,6 +7701,13 @@
           "liq": 2017.06,
           "pct": -97.9,
           "measured_at_h": 3.4
+        },
+        "6h": {
+          "at": "2026-10-27 06:42",
+          "price": 1.969e-06,
+          "liq": 1993.15,
+          "pct": -97.9,
+          "measured_at_h": 8.8
         }
       }
     },
@@ -7717,8 +7731,30 @@
           "liq": 106522.48,
           "pct": -0.5,
           "measured_at_h": 3.4
+        },
+        "6h": {
+          "at": "2026-10-27 06:42",
+          "price": 0.001008,
+          "liq": 102549.91,
+          "pct": -3.5,
+          "measured_at_h": 8.8
         }
       }
+    },
+    {
+      "mint": "ASCcuz8Dy5edyvjZMcpyJEkfx87fgjw1pBVoLbj4pump",
+      "symbol": "TGC",
+      "at": 1793083268.370565,
+      "at_human": "2026-10-27 06:41",
+      "alerted": false,
+      "composite": 45.6,
+      "safety": 65.2,
+      "social": 0,
+      "price0": 0.0001539,
+      "liq0": 32378.97,
+      "mcap0": 148242,
+      "age_h0": 2.4145467322455514,
+      "marks": {}
     }
   ]
 }
