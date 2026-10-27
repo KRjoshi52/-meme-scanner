@@ -7715,6 +7715,13 @@
           "liq": 1993.15,
           "pct": -97.9,
           "measured_at_h": 8.8
+        },
+        "24h": {
+          "at": "2026-10-27 22:32",
+          "price": 2.018e-06,
+          "liq": 2041.99,
+          "pct": -97.9,
+          "measured_at_h": 24.6
         }
       }
     },
@@ -7745,6 +7752,13 @@
           "liq": 102549.91,
           "pct": -3.5,
           "measured_at_h": 8.8
+        },
+        "24h": {
+          "at": "2026-10-27 22:32",
+          "price": 0.001046,
+          "liq": 106325.79,
+          "pct": 0.1,
+          "measured_at_h": 24.6
         }
       }
     },
@@ -7775,6 +7789,36 @@
           "measured_at_h": 6.0
         }
       }
+    },
+    {
+      "mint": "2cRhjCGvMQViKtTpgdQUBUxUBfQQpvG2VjnEYZmQpump",
+      "symbol": "SF",
+      "at": 1793140272.8177125,
+      "at_human": "2026-10-27 22:31",
+      "alerted": false,
+      "composite": 49.6,
+      "safety": 70.8,
+      "social": 0,
+      "price0": 0.0001635,
+      "liq0": 33416.66,
+      "mcap0": 162232,
+      "age_h0": 0.6557820562744141,
+      "marks": {}
+    },
+    {
+      "mint": "32GwB1RZPUSrNrCooZCigPgD6D89yky8MXzCbvgypump",
+      "symbol": "PEPUS",
+      "at": 1793140274.4593534,
+      "at_human": "2026-10-27 22:31",
+      "alerted": false,
+      "composite": 55.9,
+      "safety": 76.0,
+      "social": 9,
+      "price0": 0.0001826,
+      "liq0": 35221.15,
+      "mcap0": 180008,
+      "age_h0": 1.1226269911024305,
+      "marks": {}
     }
   ]
 }
