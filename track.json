@@ -7875,8 +7875,43 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
         }
       }
+    },
+    {
+      "mint": "BLeMEetdzeq9xsNti2tCiau4JnD7mzyQzQFHdy5pump",
+      "symbol": "RETIRED",
+      "at": 1793197958.323413,
+      "at_human": "2026-10-28 14:32",
+      "alerted": false,
+      "composite": 59.7,
+      "safety": 75.9,
+      "social": 22,
+      "price0": 0.0008305,
+      "liq0": 77816.68,
+      "mcap0": 813152,
+      "age_h0": 50.08147794826932,
+      "marks": {}
+    },
+    {
+      "mint": "Pmfm2RprxQRKZH1XWVsBUc2KgCTyzeDTSFbT1vJmogz",
+      "symbol": "MOGZ",
+      "at": 1793198010.4461203,
+      "at_human": "2026-10-28 14:33",
+      "alerted": false,
+      "composite": 50.5,
+      "safety": 70.0,
+      "social": 5,
+      "price0": 0.0006423,
+      "liq0": 76456.14,
+      "mcap0": 642283,
+      "age_h0": 22.891789566107857,
+      "marks": {}
     }
   ]
 }
