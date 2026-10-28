@@ -7803,7 +7803,15 @@
       "liq0": 33416.66,
       "mcap0": 162232,
       "age_h0": 0.6557820562744141,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "at": "2026-10-28 01:46",
+          "price": 2.025e-06,
+          "liq": 2199.1,
+          "pct": -98.8,
+          "measured_at_h": 3.3
+        }
+      }
     },
     {
       "mint": "32GwB1RZPUSrNrCooZCigPgD6D89yky8MXzCbvgypump",
@@ -7818,6 +7826,29 @@
       "liq0": 35221.15,
       "mcap0": 180008,
       "age_h0": 1.1226269911024305,
+      "marks": {
+        "1h": {
+          "at": "2026-10-28 01:46",
+          "price": 2.026e-06,
+          "liq": 2167.55,
+          "pct": -98.9,
+          "measured_at_h": 3.3
+        }
+      }
+    },
+    {
+      "mint": "9v4airX4Vt45ADFg3QQG9pXX68LkX9Big4GiYEuJpump",
+      "symbol": "CHICO",
+      "at": 1793151966.7827594,
+      "at_human": "2026-10-28 01:46",
+      "alerted": false,
+      "composite": 54.8,
+      "safety": 76.1,
+      "social": 5,
+      "price0": 0.005619,
+      "liq0": 213253.98,
+      "mcap0": 5546868,
+      "age_h0": 25.90327213100857,
       "marks": {}
     }
   ]
