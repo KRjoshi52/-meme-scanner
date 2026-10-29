@@ -8043,7 +8043,13 @@
       "liq0": 111186.12,
       "mcap0": 279107,
       "age_h0": 0.5363516832139757,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
     },
     {
       "mint": "9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump",
@@ -8058,7 +8064,13 @@
       "liq0": 169863.93,
       "mcap0": 3641792,
       "age_h0": 46.374154260525174,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
     }
   ]
 }
