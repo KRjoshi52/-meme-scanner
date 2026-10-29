@@ -7894,6 +7894,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "24h": {
+          "at": "2026-10-29 05:30",
+          "price": 0.0001697,
+          "liq": 36870.17,
+          "pct": -97.0,
+          "measured_at_h": 27.7
         }
       }
     },
@@ -7966,6 +7973,27 @@
       "liq0": 30211.04,
       "mcap0": 137439,
       "age_h0": 12.858839966295031,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
+    },
+    {
+      "mint": "CxzxZDuo3igCYpqfBfMTsJHFsFXwsLLStphSEgAiq4kA",
+      "symbol": "AISI",
+      "at": 1793251801.3902152,
+      "at_human": "2026-10-29 05:30",
+      "alerted": false,
+      "composite": 55.1,
+      "safety": 63.7,
+      "social": 35,
+      "price0": 9.61e-05,
+      "liq0": 63731.67,
+      "mcap0": 96110,
+      "age_h0": 0.5192743663194445,
       "marks": {}
     }
   ]
