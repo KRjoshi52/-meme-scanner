@@ -7929,6 +7929,13 @@
           "liq": 65085.28,
           "pct": -30.8,
           "measured_at_h": 9.4
+        },
+        "24h": {
+          "at": "2026-10-29 17:36",
+          "price": 0.0004991,
+          "liq": 60544.11,
+          "pct": -39.9,
+          "measured_at_h": 27.1
         }
       }
     },
@@ -7957,6 +7964,13 @@
           "liq": 52615.06,
           "pct": -40.6,
           "measured_at_h": 9.4
+        },
+        "24h": {
+          "at": "2026-10-29 17:36",
+          "price": 0.0002107,
+          "liq": 38937.4,
+          "pct": -67.2,
+          "measured_at_h": 27.0
         }
       }
     },
@@ -8015,6 +8029,36 @@
           "measured_at_h": 6.2
         }
       }
+    },
+    {
+      "mint": "FkUGF7cPFy7hHuJwBERCTfAex3XcLFCH9pkj2RDUQTMe",
+      "symbol": "HI",
+      "at": 1793295305.868511,
+      "at_human": "2026-10-29 17:35",
+      "alerted": false,
+      "composite": 54.8,
+      "safety": 68.9,
+      "social": 22,
+      "price0": 0.0002791,
+      "liq0": 111186.12,
+      "mcap0": 279107,
+      "age_h0": 0.5363516832139757,
+      "marks": {}
+    },
+    {
+      "mint": "9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump",
+      "symbol": "JOB",
+      "at": 1793295365.252765,
+      "at_human": "2026-10-29 17:36",
+      "alerted": true,
+      "composite": 73.7,
+      "safety": 84.3,
+      "social": 49,
+      "price0": 0.003738,
+      "liq0": 169863.93,
+      "mcap0": 3641792,
+      "age_h0": 46.374154260525174,
+      "marks": {}
     }
   ]
 }
