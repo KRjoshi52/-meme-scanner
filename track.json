@@ -8155,6 +8155,27 @@
       "liq0": 134294.88,
       "mcap0": 1289943,
       "age_h0": 20.13792381713867,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
+    },
+    {
+      "mint": "3P6dYjBnwHKbowrxV73oEGZGUdw4ooD98MiAMTAQpump",
+      "symbol": "PUMPCAT",
+      "at": 1793404178.6860886,
+      "at_human": "2026-10-30 23:49",
+      "alerted": false,
+      "composite": 56.4,
+      "safety": 74.2,
+      "social": 15,
+      "price0": 8.122e-05,
+      "liq0": 22389.9,
+      "mcap0": 80079,
+      "age_h0": 1.043523563571506,
       "marks": {}
     }
   ]
