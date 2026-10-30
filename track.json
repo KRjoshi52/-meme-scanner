@@ -8069,6 +8069,13 @@
           "liq": 24889.64,
           "pct": -94.6,
           "measured_at_h": 8.4
+        },
+        "24h": {
+          "at": "2026-10-30 20:02",
+          "price": 1.309e-05,
+          "liq": 23220.84,
+          "pct": -95.3,
+          "measured_at_h": 26.5
         }
       }
     },
@@ -8097,6 +8104,13 @@
           "liq": 135918.82,
           "pct": -31.2,
           "measured_at_h": 8.4
+        },
+        "24h": {
+          "at": "2026-10-30 20:02",
+          "price": 0.003421,
+          "liq": 160133.22,
+          "pct": -8.5,
+          "measured_at_h": 26.4
         }
       }
     },
@@ -8127,6 +8141,21 @@
           "measured_at_h": 6.5
         }
       }
+    },
+    {
+      "mint": "7SL2VnfYsChvog5oQY9Nmtqu1wceaMiQzWoqoLQpump",
+      "symbol": "NIO",
+      "at": 1793390546.5281372,
+      "at_human": "2026-10-30 20:02",
+      "alerted": false,
+      "composite": 56.0,
+      "safety": 67.2,
+      "social": 30,
+      "price0": 0.001353,
+      "liq0": 134294.88,
+      "mcap0": 1289943,
+      "age_h0": 20.13792381713867,
+      "marks": {}
     }
   ]
 }
