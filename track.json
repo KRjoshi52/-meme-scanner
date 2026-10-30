@@ -8034,6 +8034,13 @@
           "liq": 51393.74,
           "pct": -35.1,
           "measured_at_h": 6.2
+        },
+        "24h": {
+          "at": "2026-10-30 08:31",
+          "price": 1.432e-05,
+          "liq": 24199.43,
+          "pct": -85.1,
+          "measured_at_h": 27.0
         }
       }
     },
@@ -8106,7 +8113,20 @@
       "liq0": 172944.76,
       "mcap0": 756238,
       "age_h0": 27.721569284939235,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-10-30 08:31",
+          "price": 0.0008087,
+          "liq": 183636.95,
+          "pct": 6.8,
+          "measured_at_h": 6.5
+        }
+      }
     }
   ]
 }
