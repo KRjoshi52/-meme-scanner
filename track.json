@@ -8218,7 +8218,13 @@
       "liq0": 29144.77,
       "mcap0": 107024,
       "age_h0": 52.0717217654758,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
     },
     {
       "mint": "2gTbp2gwH46rqExzabSyrdR3294SLwCp2rSqWDS6Sim1",
@@ -8233,6 +8239,42 @@
       "liq0": 29822.27,
       "mcap0": 128618,
       "age_h0": 25.02381333916558,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
+    },
+    {
+      "mint": "8DKHFW32ApiG6xLYrTDTxkWMGxdDyASfNnSaWwCbpump",
+      "symbol": "SUPER",
+      "at": 1793476439.4463282,
+      "at_human": "2026-10-31 19:53",
+      "alerted": false,
+      "composite": 53.7,
+      "safety": 75.8,
+      "social": 2,
+      "price0": 0.0001583,
+      "liq0": 31821.82,
+      "mcap0": 155454,
+      "age_h0": 0.8473455832248263,
+      "marks": {}
+    },
+    {
+      "mint": "DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump",
+      "symbol": "AgenC",
+      "at": 1793476466.059378,
+      "at_human": "2026-10-31 19:54",
+      "alerted": false,
+      "composite": 56.5,
+      "safety": 77.7,
+      "social": 7,
+      "price0": 0.001125,
+      "liq0": 1010529.04,
+      "mcap0": 1118849,
+      "age_h0": 25.558904638197156,
       "marks": {}
     }
   ]
