@@ -8204,6 +8204,36 @@
           "measured_at_h": 11.0
         }
       }
+    },
+    {
+      "mint": "57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump",
+      "symbol": "OREN",
+      "at": 1793462364.2003517,
+      "at_human": "2026-10-31 15:59",
+      "alerted": false,
+      "composite": 49.9,
+      "safety": 60.1,
+      "social": 26,
+      "price0": 0.0001117,
+      "liq0": 29144.77,
+      "mcap0": 107024,
+      "age_h0": 52.0717217654758,
+      "marks": {}
+    },
+    {
+      "mint": "2gTbp2gwH46rqExzabSyrdR3294SLwCp2rSqWDS6Sim1",
+      "symbol": "CATPAD",
+      "at": 1793462427.1712644,
+      "at_human": "2026-10-31 16:00",
+      "alerted": true,
+      "composite": 62.7,
+      "safety": 66.4,
+      "social": 54,
+      "price0": 0.0001358,
+      "liq0": 29822.27,
+      "mcap0": 128618,
+      "age_h0": 25.02381333916558,
+      "marks": {}
     }
   ]
 }
