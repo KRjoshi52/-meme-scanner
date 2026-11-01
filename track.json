@@ -8316,6 +8316,13 @@
           "liq": 1953.92,
           "pct": -98.8,
           "measured_at_h": 6.4
+        },
+        "24h": {
+          "at": "2026-11-01 20:45",
+          "price": 1.884e-06,
+          "liq": 1990.44,
+          "pct": -98.8,
+          "measured_at_h": 24.9
         }
       }
     },
@@ -8346,6 +8353,13 @@
           "liq": 3160.66,
           "pct": -99.8,
           "measured_at_h": 6.4
+        },
+        "24h": {
+          "at": "2026-11-01 20:45",
+          "price": 2.806e-06,
+          "liq": 3319.36,
+          "pct": -99.8,
+          "measured_at_h": 24.9
         }
       }
     },
@@ -8404,6 +8418,21 @@
           "measured_at_h": 6.9
         }
       }
+    },
+    {
+      "mint": "ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump",
+      "symbol": "Anakin",
+      "at": 1793565930.1620872,
+      "at_human": "2026-11-01 20:45",
+      "alerted": false,
+      "composite": 54.9,
+      "safety": 78.5,
+      "social": 0,
+      "price0": 0.003703,
+      "liq0": 260052.06,
+      "mcap0": 3522224,
+      "age_h0": 26.560322122734917,
+      "marks": {}
     }
   ]
 }
