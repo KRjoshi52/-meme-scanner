@@ -8348,6 +8348,34 @@
       "liq0": 85223.09,
       "mcap0": 975893,
       "age_h0": 26.62669756435818,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-11-01 09:35",
+          "price": 0.001097,
+          "liq": 90497.85,
+          "pct": 11.2,
+          "measured_at_h": 7.3
+        }
+      }
+    },
+    {
+      "mint": "GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump",
+      "symbol": "WASTED",
+      "at": 1793525694.397176,
+      "at_human": "2026-11-01 09:34",
+      "alerted": false,
+      "composite": 43.8,
+      "safety": 62.6,
+      "social": 0,
+      "price0": 0.000123,
+      "liq0": 30802.22,
+      "mcap0": 120769,
+      "age_h0": 39.42205402818468,
       "marks": {}
     }
   ]
