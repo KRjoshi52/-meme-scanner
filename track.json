@@ -8209,6 +8209,13 @@
           "liq": 1920.12,
           "pct": -97.8,
           "measured_at_h": 11.0
+        },
+        "24h": {
+          "at": "2026-11-01 02:19",
+          "price": 1.828e-06,
+          "liq": 1927.33,
+          "pct": -97.7,
+          "measured_at_h": 26.5
         }
       }
     },
@@ -8288,6 +8295,13 @@
           "liq": 1959.3,
           "pct": -98.8,
           "measured_at_h": 3.3
+        },
+        "6h": {
+          "at": "2026-11-01 02:19",
+          "price": 1.845e-06,
+          "liq": 1953.92,
+          "pct": -98.8,
+          "measured_at_h": 6.4
         }
       }
     },
@@ -8311,8 +8325,30 @@
           "liq": 3144.97,
           "pct": -99.8,
           "measured_at_h": 3.3
+        },
+        "6h": {
+          "at": "2026-11-01 02:19",
+          "price": 2.618e-06,
+          "liq": 3160.66,
+          "pct": -99.8,
+          "measured_at_h": 6.4
         }
       }
+    },
+    {
+      "mint": "FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump",
+      "symbol": "Leverhedge",
+      "at": 1793499528.113737,
+      "at_human": "2026-11-01 02:18",
+      "alerted": false,
+      "composite": 53.4,
+      "safety": 75.5,
+      "social": 2,
+      "price0": 0.0009861,
+      "liq0": 85223.09,
+      "mcap0": 975893,
+      "age_h0": 26.62669756435818,
+      "marks": {}
     }
   ]
 }
