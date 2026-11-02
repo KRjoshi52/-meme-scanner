@@ -8460,6 +8460,13 @@
           "liq": 247917.81,
           "pct": -17.3,
           "measured_at_h": 9.0
+        },
+        "24h": {
+          "at": "2026-11-02 23:09",
+          "price": 0.001195,
+          "liq": 103835.18,
+          "pct": -67.7,
+          "measured_at_h": 26.4
         }
       }
     },
@@ -8476,7 +8483,20 @@
       "liq0": 24425.82,
       "mcap0": 92566,
       "age_h0": 1.2362954005940756,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-11-02 23:09",
+          "price": 2.077e-06,
+          "liq": 2198.83,
+          "pct": -97.8,
+          "measured_at_h": 7.9
+        }
+      }
     },
     {
       "mint": "57eJSmN1ecANrnZjGPrXzWUMyGhQsQgMS9eHdxM3pump",
@@ -8491,6 +8511,49 @@
       "liq0": 31628.36,
       "mcap0": 159093,
       "age_h0": 0.7176717496066624,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-11-02 23:09",
+          "price": 1.709e-06,
+          "liq": 1779.12,
+          "pct": -98.9,
+          "measured_at_h": 7.9
+        }
+      }
+    },
+    {
+      "mint": "7gCND4jhgJ8Mq1XxNhRdercinXh7fcCDPjA9uEQLk3f2",
+      "symbol": "HAMSTER",
+      "at": 1793660924.1954484,
+      "at_human": "2026-11-02 23:08",
+      "alerted": false,
+      "composite": 47.5,
+      "safety": 67.0,
+      "social": 2,
+      "price0": 0.0002185,
+      "liq0": 93066.69,
+      "mcap0": 218546,
+      "age_h0": 0.5708868876817491,
+      "marks": {}
+    },
+    {
+      "mint": "wDSAqt4tEZpDAwB9XY6ejkZvMFuT1zUMjUh67txeYhf",
+      "symbol": "HEDGE",
+      "at": 1793660929.1889672,
+      "at_human": "2026-11-02 23:08",
+      "alerted": false,
+      "composite": 45.1,
+      "safety": 64.4,
+      "social": 0,
+      "price0": 0.000167,
+      "liq0": 85659.4,
+      "mcap0": 167001,
+      "age_h0": 2.7472739459906683,
       "marks": {}
     }
   ]
