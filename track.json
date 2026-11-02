@@ -8423,6 +8423,13 @@
           "liq": 34193.73,
           "pct": 22.0,
           "measured_at_h": 6.9
+        },
+        "24h": {
+          "at": "2026-11-02 15:15",
+          "price": 0.0006942,
+          "liq": 77621.55,
+          "pct": 464.4,
+          "measured_at_h": 29.7
         }
       }
     },
@@ -8455,6 +8462,36 @@
           "measured_at_h": 9.0
         }
       }
+    },
+    {
+      "mint": "8cGKGiSUiwm1KDqUzqYtQnsSRCJw4WcyoyW74LHspump",
+      "symbol": "VICECITY",
+      "at": 1793632459.6663194,
+      "at_human": "2026-11-02 15:14",
+      "alerted": false,
+      "composite": 54.4,
+      "safety": 62.7,
+      "social": 35,
+      "price0": 9.489e-05,
+      "liq0": 24425.82,
+      "mcap0": 92566,
+      "age_h0": 1.2362954005940756,
+      "marks": {}
+    },
+    {
+      "mint": "57eJSmN1ecANrnZjGPrXzWUMyGhQsQgMS9eHdxM3pump",
+      "symbol": "MameStonk",
+      "at": 1793632507.7239974,
+      "at_human": "2026-11-02 15:15",
+      "alerted": true,
+      "composite": 61.3,
+      "safety": 81.2,
+      "social": 15,
+      "price0": 0.0001611,
+      "liq0": 31628.36,
+      "mcap0": 159093,
+      "age_h0": 0.7176717496066624,
+      "marks": {}
     }
   ]
 }
