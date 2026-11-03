@@ -8544,6 +8544,11 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
         }
       }
     },
@@ -8565,8 +8570,28 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
         }
       }
+    },
+    {
+      "mint": "DBPTU2oKLDHXQjAEJ3rZi8bUGmt2uxUbipgg6xmXoMqr",
+      "symbol": "CAPY",
+      "at": 1793706487.7649567,
+      "at_human": "2026-11-03 11:48",
+      "alerted": false,
+      "composite": 46.9,
+      "safety": 62.3,
+      "social": 11,
+      "price0": 0.0006235,
+      "liq0": 156175.79,
+      "mcap0": 623575,
+      "age_h0": 16.08965624565972,
+      "marks": {}
     }
   ]
 }
