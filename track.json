@@ -8631,6 +8631,13 @@
           "liq": 137480.37,
           "pct": -23.3,
           "measured_at_h": 7.5
+        },
+        "24h": {
+          "at": "2026-11-04 14:50",
+          "price": 0.0004562,
+          "liq": 135174.4,
+          "pct": -26.8,
+          "measured_at_h": 27.0
         }
       }
     },
@@ -8647,6 +8654,34 @@
       "liq0": 184072.49,
       "mcap0": 677367,
       "age_h0": 12.48380740512424,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-11-04 14:50",
+          "price": 0.001232,
+          "liq": 256815.62,
+          "pct": 81.9,
+          "measured_at_h": 8.4
+        }
+      }
+    },
+    {
+      "mint": "CPZguakzrJSPZDvyB2BY7wdk25eKFwuwtYxSPYHmpump",
+      "symbol": "LEOMAN",
+      "at": 1793803750.8391967,
+      "at_human": "2026-11-04 14:49",
+      "alerted": false,
+      "composite": 45.6,
+      "safety": 65.1,
+      "social": 0,
+      "price0": 0.0001393,
+      "liq0": 29562.62,
+      "mcap0": 137420,
+      "age_h0": 2.4810659383138023,
       "marks": {}
     }
   ]
