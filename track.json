@@ -8633,6 +8633,21 @@
           "measured_at_h": 7.5
         }
       }
+    },
+    {
+      "mint": "22r9JGoWRBYc4Z1pkSFw8p2tdjefS2ZZshw1vr8bBC2K",
+      "symbol": "STONKS",
+      "at": 1793773720.7088106,
+      "at_human": "2026-11-04 06:28",
+      "alerted": false,
+      "composite": 55.2,
+      "safety": 74.1,
+      "social": 11,
+      "price0": 0.0006773,
+      "liq0": 184072.49,
+      "mcap0": 677367,
+      "age_h0": 12.48380740512424,
+      "marks": {}
     }
   ]
 }
