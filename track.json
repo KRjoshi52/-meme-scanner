@@ -8696,6 +8696,21 @@
           "measured_at_h": 6.3
         }
       }
+    },
+    {
+      "mint": "Dc8qw7K8ohS74ZS1rHknvsuxnxV9hkJBCYNzX3gdpump",
+      "symbol": "MOGE",
+      "at": 1793842106.1305158,
+      "at_human": "2026-11-05 01:28",
+      "alerted": false,
+      "composite": 54.9,
+      "safety": 72.0,
+      "social": 15,
+      "price0": 0.0001153,
+      "liq0": 26627.12,
+      "mcap0": 113729,
+      "age_h0": 0.6200355598958334,
+      "marks": {}
     }
   ]
 }
