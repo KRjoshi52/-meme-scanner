@@ -8745,6 +8745,21 @@
           "measured_at_h": 25.3
         }
       }
+    },
+    {
+      "mint": "8csCzE6QWAjNRiVNNSSn7ifR2CZHFj3sWuTzGSDapump",
+      "symbol": "HODL",
+      "at": 1793985602.7838664,
+      "at_human": "2026-11-06 17:20",
+      "alerted": false,
+      "composite": 45.9,
+      "safety": 63.5,
+      "social": 5,
+      "price0": 9.93e-05,
+      "liq0": 23806.28,
+      "mcap0": 99260,
+      "age_h0": 0.3474395067003038,
+      "marks": {}
     }
   ]
 }
