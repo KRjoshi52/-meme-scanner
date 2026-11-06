@@ -8759,6 +8759,42 @@
       "liq0": 23806.28,
       "mcap0": 99260,
       "age_h0": 0.3474395067003038,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
+    },
+    {
+      "mint": "8UQdy5sHMVWUWSHeA5B3ZuuAVNumjSLPXdf19MXcpump",
+      "symbol": "COGE",
+      "at": 1794003430.1968944,
+      "at_human": "2026-11-06 22:17",
+      "alerted": true,
+      "composite": 66.1,
+      "safety": 91.5,
+      "social": 7,
+      "price0": 0.004768,
+      "liq0": 182914.08,
+      "mcap0": 4746894,
+      "age_h0": 26.46732064649794,
+      "marks": {}
+    },
+    {
+      "mint": "Hy4iuJwuo9hAUMgMsNpFXANvKSnGmFFqcjBZuiCFpJCP",
+      "symbol": "PI",
+      "at": 1794003431.1162364,
+      "at_human": "2026-11-06 22:17",
+      "alerted": true,
+      "composite": 61.3,
+      "safety": 79.0,
+      "social": 20,
+      "price0": 0.0003788,
+      "liq0": 132795.79,
+      "mcap0": 378871,
+      "age_h0": 0.4475171685112847,
       "marks": {}
     }
   ]
