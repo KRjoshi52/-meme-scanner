@@ -8806,6 +8806,13 @@
           "liq": 350115.12,
           "pct": 256.3,
           "measured_at_h": 10.6
+        },
+        "24h": {
+          "at": "2026-11-07 23:05",
+          "price": 0.003772,
+          "liq": 165055.76,
+          "pct": -20.9,
+          "measured_at_h": 24.8
         }
       }
     },
@@ -8834,6 +8841,13 @@
           "liq": 99092.97,
           "pct": -38.8,
           "measured_at_h": 10.6
+        },
+        "24h": {
+          "at": "2026-11-07 23:05",
+          "price": 0.0005921,
+          "liq": 155063.84,
+          "pct": 56.3,
+          "measured_at_h": 24.8
         }
       }
     },
@@ -8855,6 +8869,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-11-07 23:05",
+          "price": 0.0006218,
+          "liq": 68124.48,
+          "pct": -27.3,
+          "measured_at_h": 7.5
         }
       }
     },
@@ -8876,6 +8897,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-11-07 23:05",
+          "price": 0.0001886,
+          "liq": 84418.79,
+          "pct": -35.5,
+          "measured_at_h": 7.5
         }
       }
     },
@@ -8897,8 +8925,30 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-11-07 23:05",
+          "price": 0.0007916,
+          "liq": 71591.9,
+          "pct": 13.9,
+          "measured_at_h": 7.5
         }
       }
+    },
+    {
+      "mint": "3hWkYmr81vZbyVnTPzcSjSNxxZuSmSdrQUohx86Rrxqf",
+      "symbol": "TAOLF",
+      "at": 1794092646.1847053,
+      "at_human": "2026-11-07 23:04",
+      "alerted": false,
+      "composite": 55.6,
+      "safety": 74.7,
+      "social": 11,
+      "price0": 0.0004391,
+      "liq0": 128951.58,
+      "mcap0": 439132,
+      "age_h0": 2.0661618845621743,
+      "marks": {}
     }
   ]
 }
