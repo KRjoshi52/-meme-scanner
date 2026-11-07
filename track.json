@@ -8792,6 +8792,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-11-07 08:55",
+          "price": 0.01699,
+          "liq": 350115.12,
+          "pct": 256.3,
+          "measured_at_h": 10.6
         }
       }
     },
@@ -8813,6 +8820,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-11-07 08:55",
+          "price": 0.0002319,
+          "liq": 99092.97,
+          "pct": -38.8,
+          "measured_at_h": 10.6
         }
       }
     }
