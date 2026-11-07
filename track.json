@@ -8764,6 +8764,13 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-11-07 02:14",
+          "price": 1.824e-06,
+          "liq": 1999.76,
+          "pct": -98.2,
+          "measured_at_h": 8.9
         }
       }
     },
@@ -8780,7 +8787,13 @@
       "liq0": 182914.08,
       "mcap0": 4746894,
       "age_h0": 26.46732064649794,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
     },
     {
       "mint": "Hy4iuJwuo9hAUMgMsNpFXANvKSnGmFFqcjBZuiCFpJCP",
@@ -8795,7 +8808,13 @@
       "liq0": 132795.79,
       "mcap0": 378871,
       "age_h0": 0.4475171685112847,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
     }
   ]
 }
