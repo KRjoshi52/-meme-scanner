@@ -8829,6 +8829,51 @@
           "measured_at_h": 10.6
         }
       }
+    },
+    {
+      "mint": "8Mi9E1V2bdPeAaRkR5yxUsAvpzP6UBUEEUrYmgKNpump",
+      "symbol": "WEALTH",
+      "at": 1794065567.527676,
+      "at_human": "2026-11-07 15:32",
+      "alerted": false,
+      "composite": 45.1,
+      "safety": 64.5,
+      "social": 0,
+      "price0": 0.0008557,
+      "liq0": 79225.77,
+      "mcap0": 849759,
+      "age_h0": 48.470701447618275,
+      "marks": {}
+    },
+    {
+      "mint": "CzwzQw6eGr9RjF3ZLmEPxcxspSk6csRg9Gpvsnycz5eD",
+      "symbol": "FUSE",
+      "at": 1794065575.3176787,
+      "at_human": "2026-11-07 15:32",
+      "alerted": false,
+      "composite": 43.9,
+      "safety": 62.7,
+      "social": 0,
+      "price0": 0.0002923,
+      "liq0": 105351.85,
+      "mcap0": 292376,
+      "age_h0": 19.148976663275825,
+      "marks": {}
+    },
+    {
+      "mint": "ejrz94zR4A2ScS8LdvRaQih2xUxaE2ydreqUNKmpump",
+      "symbol": "ANTS",
+      "at": 1794065585.5295665,
+      "at_human": "2026-11-07 15:33",
+      "alerted": true,
+      "composite": 67.6,
+      "safety": 87.2,
+      "social": 22,
+      "price0": 0.0006949,
+      "liq0": 66787.08,
+      "mcap0": 685725,
+      "age_h0": 24.53859559855143,
+      "marks": {}
     }
   ]
 }
