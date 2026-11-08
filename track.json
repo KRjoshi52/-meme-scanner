@@ -8955,8 +8955,30 @@
           "liq": 77267.54,
           "pct": -64.3,
           "measured_at_h": 3.5
+        },
+        "6h": {
+          "at": "2026-11-08 09:32",
+          "price": 5.865e-05,
+          "liq": 47054.92,
+          "pct": -86.6,
+          "measured_at_h": 10.5
         }
       }
+    },
+    {
+      "mint": "nyNJvTX7tm83S4Jzf9LA6VDAddNSo264wY3ttJbpump",
+      "symbol": "CALYPSO",
+      "at": 1794130284.7874355,
+      "at_human": "2026-11-08 09:31",
+      "alerted": false,
+      "composite": 47.7,
+      "safety": 67.3,
+      "social": 2,
+      "price0": 0.00035,
+      "liq0": 46533.26,
+      "mcap0": 345994,
+      "age_h0": 17.159662445882162,
+      "marks": {}
     }
   ]
 }
