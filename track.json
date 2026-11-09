@@ -9020,6 +9020,21 @@
           "measured_at_h": 6.9
         }
       }
+    },
+    {
+      "mint": "CZRtwCDJy4cKNvtVwtgGqeEGzLnCDJdTkexgpEsMpump",
+      "symbol": "BTC",
+      "at": 1794206238.443651,
+      "at_human": "2026-11-09 06:37",
+      "alerted": true,
+      "composite": 60.5,
+      "safety": 83.4,
+      "social": 7,
+      "price0": 0.0009874,
+      "liq0": 81412.81,
+      "mcap0": 973690,
+      "age_h0": 41.332420080498586,
+      "marks": {}
     }
   ]
 }
