@@ -9055,6 +9055,21 @@
           "measured_at_h": 10.3
         }
       }
+    },
+    {
+      "mint": "FZxHLUGiGchY5uvvoeqh1EKiXTrGdN67WUBhUc1fLoat",
+      "symbol": "PUSSY",
+      "at": 1794271015.003903,
+      "at_human": "2026-11-10 00:36",
+      "alerted": false,
+      "composite": 55.3,
+      "safety": 68.7,
+      "social": 24,
+      "price0": 0.001472,
+      "liq0": 230826.29,
+      "mcap0": 1472379,
+      "age_h0": 28.175556198798287,
+      "marks": {}
     }
   ]
 }
