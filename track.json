@@ -9088,8 +9088,30 @@
           "liq": 206527.57,
           "pct": -19.3,
           "measured_at_h": 7.2
+        },
+        "24h": {
+          "at": "2026-11-11 01:47",
+          "price": 0.0006789,
+          "liq": 152248.64,
+          "pct": -53.9,
+          "measured_at_h": 25.2
         }
       }
+    },
+    {
+      "mint": "Bp7Lk2CfPdK7yfc15gdmqMKSFBsHFbiish1SZ9enpump",
+      "symbol": "\u54c8\u57fa\u4ed9\u4eba",
+      "at": 1794361548.016993,
+      "at_human": "2026-11-11 01:45",
+      "alerted": false,
+      "composite": 55.9,
+      "safety": 79.9,
+      "social": 0,
+      "price0": 0.0001254,
+      "liq0": 26154.69,
+      "mcap0": 123586,
+      "age_h0": 0.9808375030517578,
+      "marks": {}
     }
   ]
 }
