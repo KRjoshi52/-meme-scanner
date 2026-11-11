@@ -9125,6 +9125,21 @@
           "measured_at_h": 7.3
         }
       }
+    },
+    {
+      "mint": "8oGD1rEraxCCXd98JYdNnb38bENjfR6pGcRuqmfMpump",
+      "symbol": "MEOWLAND",
+      "at": 1794417009.3425257,
+      "at_human": "2026-11-11 17:10",
+      "alerted": false,
+      "composite": 47.5,
+      "safety": 67.8,
+      "social": 0,
+      "price0": 0.0001574,
+      "liq0": 29516.74,
+      "mcap0": 155668,
+      "age_h0": 0.8823166190592447,
+      "marks": {}
     }
   ]
 }
