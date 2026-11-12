@@ -9123,6 +9123,13 @@
           "liq": 1746.99,
           "pct": -98.6,
           "measured_at_h": 7.3
+        },
+        "24h": {
+          "at": "2026-11-12 04:06",
+          "price": 1.552e-06,
+          "liq": 1606.51,
+          "pct": -98.8,
+          "measured_at_h": 26.3
         }
       }
     },
@@ -9167,6 +9174,42 @@
       "liq0": 104669.52,
       "mcap0": 357157,
       "age_h0": 0.4025240052625868,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
+    },
+    {
+      "mint": "AitksCRn29wLXgf6AGJbcszX9maZtVg62D1bV4expump",
+      "symbol": "MAX",
+      "at": 1794456326.8161387,
+      "at_human": "2026-11-12 04:05",
+      "alerted": false,
+      "composite": 51.1,
+      "safety": 72.2,
+      "social": 2,
+      "price0": 0.000191,
+      "liq0": 33023.5,
+      "mcap0": 188536,
+      "age_h0": 2.02300402730306,
+      "marks": {}
+    },
+    {
+      "mint": "8AAVuQpJcqpvCuutxyBTVvgBEXZJSkZoNv1sExpBpump",
+      "symbol": "NOBUSHIBA",
+      "at": 1794456328.4119704,
+      "at_human": "2026-11-12 04:05",
+      "alerted": false,
+      "composite": 55.5,
+      "safety": 77.6,
+      "social": 4,
+      "price0": 0.001032,
+      "liq0": 81249.53,
+      "mcap0": 1019331,
+      "age_h0": 26.646780712958442,
       "marks": {}
     }
   ]
