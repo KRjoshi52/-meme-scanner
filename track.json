@@ -9284,7 +9284,20 @@
       "liq0": 421073.65,
       "mcap0": 13305566,
       "age_h0": 56.76650793104384,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-11-13 16:47",
+          "price": 0.01466,
+          "liq": 421784.56,
+          "pct": 3.7,
+          "measured_at_h": 8.1
+        }
+      }
     },
     {
       "mint": "5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump",
@@ -9299,6 +9312,34 @@
       "liq0": 171562.13,
       "mcap0": 1718958,
       "age_h0": 35.7064360224745,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-11-13 16:47",
+          "price": 0.001776,
+          "liq": 174354.36,
+          "pct": 3.1,
+          "measured_at_h": 8.1
+        }
+      }
+    },
+    {
+      "mint": "9RZH5NbSW27KewwfAcbhQXixMRUaMc7zNppCRnfUpump",
+      "symbol": "JENSLA",
+      "at": 1794588373.3450878,
+      "at_human": "2026-11-13 16:46",
+      "alerted": false,
+      "composite": 46.3,
+      "safety": 66.2,
+      "social": 0,
+      "price0": 0.0001609,
+      "liq0": 29049.58,
+      "mcap0": 159223,
+      "age_h0": 1.2656505577935113,
       "marks": {}
     }
   ]
