@@ -9296,6 +9296,13 @@
           "liq": 421784.56,
           "pct": 3.7,
           "measured_at_h": 8.1
+        },
+        "24h": {
+          "at": "2026-11-14 09:28",
+          "price": 0.01841,
+          "liq": 467335.55,
+          "pct": 30.2,
+          "measured_at_h": 24.8
         }
       }
     },
@@ -9324,6 +9331,13 @@
           "liq": 174354.36,
           "pct": 3.1,
           "measured_at_h": 8.1
+        },
+        "24h": {
+          "at": "2026-11-14 09:28",
+          "price": 0.001688,
+          "liq": 167719.25,
+          "pct": -2.0,
+          "measured_at_h": 24.8
         }
       }
     },
@@ -9354,6 +9368,21 @@
           "measured_at_h": 9.9
         }
       }
+    },
+    {
+      "mint": "D7MyAD7k3AqJpg4uxjUcmL51EDHrEsJxkjUynsxcpump",
+      "symbol": "Christmax",
+      "at": 1794648463.480844,
+      "at_human": "2026-11-14 09:27",
+      "alerted": false,
+      "composite": 44.9,
+      "safety": 64.1,
+      "social": 0,
+      "price0": 0.0002416,
+      "liq0": 35627.13,
+      "mcap0": 230931,
+      "age_h0": 34.96513262953017,
+      "marks": {}
     }
   ]
 }
