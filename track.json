@@ -9403,6 +9403,36 @@
           "measured_at_h": 6.6
         }
       }
+    },
+    {
+      "mint": "6edJUFSC85CyyLFB1QcCvYu7uzqaD4kV9o5YUPxrpump",
+      "symbol": "RWA",
+      "at": 1794702077.301733,
+      "at_human": "2026-11-15 00:21",
+      "alerted": false,
+      "composite": 47.7,
+      "safety": 68.2,
+      "social": 0,
+      "price0": 0.0001432,
+      "liq0": 25756.72,
+      "mcap0": 141707,
+      "age_h0": 0.8545275111219618,
+      "marks": {}
+    },
+    {
+      "mint": "Hi6qQHwHBnx9uaxT3KyBxaHaUn4JTAG6ijygQbiopump",
+      "symbol": "SWIF",
+      "at": 1794702083.3520417,
+      "at_human": "2026-11-15 00:21",
+      "alerted": false,
+      "composite": 55.6,
+      "safety": 79.4,
+      "social": 0,
+      "price0": 0.0001342,
+      "liq0": 25051.61,
+      "mcap0": 132594,
+      "age_h0": 1.1881526532660591,
+      "marks": {}
     }
   ]
 }
