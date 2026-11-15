@@ -9417,7 +9417,20 @@
       "liq0": 25756.72,
       "mcap0": 141707,
       "age_h0": 0.8545275111219618,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-11-15 07:00",
+          "price": 1.37e-06,
+          "liq": 1451.93,
+          "pct": -99.0,
+          "measured_at_h": 6.7
+        }
+      }
     },
     {
       "mint": "Hi6qQHwHBnx9uaxT3KyBxaHaUn4JTAG6ijygQbiopump",
@@ -9432,7 +9445,20 @@
       "liq0": 25051.61,
       "mcap0": 132594,
       "age_h0": 1.1881526532660591,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-11-15 07:00",
+          "price": 1.352e-06,
+          "liq": 1418.82,
+          "pct": -99.0,
+          "measured_at_h": 6.7
+        }
+      }
     }
   ]
 }
