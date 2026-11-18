@@ -9546,6 +9546,21 @@
           "measured_at_h": 29.3
         }
       }
+    },
+    {
+      "mint": "EVbsBwxqdbMqadwAsVZ6KP9SJiaNmLSHAAb4W2mUpump",
+      "symbol": "LUNO",
+      "at": 1795036426.3331,
+      "at_human": "2026-11-18 21:13",
+      "alerted": false,
+      "composite": 45.0,
+      "safety": 60.5,
+      "social": 9,
+      "price0": 0.0002035,
+      "liq0": 33094.98,
+      "mcap0": 202665,
+      "age_h0": 24.430925061306425,
+      "marks": {}
     }
   ]
 }
