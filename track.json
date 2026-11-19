@@ -9560,6 +9560,42 @@
       "liq0": 33094.98,
       "mcap0": 202665,
       "age_h0": 24.430925061306425,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        }
+      }
+    },
+    {
+      "mint": "3ZhsX6y2aEYoiwRFCu7mtwuMWSFH654dhyR2aGRVpump",
+      "symbol": "LUCIA",
+      "at": 1795055897.7261126,
+      "at_human": "2026-11-19 02:38",
+      "alerted": false,
+      "composite": 52.5,
+      "safety": 75.0,
+      "social": 0,
+      "price0": 9.021e-05,
+      "liq0": 20837.28,
+      "mcap0": 89052,
+      "age_h0": 1.818256759033203,
+      "marks": {}
+    },
+    {
+      "mint": "Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump",
+      "symbol": "SHIT",
+      "at": 1795055960.1301997,
+      "at_human": "2026-11-19 02:39",
+      "alerted": false,
+      "composite": 44.8,
+      "safety": 63.2,
+      "social": 2,
+      "price0": 0.002485,
+      "liq0": 122712.07,
+      "mcap0": 2477052,
+      "age_h0": 27.011146622856987,
       "marks": {}
     }
   ]
