@@ -9565,6 +9565,11 @@
           "missed": true,
           "pct": null,
           "note": "not measured within the window"
+        },
+        "6h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
         }
       }
     },
@@ -9581,7 +9586,20 @@
       "liq0": 20837.28,
       "mcap0": 89052,
       "age_h0": 1.818256759033203,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-11-19 10:47",
+          "price": 1.41e-06,
+          "liq": 1484.36,
+          "pct": -98.4,
+          "measured_at_h": 8.2
+        }
+      }
     },
     {
       "mint": "Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump",
@@ -9596,6 +9614,49 @@
       "liq0": 122712.07,
       "mcap0": 2477052,
       "age_h0": 27.011146622856987,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-11-19 10:47",
+          "price": 0.00172,
+          "liq": 104332.78,
+          "pct": -30.8,
+          "measured_at_h": 8.1
+        }
+      }
+    },
+    {
+      "mint": "5a6mAmWbL3Na2KhwV1LmmAUSf12Gy1vd3NjqBq24pump",
+      "symbol": "Sparrow",
+      "at": 1795085203.1976614,
+      "at_human": "2026-11-19 10:46",
+      "alerted": false,
+      "composite": 52.2,
+      "safety": 60.8,
+      "social": 32,
+      "price0": 0.0001075,
+      "liq0": 28392.95,
+      "mcap0": 104312,
+      "age_h0": 0.7025543796115451,
+      "marks": {}
+    },
+    {
+      "mint": "9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump",
+      "symbol": "Leonida",
+      "at": 1795085228.3912613,
+      "at_human": "2026-11-19 10:47",
+      "alerted": false,
+      "composite": 43.4,
+      "safety": 62.0,
+      "social": 0,
+      "price0": 0.001308,
+      "liq0": 88188.23,
+      "mcap0": 1303102,
+      "age_h0": 33.414274703572595,
       "marks": {}
     }
   ]
