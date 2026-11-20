@@ -9719,6 +9719,21 @@
           "measured_at_h": 31.0
         }
       }
+    },
+    {
+      "mint": "BYKQkHKMWHidNBLQXgt7NX4PLUtJZRYGLWQYkJzPGenX",
+      "symbol": "Trader",
+      "at": 1795217086.9109406,
+      "at_human": "2026-11-20 23:24",
+      "alerted": false,
+      "composite": 56.6,
+      "safety": 71.4,
+      "social": 22,
+      "price0": 0.000422,
+      "liq0": 113077.84,
+      "mcap0": 422011,
+      "age_h0": 2.573029999593099,
+      "marks": {}
     }
   ]
 }
