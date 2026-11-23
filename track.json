@@ -9808,6 +9808,21 @@
           "measured_at_h": 8.2
         }
       }
+    },
+    {
+      "mint": "BzPyyYCTmQNq2BcfQ4ANAvCYk54rnmQEXMFvFT8RhWMi",
+      "symbol": "MCAT",
+      "at": 1795398414.483658,
+      "at_human": "2026-11-23 01:46",
+      "alerted": false,
+      "composite": 49.5,
+      "safety": 66.5,
+      "social": 10,
+      "price0": 0.0004677,
+      "liq0": 118300.45,
+      "mcap0": 467758,
+      "age_h0": 8.493744682413737,
+      "marks": {}
     }
   ]
 }
