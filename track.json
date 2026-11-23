@@ -9864,7 +9864,20 @@
       "liq0": 99142.26,
       "mcap0": 1768975,
       "age_h0": 43.16403533725315,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-11-23 22:13",
+          "price": 0.001146,
+          "liq": 80946.09,
+          "pct": -35.8,
+          "measured_at_h": 11.7
+        }
+      }
     }
   ]
 }
