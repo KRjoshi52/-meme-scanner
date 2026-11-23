@@ -9778,6 +9778,13 @@
           "liq": 29999.87,
           "pct": -38.1,
           "measured_at_h": 8.2
+        },
+        "24h": {
+          "at": "2026-11-23 10:30",
+          "price": 5.268e-05,
+          "liq": 20904.86,
+          "pct": -67.4,
+          "measured_at_h": 27.6
         }
       }
     },
@@ -9806,6 +9813,13 @@
           "liq": 27526.61,
           "pct": 5.0,
           "measured_at_h": 8.2
+        },
+        "24h": {
+          "at": "2026-11-23 10:30",
+          "price": 1.555e-05,
+          "liq": 10746.65,
+          "pct": -86.2,
+          "measured_at_h": 27.6
         }
       }
     },
@@ -9822,6 +9836,34 @@
       "liq0": 118300.45,
       "mcap0": 467758,
       "age_h0": 8.493744682413737,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-11-23 10:30",
+          "price": 0.0004061,
+          "liq": 111949.47,
+          "pct": -13.2,
+          "measured_at_h": 8.7
+        }
+      }
+    },
+    {
+      "mint": "Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump",
+      "symbol": "NOHR",
+      "at": 1795429854.7266579,
+      "at_human": "2026-11-23 10:30",
+      "alerted": true,
+      "composite": 63.1,
+      "safety": 82.8,
+      "social": 17,
+      "price0": 0.001785,
+      "liq0": 99142.26,
+      "mcap0": 1768975,
+      "age_h0": 43.16403533725315,
       "marks": {}
     }
   ]
