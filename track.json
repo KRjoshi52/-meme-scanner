@@ -9848,6 +9848,13 @@
           "liq": 111949.47,
           "pct": -13.2,
           "measured_at_h": 8.7
+        },
+        "24h": {
+          "at": "2026-11-24 06:07",
+          "price": 0.0001453,
+          "liq": 66371.97,
+          "pct": -68.9,
+          "measured_at_h": 28.4
         }
       }
     },
@@ -9878,6 +9885,21 @@
           "measured_at_h": 11.7
         }
       }
+    },
+    {
+      "mint": "zcRvzm7gAfYGde8gRwaSYxNryL47SjLVUQLAf1bdoor",
+      "symbol": "SIDOOR",
+      "at": 1795500471.8797,
+      "at_human": "2026-11-24 06:07",
+      "alerted": false,
+      "composite": 46.0,
+      "safety": 62.7,
+      "social": 7,
+      "price0": 0.0002494,
+      "liq0": 38749.93,
+      "mcap0": 249483,
+      "age_h0": 57.35635493048774,
+      "marks": {}
     }
   ]
 }
