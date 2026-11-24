@@ -9883,6 +9883,13 @@
           "liq": 80946.09,
           "pct": -35.8,
           "measured_at_h": 11.7
+        },
+        "24h": {
+          "at": "2026-11-24 17:50",
+          "price": 0.003554,
+          "liq": 142514.12,
+          "pct": 99.1,
+          "measured_at_h": 31.3
         }
       }
     },
@@ -9899,6 +9906,49 @@
       "liq0": 38749.93,
       "mcap0": 249483,
       "age_h0": 57.35635493048774,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-11-24 17:50",
+          "price": 0.0002651,
+          "liq": 38306.11,
+          "pct": 6.3,
+          "measured_at_h": 11.7
+        }
+      }
+    },
+    {
+      "mint": "4npJ3avxnGhCzKbWQpLrQXAHsjWzKr4JqBsbu5Fspump",
+      "symbol": "cateball",
+      "at": 1795542575.0118842,
+      "at_human": "2026-11-24 17:49",
+      "alerted": false,
+      "composite": 59.8,
+      "safety": 81.6,
+      "social": 9,
+      "price0": 0.0007447,
+      "liq0": 64026.62,
+      "mcap0": 734732,
+      "age_h0": 56.71278036763509,
+      "marks": {}
+    },
+    {
+      "mint": "38M2z4UCfZEkUHFzD48vhKQhFhNyRGto8pZbLjNipump",
+      "symbol": "JIMMY",
+      "at": 1795542589.4763825,
+      "at_human": "2026-11-24 17:49",
+      "alerted": false,
+      "composite": 53.7,
+      "safety": 68.2,
+      "social": 20,
+      "price0": 0.0007117,
+      "liq0": 79441.07,
+      "mcap0": 664689,
+      "age_h0": 19.635964928249784,
       "marks": {}
     }
   ]
