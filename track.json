@@ -9934,7 +9934,20 @@
       "liq0": 64026.62,
       "mcap0": 734732,
       "age_h0": 56.71278036763509,
-      "marks": {}
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-11-25 02:04",
+          "price": 0.0006531,
+          "liq": 60020.72,
+          "pct": -12.3,
+          "measured_at_h": 8.3
+        }
+      }
     },
     {
       "mint": "38M2z4UCfZEkUHFzD48vhKQhFhNyRGto8pZbLjNipump",
@@ -9949,6 +9962,34 @@
       "liq0": 79441.07,
       "mcap0": 664689,
       "age_h0": 19.635964928249784,
+      "marks": {
+        "1h": {
+          "missed": true,
+          "pct": null,
+          "note": "not measured within the window"
+        },
+        "6h": {
+          "at": "2026-11-25 02:04",
+          "price": 0.00135,
+          "liq": 121357.76,
+          "pct": 89.7,
+          "measured_at_h": 8.2
+        }
+      }
+    },
+    {
+      "mint": "CLxrgvfFs3gr9BQhTAfGxZDsiHfVUQTDEahfiZdLpump",
+      "symbol": "ChristmASS",
+      "at": 1795572235.3749952,
+      "at_human": "2026-11-25 02:03",
+      "alerted": false,
+      "composite": 53.3,
+      "safety": 76.1,
+      "social": 0,
+      "price0": 0.0001758,
+      "liq0": 28816.17,
+      "mcap0": 174232,
+      "age_h0": 1.8692698908148873,
       "marks": {}
     }
   ]
