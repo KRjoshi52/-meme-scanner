@@ -10032,6 +10032,21 @@
           "measured_at_h": 25.1
         }
       }
+    },
+    {
+      "mint": "Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump",
+      "symbol": "PUMPCHAN",
+      "at": 1795787699.5404458,
+      "at_human": "2026-11-27 13:54",
+      "alerted": false,
+      "composite": 53.8,
+      "safety": 72.1,
+      "social": 11,
+      "price0": 0.01191,
+      "liq0": 266900.98,
+      "mcap0": 11907714,
+      "age_h0": 36.39709385925293,
+      "marks": {}
     }
   ]
 }
